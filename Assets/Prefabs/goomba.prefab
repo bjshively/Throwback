@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212529264024662418}
   - component: {fileID: 50175678318210992}
   - component: {fileID: 61674553170989526}
-  m_Layer: 0
+  - component: {fileID: 114418360035653390}
+  m_Layer: 9
   m_Name: goomba
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -61,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61674553170989526
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 2.25}
   m_EdgeRadius: 0
+--- !u!114 &114418360035653390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869797361193904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc9f5df73d9241b6ba51f8582f381f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212529264024662418
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
     // Returns true if character is on the ground
     public bool IsGrounded()
     {
-        if (Physics2D.Raycast(transform.FindChild("groundPoint").position, Vector2.down, 0.4f, ground.value))
+        if (Physics2D.Raycast(transform.FindChild("groundPoint").position, Vector2.down, 0.2f, ground.value))
         {
             return true;
         }
