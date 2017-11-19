@@ -20,8 +20,10 @@ public class Pistol : Weapon
         base.Start();
         pc.canFire = false;
 
-        // Pistol bullets are destroyed after 5 seconds automatically
-        Invoke("SelfDestruct", 5);
+        // Pistol fire limited to once/second
+        // We may want bullets to last longer than the delay between shots
+        Invoke("SelfDestruct", 1);
+        Invoke("ResetFire", 1);
     }
 	
     // Update is called once per frame

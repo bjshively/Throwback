@@ -30,7 +30,10 @@ public abstract class Weapon : MonoBehaviour
         // Fire bullets the direction the player is facing
         pc = player.GetComponent<PlayerController>();
         body = GetComponent<Rigidbody2D>();
-        body.velocity = new Vector2(projectileSpeed * pc.facing, 0);  
+        body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
+
+        // After some delay, call the self destruct method
+        Invoke("SelfDestruct", 5);
     }
 	
     // Update is called once per frame
@@ -45,14 +48,17 @@ public abstract class Weapon : MonoBehaviour
         if (col.gameObject.tag == "Enemy")
         {
             Destroy(col.gameObject);
-            Destroy(gameObject);
-            SelfDestruct();
+            gameObject.SetActive(false);
         }
     }
 
     protected void SelfDestruct()
     {
         Destroy(gameObject);
+    }
+
+    protected void ResetFire()
+    {
         pc.canFire = true;
     }
 }
