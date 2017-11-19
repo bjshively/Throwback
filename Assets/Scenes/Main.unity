@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 1653398186}
   - component: {fileID: 1653398185}
   - component: {fileID: 1653398184}
+  - component: {fileID: 1653398189}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -456,6 +457,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653398189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653398183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb996db487a1464193e13850b149dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMax: 2000
+  xMin: -2000
+  yMax: 2000
+  yMin: -2000
+  target: {fileID: 0}
 --- !u!1 &1755141909
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +486,7 @@ GameObject:
   - component: {fileID: 1755141910}
   - component: {fileID: 1755141914}
   m_Layer: 0
-  m_Name: mario
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
