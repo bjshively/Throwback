@@ -47,9 +47,12 @@ public class EnemyController : MonoBehaviour
     // Determine direction of player and compare to the direction the enemy is facing
     private void Move()
     {
-        playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
-        body.velocity = new Vector2(moveSpeed * playerDirection, body.velocity.y);
-        Flip();
+        if (Mathf.Abs(player.transform.position.x - gameObject.transform.position.x) > 1)
+        {
+            playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
+            body.velocity = new Vector2(moveSpeed * playerDirection, body.velocity.y);
+            Flip();
+        }
     }
 
     // Flip the enemy sprite to face the player if needed
