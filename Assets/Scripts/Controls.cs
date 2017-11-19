@@ -26,6 +26,7 @@ public class Controls : MonoBehaviour
     void FixedUpdate()
     {
         grounded = IsGrounded();
+
         // Stupid simple movement code
         float h = horizontalSpeed * Input.GetAxis("Horizontal");
         if (Mathf.Abs(h) < .2)
@@ -37,12 +38,14 @@ public class Controls : MonoBehaviour
             body.velocity = new Vector2(h, body.velocity.y);    
         }
 
-
+        // Jump       
         if (Input.GetKeyDown("space") && grounded)
         {
             body.AddForce(new Vector2(0, 500), ForceMode2D.Impulse);
         }
             
+        // For testing/during dev
+        // Respawn player at start location if they fall below y=-10
         if (transform.position.y < -10)
         {
             transform.position = startLocation;
