@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalSpeed = 12.0F;
     private bool grounded;
 
+    private float facing;
 
 
     // Use this for initialization
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         startLocation = transform.position;
         body = GetComponent<Rigidbody2D>();
         grounded = IsGrounded();      
+        facing = 1;
     }
 	
     // Update is called once per frame
@@ -32,17 +34,12 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
 
-        // Stupid simple movement code
-        float h = horizontalSpeed * Input.GetAxis("Horizontal");
-        if (Mathf.Abs(h) < .2)
-        {
-            body.velocity = new Vector2(0, body.velocity.y);
-        }
-        else
-        {
-            body.velocity = new Vector2(h, body.velocity.y);    
-        }
 
+        float h = horizontalSpeed * Input.GetAxis("Horizontal");
+        move(h);
+       
+        //facing = Mathf.Sign(body.velocity.x);
+       
         // Jump       
         if (Input.GetKeyDown("space") && grounded)
         {
@@ -63,6 +60,31 @@ public class PlayerController : MonoBehaviour
             transform.position = startLocation;
         }
 
+    }
+
+    // Move the player
+    private void move(float h)
+    {
+        if (Mathf.Abs(h) < .2)
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
+        else
+        {
+            Vector3 scale = transform.localScale;
+            body.velocity = new Vector2(h, body.velocity.y);
+            if (body.velocity.x > 0)
+            {
+                scale.x = 1;
+                transform.localScale = scale;    
+            }
+            else if (body.velocity.x < 0)
+            {
+                scale.x = -1;
+                transform.localScale = scale;
+            }
+
+        }
     }
 
     // Returns true if character is on the ground
