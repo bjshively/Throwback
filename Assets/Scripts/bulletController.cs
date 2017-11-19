@@ -6,6 +6,7 @@ public class bulletController : MonoBehaviour
 {
 
     private Rigidbody2D body;
+    private GameObject player;
 
     // Use this for initialization
     void Start()
@@ -15,10 +16,13 @@ public class bulletController : MonoBehaviour
 
         // Fire the bullet out of the player's position
         // May want to update to some gun barrel position eventually
-        transform.position = GameObject.Find("Player").transform.position;
+        player = GameObject.Find("Player");
+        transform.position = player.transform.position;
 
+        // Fire bullets the direction the player is facing
+        PlayerController pc = player.GetComponent<PlayerController>();
         body = GetComponent<Rigidbody2D>();
-        body.velocity = new Vector2(15, 0);    
+        body.velocity = new Vector2(15 * pc.facing, 0);  
     }
 	
     // Update is called once per frame

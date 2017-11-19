@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalSpeed = 12.0F;
     private bool grounded;
 
-    private float facing;
+    public float facing;
 
 
     // Use this for initialization
@@ -76,12 +76,14 @@ public class PlayerController : MonoBehaviour
             if (body.velocity.x > 0)
             {
                 scale.x = 1;
-                transform.localScale = scale;    
+                transform.localScale = scale;
+                facing = 1;
             }
             else if (body.velocity.x < 0)
             {
                 scale.x = -1;
                 transform.localScale = scale;
+                facing = -1;
             }
 
         }
