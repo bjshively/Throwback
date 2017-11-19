@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        // TODO
         if (col.gameObject.tag == "Enemy")
         {
             takeDamage();
@@ -131,6 +132,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!invincible)
         {
+            knockback();
             invincible = true;
             currentHealth -= 1;
             spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
@@ -171,5 +173,14 @@ public class PlayerController : MonoBehaviour
     {
         invincible = false;
         spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    // Player is knocked backwards upon collidding with an enemy
+    // TODO: Ease camera follow so screen doesn't jerk
+    private void knockback()
+    {
+        Vector2 pos = gameObject.transform.position;
+        Vector2 newPos = new Vector2(pos.x - 2 * facing, pos.y);
+        gameObject.transform.position = newPos;
     }
 }
