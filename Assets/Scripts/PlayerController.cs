@@ -13,6 +13,12 @@ public class PlayerController : MonoBehaviour
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
     private int lives = 100;
+
+    public int livesCount
+    {
+        get { return lives; }
+    }
+
     private float moveSpeed = 5.0F;
 
 
@@ -153,7 +159,7 @@ public class PlayerController : MonoBehaviour
     // Reduce lives, respawn if you have lives
     private void die()
     {
-        lives -= -1;
+        lives -= 1;
         if (lives > 0)
         {
             respawn();
