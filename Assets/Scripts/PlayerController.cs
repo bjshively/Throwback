@@ -13,9 +13,12 @@ public class PlayerController : MonoBehaviour
     private int currentHealth = 3;
     private int lives = 100;
     private float horizontalSpeed = 12.0F;
+
+
+    // State
     private bool grounded;
     private bool invincible;
-
+    public bool canFire;
     public float facing;
 
 
@@ -25,6 +28,8 @@ public class PlayerController : MonoBehaviour
         startLocation = transform.position;
         body = GetComponent<Rigidbody2D>();
         grounded = IsGrounded();      
+        invincible = false;
+        canFire = true;
         facing = 1;
     }
 	
@@ -32,7 +37,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         grounded = IsGrounded();
-
 
         float h = horizontalSpeed * Input.GetAxis("Horizontal");
         move(h);
@@ -46,10 +50,11 @@ public class PlayerController : MonoBehaviour
         }
 
         // Shoot
-        if (Input.GetKeyDown("x"))
+        if (Input.GetKeyDown("x") && canFire)
         {
             // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("bullet"));
+            canFire = false;
         }
 
         // For testing/during dev
