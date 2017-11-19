@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private int lives = 100;
     private float horizontalSpeed = 12.0F;
     private bool grounded;
+    private bool invincible;
 
     public float facing;
 
@@ -113,10 +114,22 @@ public class PlayerController : MonoBehaviour
     // take damage, die if health goes to 0
     private void takeDamage()
     {
-        this.currentHealth -= 1;
-        if (currentHealth <= 0)
+        if (!invincible)
         {
-            die();
+            Debug.Log("on");
+            invincible = true;
+            currentHealth -= 1;
+
+            if (currentHealth <= 0)
+            {
+                die();
+            }
+            else
+            {
+                // 3 seconds of invincibility
+                Invoke("resetInvincibility", 3);
+
+            }
         }
     }
 
@@ -130,9 +143,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Respawn the character, and reset any necessary state such as health, location
     private void respawn()
     {
         currentHealth = STARTHEALTH;
+        invincible = false;
         gameObject.transform.position = startLocation;
+    }
+
+    // Called after iframes expire
+    private void resetInvincibility()
+    {
+        invincible = false;
+        Debug.Log("off");
     }
 }
