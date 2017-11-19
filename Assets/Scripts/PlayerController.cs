@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask ground;
     private Vector3 startLocation;
     protected Rigidbody2D body;
+    private SpriteRenderer spriteRenderer;
 
     // Player attributes
     private const int STARTHEALTH = 3;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         startLocation = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         grounded = IsGrounded();      
         invincible = false;
@@ -121,9 +123,9 @@ public class PlayerController : MonoBehaviour
     {
         if (!invincible)
         {
-            Debug.Log("on");
             invincible = true;
             currentHealth -= 1;
+            spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
 
             if (currentHealth <= 0)
             {
@@ -152,7 +154,7 @@ public class PlayerController : MonoBehaviour
     private void respawn()
     {
         currentHealth = STARTHEALTH;
-        invincible = false;
+        resetInvincibility();
         gameObject.transform.position = startLocation;
     }
 
@@ -160,6 +162,6 @@ public class PlayerController : MonoBehaviour
     private void resetInvincibility()
     {
         invincible = false;
-        Debug.Log("off");
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
     }
 }
