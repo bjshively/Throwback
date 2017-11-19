@@ -8,7 +8,7 @@ public class Controls : MonoBehaviour
 
     protected Rigidbody2D body;
 
-    private float horizontalSpeed = 20.0F;
+    private float horizontalSpeed = 12.0F;
     private bool grounded;
 
     private Vector3 startLocation;
