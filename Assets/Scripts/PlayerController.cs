@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controls : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public LayerMask ground;
     private Vector3 startLocation;
@@ -11,7 +11,9 @@ public class Controls : MonoBehaviour
 
 
     // Player attributes
-    private int health = 3;
+    private const int STARTHEALTH = 3;
+    private int currentHealth = 3;
+    private int lives = 100;
     private float horizontalSpeed = 12.0F;
     private bool grounded;
 
@@ -75,8 +77,37 @@ public class Controls : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log(collision.collider.gameObject.layer);
+        if (col.gameObject.tag == "Enemy")
+        {
+            takeDamage();
+        }
+    }
+
+    // take damage, die if health goes to 0
+    private void takeDamage()
+    {
+        this.currentHealth -= 1;
+        if (currentHealth <= 0)
+        {
+            die();
+        }
+    }
+
+    // Reduce lives, respawn if you have lives
+    private void die()
+    {
+        lives -= -1;
+        if (lives > 0)
+        {
+            respawn();
+        }
+    }
+
+    private void respawn()
+    {
+        currentHealth = STARTHEALTH;
+        gameObject.transform.position = startLocation;
     }
 }
