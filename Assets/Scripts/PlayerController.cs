@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
     private int lives = 100;
-    private float horizontalSpeed = 5.0F;
+    private float moveSpeed = 5.0F;
 
 
     // State
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
 
-        float h = horizontalSpeed * Input.GetAxis("Horizontal");
+        float h = moveSpeed * Input.GetAxis("Horizontal");
         move(h);
        
         //facing = Mathf.Sign(body.velocity.x);
@@ -118,7 +118,6 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // TODO
         if (col.gameObject.tag == "Enemy")
         {
             takeDamage();
@@ -180,6 +179,7 @@ public class PlayerController : MonoBehaviour
     // TODO: Ease camera follow so screen doesn't jerk
     private void knockback()
     {
+        // TODO: I don't think this works at all right now.
         Vector2 pos = gameObject.transform.position;
         Vector2 newPos = new Vector2(pos.x - 2 * facing, pos.y);
         gameObject.transform.position = newPos;
