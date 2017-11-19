@@ -10,6 +10,14 @@ public class EnemyController : MonoBehaviour
     private float facing;
     private float playerDirection;
 
+    public virtual float moveSpeed
+    {
+        get
+        {
+            return 3;
+        }
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -40,7 +48,7 @@ public class EnemyController : MonoBehaviour
     private void Move()
     {
         playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
-        body.velocity = new Vector2(1 * playerDirection, body.velocity.y);
+        body.velocity = new Vector2(moveSpeed * playerDirection, body.velocity.y);
         Flip();
     }
 
