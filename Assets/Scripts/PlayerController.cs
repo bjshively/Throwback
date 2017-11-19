@@ -49,8 +49,6 @@ public class PlayerController : MonoBehaviour
         float h = moveSpeed * Input.GetAxis("Horizontal");
         move(h);
        
-        //facing = Mathf.Sign(body.velocity.x);
-       
         // Jump       
         if (Input.GetKeyDown("space") && grounded)
         {
