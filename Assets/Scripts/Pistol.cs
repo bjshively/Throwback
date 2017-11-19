@@ -13,6 +13,14 @@ public class Pistol : Weapon
         } 
     }
 
+    protected override float fireDelay
+    {
+        get
+        {
+            return 1f;
+        }
+    }
+
     void Start()
     {
         base.Start();

@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 296504221}
   - component: {fileID: 296504220}
   m_Layer: 8
-  m_Name: block
+  m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 621262198}
   - component: {fileID: 621262197}
   m_Layer: 8
-  m_Name: block
+  m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

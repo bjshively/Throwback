@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private const int STARTHEALTH = 3;
     private int currentHealth = 3;
     private int lives = 100;
-    private float horizontalSpeed = 12.0F;
+    private float horizontalSpeed = 5.0F;
 
 
     // State
