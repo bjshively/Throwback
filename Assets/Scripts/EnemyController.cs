@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     private GameObject player;
     private SpriteRenderer renderer;
     private float facing;
+    private float playerDirection;
 
     // Use this for initialization
     void Start()
@@ -22,7 +23,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
 
-        // Enemies only move when on screen with the player
+        // Enemies only move when visible
         if (renderer.isVisible)
         {
             Move();
@@ -36,11 +37,16 @@ public class EnemyController : MonoBehaviour
     }
 
     // Determine direction of player and compare to the direction the enemy is facing
-    // If they don't match, flip the enemy sprite to face the player
     private void Move()
     {
-        float playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
+        playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
         body.velocity = new Vector2(1 * playerDirection, body.velocity.y);
+        Flip();
+    }
+
+    // Flip the enemy sprite to face the player if needed
+    private void Flip()
+    {
         if (playerDirection != facing)
         {
             // Flip enemy sprite
