@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private Rigidbody2D body;
-    private GameObject player;
-    private SpriteRenderer renderer;
-    private float facing;
-    private float playerDirection;
+    protected Rigidbody2D body;
+    protected GameObject player;
+    protected SpriteRenderer renderer;
+    protected float facing;
+    protected float playerDirection;
 
     public virtual float moveSpeed
     {
@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start()
+    protected virtual void Start()
     {
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
