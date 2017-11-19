@@ -55,20 +55,22 @@ public abstract class Weapon : MonoBehaviour
     // Destroy the enemy and bullet on contact
     void OnCollisionEnter2D(Collision2D col)
     {
+        // Destroy enemy and bullet on contact
         if (col.gameObject.tag == "Enemy")
         {
             Destroy(col.gameObject);
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+
+        // Destroy bullet when it hits a wall or other piece of the world
+        if (col.gameObject.tag == "World")
+        {
+            Destroy(gameObject);
         }
     }
 
     protected void SelfDestruct()
     {
         Destroy(gameObject);
-    }
-
-    protected void ResetFire()
-    {
-        pc.canFire = true;
     }
 }
