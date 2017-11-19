@@ -20,14 +20,4 @@ public class Pistol : Weapon
             return 1f;
         }
     }
-
-    void Start()
-    {
-        base.Start();
-
-        // Pistol fire limited to once/second
-        // We may want bullets to last longer than the delay between shots
-        Invoke("SelfDestruct", 1);
-        Invoke("ResetFire", fireDelay);
-    }
 }

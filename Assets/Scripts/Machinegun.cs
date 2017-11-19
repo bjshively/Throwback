@@ -20,14 +20,4 @@ public class Machinegun : Weapon
             return .4f;
         } 
     }
-
-    void Start()
-    {
-        base.Start();
-
-        // Pistol fire limited to once/second
-        // We may want bullets to last longer than the delay between shots
-        Invoke("SelfDestruct", 3);
-        Invoke("ResetFire", fireDelay);
-    }
 }

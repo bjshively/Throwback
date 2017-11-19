@@ -183,4 +183,14 @@ public class PlayerController : MonoBehaviour
         Vector2 newPos = new Vector2(pos.x - 2 * facing, pos.y);
         gameObject.transform.position = newPos;
     }
+
+    public void resetFire()
+    {
+        canFire = true;  
+    }
+
+    public void startResetFireTimer(float delay)
+    {
+        Invoke("resetFire", delay);
+    }
 }
