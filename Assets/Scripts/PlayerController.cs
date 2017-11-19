@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         // Shoot
         if (Input.GetKeyDown("x"))
         {
+            // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("bullet"));
         }
 
