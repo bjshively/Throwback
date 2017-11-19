@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D body;
     private GameObject player;
     private SpriteRenderer renderer;
+    private float facing;
 
     // Use this for initialization
     void Start()
@@ -14,6 +15,7 @@ public class EnemyController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
+        facing = 1;
     }
 	
     // Update is called once per frame
@@ -23,9 +25,7 @@ public class EnemyController : MonoBehaviour
         // Enemies only move when on screen with the player
         if (renderer.isVisible)
         {
-            // Figure out which direction is towards the player, and move that direction
-            float direction = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
-            body.velocity = new Vector2(1 * direction, body.velocity.y);
+            Move();
         }
     }
 
@@ -33,6 +33,24 @@ public class EnemyController : MonoBehaviour
     void OnBecameVisible()
     {
 
+    }
+
+    // Determine direction of player and compare to the direction the enemy is facing
+    // If they don't match, flip the enemy sprite to face the player
+    private void Move()
+    {
+        float playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
+        body.velocity = new Vector2(1 * playerDirection, body.velocity.y);
+        if (playerDirection != facing)
+        {
+            // Flip enemy sprite
+            Vector2 scale = transform.localScale;
+            scale.x = scale.x *= -1;
+            transform.localScale = scale;
+
+            // Update facing value
+            facing = Mathf.Sign(scale.x);
+        }
     }
 
 }

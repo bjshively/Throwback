@@ -127,7 +127,8 @@ public class PlayerController : MonoBehaviour
 
 
     // TODO: Make player and enemy not interact in physics but still damage on collision
-    // take damage, die if health goes to 0
+
+    // Take damage, die if health goes to 0
     private void takeDamage()
     {
         if (!invincible)
