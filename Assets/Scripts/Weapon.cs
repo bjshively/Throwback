@@ -37,6 +37,7 @@ public abstract class Weapon : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
         body = GetComponent<Rigidbody2D>();
         body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
+        pc.canFire = false;
 
         // After some delay, call the self destruct method
         Invoke("SelfDestruct", 5);

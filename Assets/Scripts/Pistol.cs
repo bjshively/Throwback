@@ -16,7 +16,6 @@ public class Pistol : Weapon
     void Start()
     {
         base.Start();
-        pc.canFire = false;
 
         // Pistol fire limited to once/second
         // We may want bullets to last longer than the delay between shots
