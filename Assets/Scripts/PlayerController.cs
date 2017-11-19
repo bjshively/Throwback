@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Fire pistol
-        if (Input.GetKeyDown("x") && canFire)
+        if (Input.GetKey("x") && canFire)
         {
             // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("pistol"));
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Fire machinegun
-        if (Input.GetKeyDown("f") && canFire)
+        if (Input.GetKey("f") && canFire)
         {
             // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("machinegun"));
