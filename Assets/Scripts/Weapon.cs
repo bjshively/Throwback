@@ -17,7 +17,13 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    private float fireDelay;
+    protected virtual float fireDelay
+    {
+        get
+        {
+            return 1;
+        }
+    }
 
     // Use this for initialization
     protected void Start()

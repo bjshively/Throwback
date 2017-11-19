@@ -51,11 +51,19 @@ public class PlayerController : MonoBehaviour
             body.AddForce(new Vector2(0, 500), ForceMode2D.Impulse);
         }
 
-        // Shoot
+        // Fire pistol
         if (Input.GetKeyDown("x") && canFire)
         {
             // Spawn an instance of the bullet prefab
-            Instantiate(Resources.Load("bullet"));
+            Instantiate(Resources.Load("pistol"));
+            canFire = false;
+        }
+
+        // Fire machinegun
+        if (Input.GetKeyDown("f") && canFire)
+        {
+            // Spawn an instance of the bullet prefab
+            Instantiate(Resources.Load("machinegun"));
             canFire = false;
         }
 
@@ -63,7 +71,7 @@ public class PlayerController : MonoBehaviour
         // Respawn player at start location if they fall below y=-10
         if (transform.position.y < -10)
         {
-            transform.position = startLocation;
+            die();
         }
 
     }
