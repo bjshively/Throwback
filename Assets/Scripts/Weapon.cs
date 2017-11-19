@@ -8,6 +8,7 @@ public abstract class Weapon : MonoBehaviour
     private Rigidbody2D body;
     private GameObject player;
     protected PlayerController pc;
+    protected SpriteRenderer renderer;
 
     public virtual float projectileSpeed
     {
@@ -28,6 +29,7 @@ public abstract class Weapon : MonoBehaviour
     // Use this for initialization
     protected void Start()
     {
+        renderer = GetComponent<SpriteRenderer>();
         // Fire the bullet out of the player's position
         // TODO: May want to update to some gun barrel position eventually
         player = GameObject.Find("Player");
@@ -42,11 +44,13 @@ public abstract class Weapon : MonoBehaviour
         // After some delay, call the self destruct method
         Invoke("SelfDestruct", 5);
     }
-	
-    // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
-		
+        if (!renderer.isVisible)
+        {
+            SelfDestruct();
+        }
     }
 
     // Destroy the enemy and bullet on contact
@@ -62,6 +66,7 @@ public abstract class Weapon : MonoBehaviour
     protected void SelfDestruct()
     {
         Destroy(gameObject);
+        ResetFire();
     }
 
     protected void ResetFire()

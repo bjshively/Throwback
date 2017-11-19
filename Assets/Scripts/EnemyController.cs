@@ -14,7 +14,6 @@ public class EnemyController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
-        Debug.Log(Screen.width);
     }
 	
     // Update is called once per frame
