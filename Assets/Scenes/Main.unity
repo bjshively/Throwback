@@ -151,6 +151,10 @@ Prefab:
       propertyPath: m_Name
       value: goomba (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
   m_IsPrefabParent: 0
@@ -196,6 +200,10 @@ Prefab:
     - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
       propertyPath: m_Name
       value: goomba (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
@@ -338,6 +346,10 @@ Prefab:
       propertyPath: m_Name
       value: goomba (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
   m_IsPrefabParent: 0
@@ -379,6 +391,10 @@ Prefab:
     - target: {fileID: 4054135638242786, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
@@ -521,6 +537,10 @@ Prefab:
       propertyPath: m_Name
       value: goomba (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
   m_IsPrefabParent: 0
@@ -533,7 +553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510940446}
   - component: {fileID: 1510940447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: groundPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +731,7 @@ GameObject:
   - component: {fileID: 1755141911}
   - component: {fileID: 1755141910}
   - component: {fileID: 1755141914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -831,6 +851,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
+  facing: 0
 --- !u!1001 &1882251150
 Prefab:
   m_ObjectHideFlags: 0
@@ -873,6 +894,10 @@ Prefab:
     - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
       propertyPath: m_Name
       value: goomba (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
@@ -919,6 +944,10 @@ Prefab:
     - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
       propertyPath: m_Name
       value: goomba (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869797361193904, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dff0605ff061c4d808e4b91dd52c42c6, type: 2}

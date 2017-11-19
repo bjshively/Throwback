@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 startLocation;
     protected Rigidbody2D body;
 
-
-
     // Player attributes
     private const int STARTHEALTH = 3;
     private int currentHealth = 3;
@@ -110,6 +108,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    // TODO: Make player and enemy not interact in physics but still damage on collision
     // take damage, die if health goes to 0
     private void takeDamage()
     {
