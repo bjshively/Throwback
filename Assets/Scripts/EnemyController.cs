@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public abstract class EnemyController : MonoBehaviour
 {
     protected Rigidbody2D body;
     protected GameObject player;
@@ -26,11 +26,10 @@ public class EnemyController : MonoBehaviour
         player = GameObject.Find("Player");
         facing = 1;
     }
-	
-    // Update is called once per frame
-    void Update()
-    {
 
+    protected void Update()
+    {
+        Flip();
         // Enemies only move when visible
         if (renderer.isVisible)
         {
@@ -45,18 +44,10 @@ public class EnemyController : MonoBehaviour
     }
 
     // Determine direction of player and compare to the direction the enemy is facing
-    private void Move()
-    {
-        if (Mathf.Abs(player.transform.position.x - gameObject.transform.position.x) > 1)
-        {
-            playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
-            body.velocity = new Vector2(moveSpeed * playerDirection, body.velocity.y);
-            Flip();
-        }
-    }
+    protected abstract void Move();
 
     // Flip the enemy sprite to face the player if needed
-    private void Flip()
+    protected void Flip()
     {
         if (playerDirection != facing)
         {

@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyFloatController : EnemyController
 {
     private float yDirection = 1;
-    //    private Time t;
     float timer;
 
     public virtual float moveSpeed
@@ -18,15 +17,16 @@ public class EnemyFloatController : EnemyController
         base.Start();
         timer = 0;
     }
-	
-    // Update is called once per frame
+
     void Update()
     {
-        Move();
+        base.Update();
     }
 
-    private void Move()
+    protected override void Move()
     {
+        playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
+        Flip();
         timer += Time.deltaTime;
         if (timer > 1)
         {
