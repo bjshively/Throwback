@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     // Player attributes
     private const int STARTHEALTH = 3;
-    private int currentHealth = 3;
+    public int currentHealth = 3;
     private int lives = 100;
     private float horizontalSpeed = 5.0F;
 
@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
     // Returns true if character is on the ground
     public bool IsGrounded()
     {
-        if (Physics2D.Raycast(transform.FindChild("groundPoint").position, Vector2.down, 0.2f, ground.value))
+        if (Physics2D.Raycast(transform.Find("groundPoint").position, Vector2.down, 0.2f, ground.value))
         {
             return true;
         }
