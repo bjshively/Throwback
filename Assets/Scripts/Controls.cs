@@ -62,6 +62,7 @@ public class Controls : MonoBehaviour
 
     }
 
+    // Returns true if character is on the ground
     public bool IsGrounded()
     {
         if (Physics2D.Raycast(transform.FindChild("groundPoint").position, Vector2.down, 0.4f, ground.value))
@@ -72,5 +73,10 @@ public class Controls : MonoBehaviour
         {
             return false;
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.collider.gameObject.layer);
     }
 }
