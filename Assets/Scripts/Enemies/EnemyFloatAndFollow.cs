@@ -23,13 +23,13 @@ public class EnemyFloatAndFollow : Enemy
     {
         Move();
 
+        // Every 2 seconds, re-pinpoint the target (player)
         timer += Time.deltaTime;
         if (timer > 2)
         {
             UpdateTarget();
             timer = 0;
         }
-
     }
 
     // Float towards the player
@@ -38,6 +38,7 @@ public class EnemyFloatAndFollow : Enemy
         transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), targetLocation, moveSpeed * Time.deltaTime);
     }
 
+    // Update the reference to the player's position for following
     protected void UpdateTarget()
     {
         targetLocation = player.transform.position;
