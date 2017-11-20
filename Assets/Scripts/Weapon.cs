@@ -35,8 +35,11 @@ public abstract class Weapon : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
 
         // Fire the bullet out of the player's position
+        // (plus a small adjustment to spawn outside of the player sprite)
         // TODO: May want to update to some gun barrel position eventually
-        transform.position = player.transform.position;
+        Vector2 spawnPosition = player.transform.position;
+        spawnPosition.x = spawnPosition.x + pc.facing * .2f;
+        transform.position = spawnPosition;
 
         // Fire bullets the direction the player is facing
         body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
