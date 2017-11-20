@@ -4,17 +4,7 @@ using UnityEngine;
 
 public class EnemyWalk : Enemy
 {
-    public virtual float moveSpeed
-    {
-        get
-        {
-            return -1;
-        }
-        set
-        {
-            moveSpeed *= -1;
-        }
-    }
+    private float moveSpeed = -1;
     
     // Use this for initialization
     void Start()
@@ -31,15 +21,9 @@ public class EnemyWalk : Enemy
     // If the enemy bumps into part of the World, change directions
     void OnCollisionEnter2D(Collision2D col)
     {
-        // TODO: Setting this to the "World" tag crashed unity
-        // Need to find some way to differentiate walking on the floor from 
-        // Walking into a wall.
-        if (col.gameObject.tag == "Wall")
+        if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Breakable")
         {
             moveSpeed *= -1;
-
-            // TODO: May need to add some kind of Flip logic here
         }
     }
-
 }
