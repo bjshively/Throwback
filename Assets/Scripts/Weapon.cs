@@ -38,7 +38,7 @@ public abstract class Weapon : MonoBehaviour
         // (plus a small adjustment to spawn outside of the player sprite)
         // TODO: May want to update to some gun barrel position eventually
         Vector2 spawnPosition = player.transform.position;
-        spawnPosition.x = spawnPosition.x + pc.facing * .2f;
+        spawnPosition.x = spawnPosition.x + pc.facing * .05f;
         transform.position = spawnPosition;
 
         // Fire bullets the direction the player is facing
