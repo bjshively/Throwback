@@ -150,8 +150,13 @@ public class PlayerController : MonoBehaviour
     {
         if (!invincible)
         {
-            knockback();
+            canMove = false;
+            body.velocity = Vector2.zero;
+            Invoke("resetMove", 1);
+
             invincible = true;
+            knockback();
+
             currentHealth -= 1;
             spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
 
@@ -183,6 +188,7 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = STARTHEALTH;
         resetInvincibility();
+        resetMove();
         gameObject.transform.position = startLocation;
     }
 
