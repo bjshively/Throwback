@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
         if (!invincible)
         {
             canMove = false;
-            body.velocity = Vector2.zero;
+            Stop();
             Invoke("resetMove", 1);
 
             invincible = true;
@@ -189,6 +189,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = STARTHEALTH;
         resetInvincibility();
         resetMove();
+        Stop();
         gameObject.transform.position = startLocation;
     }
 
@@ -211,6 +212,11 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("knockback");
 
     
+    }
+
+    public void Stop()
+    {
+        body.velocity = Vector2.zero;
     }
 
     public void resetFire()
