@@ -21,6 +21,7 @@ public abstract class Enemy : MonoBehaviour
     // Use this for initialization
     protected virtual void Start()
     {
+        gameObject.tag = "Enemy";
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");

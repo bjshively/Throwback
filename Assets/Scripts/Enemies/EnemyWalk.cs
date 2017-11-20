@@ -19,17 +19,7 @@ public class EnemyWalk : Enemy
     // Use this for initialization
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();
-        renderer = GetComponent<SpriteRenderer>();
-    }
-	
-    // Update is called once per frame
-    void Update()
-    {
-        if (renderer.isVisible)
-        {
-            Move();
-        }
+        base.Start();
     }
 
     protected override void Move()
