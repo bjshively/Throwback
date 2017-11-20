@@ -14,7 +14,7 @@ public abstract class EnemyController : MonoBehaviour
     {
         get
         {
-            return 3;
+            return 1;
         }
     }
 

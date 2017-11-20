@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class EnemyFloatAndFollow : EnemyController
 {
+    public virtual float moveSpeed
+    {
+        get { return .5f; }
+    }
 
     // Float towards the player
     protected override void Move()
     {
-        transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), player.transform.position, 3 * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), player.transform.position, moveSpeed * Time.deltaTime);
     }
 
 }

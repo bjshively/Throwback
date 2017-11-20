@@ -9,7 +9,7 @@ public class EnemyFloatController : EnemyController
 
     public virtual float moveSpeed
     {
-        get { return 1f; }
+        get { return .5f; }
     }
 
     protected void Start()
@@ -28,7 +28,7 @@ public class EnemyFloatController : EnemyController
         playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
         Flip();
         timer += Time.deltaTime;
-        if (timer > 1)
+        if (timer > 2)
         {
             yDirection *= -1;
             timer = 0;
