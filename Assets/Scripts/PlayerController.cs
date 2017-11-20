@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
 
     // State
-    private bool grounded;
+    public bool grounded;
     private bool invincible;
     public bool canFire;
     public float facing;
