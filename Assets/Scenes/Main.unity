@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 199689701}
   m_Layer: 8
   m_Name: ground (7)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 492349445}
   m_Layer: 8
   m_Name: ground (10)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -783,6 +783,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1386947048498010, guid: 2584abe3f23c64f5a95fe51f24bd2666, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2584abe3f23c64f5a95fe51f24bd2666, type: 2}
   m_IsPrefabParent: 0
@@ -796,6 +800,7 @@ GameObject:
   - component: {fileID: 734786153}
   - component: {fileID: 734786152}
   - component: {fileID: 734786151}
+  - component: {fileID: 734786154}
   m_Layer: 8
   m_Name: ground (1)
   m_TagString: World
@@ -882,6 +887,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734786154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734786150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e2875feb4c54a6fbc402785728bc84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &740900518
 Prefab:
   m_ObjectHideFlags: 0
@@ -1232,7 +1248,7 @@ GameObject:
   - component: {fileID: 1325473997}
   m_Layer: 8
   m_Name: ground (5)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1386,7 +1402,7 @@ GameObject:
   - component: {fileID: 1403487253}
   m_Layer: 8
   m_Name: ground (6)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1568,7 +1584,7 @@ GameObject:
   - component: {fileID: 1555960270}
   m_Layer: 8
   m_Name: ground (8)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1782,7 +1798,7 @@ GameObject:
   - component: {fileID: 1671262361}
   m_Layer: 8
   m_Name: ground (4)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,7 +1906,7 @@ GameObject:
   - component: {fileID: 1721713833}
   m_Layer: 8
   m_Name: ground (9)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1998,7 +2014,7 @@ GameObject:
   - component: {fileID: 1757931824}
   m_Layer: 8
   m_Name: ground (11)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2282,7 +2298,7 @@ GameObject:
   - component: {fileID: 2097738341}
   m_Layer: 8
   m_Name: ground (12)
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
