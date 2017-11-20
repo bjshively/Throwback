@@ -36,4 +36,11 @@ public class EnemyFloatController : EnemyController
 
         body.velocity = new Vector2(0, moveSpeed * yDirection);
     }
+
+
+    // Stop the enemy from flying away when the player is off screen
+    void OnBecameInvisible()
+    {
+        body.velocity = Vector2.zero;
+    }
 }
