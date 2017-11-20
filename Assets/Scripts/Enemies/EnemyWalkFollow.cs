@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWalkController : EnemyController
+public class EnemyWalkFollow : Enemy
 {
 
     // Use this for initialization

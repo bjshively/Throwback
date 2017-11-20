@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFloatAndFollow : EnemyController
+public class EnemyFloatAndFollow : Enemy
 {
     public virtual float moveSpeed
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFloatController : EnemyController
+public class EnemyFloat : Enemy
 {
     private float yDirection = 1;
     float timer;

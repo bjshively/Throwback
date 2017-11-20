@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class EnemyController : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
     protected Rigidbody2D body;
     protected GameObject player;
