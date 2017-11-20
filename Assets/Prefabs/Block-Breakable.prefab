@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61811644014414546}
   - component: {fileID: 114460677513124050}
   m_Layer: 8
-  m_Name: BreakableBlock
+  m_Name: Block-Breakable
   m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1386947048498010}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 02352a00b51764084a985c8a6ce7749a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

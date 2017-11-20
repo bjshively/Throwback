@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212267231105476414}
   - component: {fileID: 61887548708239894}
   m_Layer: 8
-  m_Name: DisappearingBlock
+  m_Name: Block-Disappearing
   m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.1}
+  m_Size: {x: 0.3, y: 0.1}
   m_EdgeRadius: 0
 --- !u!61 &61887548708239894
 BoxCollider2D:
