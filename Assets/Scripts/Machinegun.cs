@@ -9,7 +9,7 @@ public class Machinegun : Weapon
     {
         get
         {
-            return 15;
+            return 10;
         } 
     }
 
