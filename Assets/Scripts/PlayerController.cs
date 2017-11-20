@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         if (canMove)
         {
-            float h = moveSpeed * Input.GetAxis("Horizontal");
+            float h = Input.GetAxis("Horizontal");
             Move(h);
 
             // Jump       
@@ -89,19 +89,16 @@ public class PlayerController : MonoBehaviour
 
     }
 
+ 
+
     // Move the player
     private void Move(float h)
     {
-        if (Mathf.Abs(h) < .2)
-        {
-            anim.SetBool(("run"), false);
-            body.velocity = new Vector2(0, body.velocity.y);
-        }
-        else
+        if (Mathf.Abs(h) > 0)
         {
             anim.SetBool("run", true);
             Vector3 scale = transform.localScale;
-            body.velocity = new Vector2(h, body.velocity.y);
+            body.velocity = new Vector2(moveSpeed * Mathf.Sign(h), body.velocity.y);
             if (body.velocity.x > 0)
             {
                 scale.x = Mathf.Abs(scale.x);
@@ -114,6 +111,11 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = scale;
                 facing = -1;
             }
+        }
+        else
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+            anim.SetBool(("run"), false);
 
         }
     }
