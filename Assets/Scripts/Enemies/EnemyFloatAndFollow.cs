@@ -21,14 +21,17 @@ public class EnemyFloatAndFollow : Enemy
 
     void Update()
     {
-        Move();
-
-        // Every 2 seconds, re-pinpoint the target (player)
-        timer += Time.deltaTime;
-        if (timer > 2)
+        if (renderer.isVisible)
         {
-            UpdateTarget();
-            timer = 0;
+            Move();
+
+            // Every 2 seconds, re-pinpoint the target (player)
+            timer += Time.deltaTime;
+            if (timer > 2)
+            {
+                UpdateTarget();
+                timer = 0;
+            }
         }
     }
 
