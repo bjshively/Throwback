@@ -104,13 +104,13 @@ public class PlayerController : MonoBehaviour
             body.velocity = new Vector2(h, body.velocity.y);
             if (body.velocity.x > 0)
             {
-                scale.x = 1;
+                scale.x = Mathf.Abs(scale.x);
                 transform.localScale = scale;
                 facing = 1;
             }
             else if (body.velocity.x < 0)
             {
-                scale.x = -1;
+                scale.x = Mathf.Abs(scale.x) * -1;
                 transform.localScale = scale;
                 facing = -1;
             }
