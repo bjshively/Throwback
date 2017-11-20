@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 startLocation;
     protected Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
+    private Animator anim;
 
     // Player attributes
     private const int STARTHEALTH = 3;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
         startLocation = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         grounded = IsGrounded();      
         invincible = false;
         canFire = true;
@@ -113,10 +115,12 @@ public class PlayerController : MonoBehaviour
         if (Physics2D.Raycast(transform.Find("groundPoint1").position, Vector2.down, 0.1f, ground.value)
             || Physics2D.Raycast(transform.Find("groundPoint2").position, Vector2.down, 0.1f, ground.value))
         {
+            anim.SetBool("grounded", true);
             return true;
         }
         else
         {
+            anim.SetBool("grounded", false);
             return false;
         }
     }

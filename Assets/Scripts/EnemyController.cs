@@ -42,6 +42,12 @@ public abstract class EnemyController : MonoBehaviour
     {
 
     }
+        
+    // Stop the enemy from flying/walking away when the player is off screen
+    void OnBecameInvisible()
+    {
+        body.velocity = Vector2.zero;
+    }
 
     // Determine direction of player and compare to the direction the enemy is facing
     protected abstract void Move();
