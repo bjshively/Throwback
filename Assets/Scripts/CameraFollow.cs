@@ -28,6 +28,6 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         //Follows the player
-        transform.position = new Vector3(Mathf.Clamp(target.position.x + 2, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), -5);
+        transform.position = new Vector3(Mathf.Clamp(target.position.x, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), -5);
     }
 }
