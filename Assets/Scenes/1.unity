@@ -357,11 +357,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4344295436382944, guid: d52694e248e4b4880a0d442fc9e92ae4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.41
+      value: -3.412
       objectReference: {fileID: 0}
     - target: {fileID: 4344295436382944, guid: d52694e248e4b4880a0d442fc9e92ae4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.379
+      value: 0.722
       objectReference: {fileID: 0}
     - target: {fileID: 4344295436382944, guid: d52694e248e4b4880a0d442fc9e92ae4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -397,6 +397,66 @@ Prefab:
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.019939423
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.2061286
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 61501691131248698, guid: d52694e248e4b4880a0d442fc9e92ae4,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d52694e248e4b4880a0d442fc9e92ae4, type: 2}
@@ -1050,7 +1110,7 @@ RectTransform:
   - {fileID: 352514519}
   - {fileID: 1431693485}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1295,7 +1355,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1485,7 +1545,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4624876917112492, guid: 00d1ba9739f2043abb2e7ac6153f22fa, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1670289563080606, guid: 00d1ba9739f2043abb2e7ac6153f22fa, type: 2}
       propertyPath: m_Name
