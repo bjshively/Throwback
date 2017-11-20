@@ -89,10 +89,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Mathf.Abs(h) < .2)
         {
+            anim.SetBool(("run"), false);
             body.velocity = new Vector2(0, body.velocity.y);
         }
         else
         {
+            anim.SetBool("run", true);
             Vector3 scale = transform.localScale;
             body.velocity = new Vector2(h, body.velocity.y);
             if (body.velocity.x > 0)
