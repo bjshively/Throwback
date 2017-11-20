@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
             // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("pistol"));
             canFire = false;
+            anim.SetTrigger("shoot");
         }
 
         // Fire machinegun
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
             // Spawn an instance of the bullet prefab
             Instantiate(Resources.Load("machinegun"));
             canFire = false;
+            anim.SetTrigger("shoot");
         }
 
         // For testing/during dev

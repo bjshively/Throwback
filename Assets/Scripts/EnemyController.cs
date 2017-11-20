@@ -42,7 +42,7 @@ public abstract class EnemyController : MonoBehaviour
     {
 
     }
-        
+
     // Stop the enemy from flying/walking away when the player is off screen
     void OnBecameInvisible()
     {
