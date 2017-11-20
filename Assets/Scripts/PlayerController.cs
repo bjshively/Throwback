@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public bool grounded;
     private bool invincible;
     public bool canFire;
+    private bool canMove;
     public float facing;
 
 
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
         invincible = false;
         canFire = true;
         facing = 1;
+        canMove = true;
     }
 	
     // Update is called once per frame
@@ -48,31 +50,34 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
 
-        float h = moveSpeed * Input.GetAxis("Horizontal");
-        move(h);
-       
-        // Jump       
-        if (Input.GetKeyDown("space") && grounded)
+        if (canMove)
         {
-            body.AddForce(new Vector2(0, 500), ForceMode2D.Impulse);
-        }
+            float h = moveSpeed * Input.GetAxis("Horizontal");
+            Move(h);
 
-        // Fire pistol
-        if (Input.GetKey("x") && canFire)
-        {
-            // Spawn an instance of the bullet prefab
-            Instantiate(Resources.Load("pistol"));
-            canFire = false;
-            anim.SetTrigger("shoot");
-        }
+            // Jump       
+            if (Input.GetKeyDown("space") && grounded)
+            {
+                body.AddForce(new Vector2(0, 500), ForceMode2D.Impulse);
+            }
 
-        // Fire machinegun
-        if (Input.GetKey("f") && canFire)
-        {
-            // Spawn an instance of the bullet prefab
-            Instantiate(Resources.Load("machinegun"));
-            canFire = false;
-            anim.SetTrigger("shoot");
+            // Fire pistol
+            if (Input.GetKey("x") && canFire)
+            {
+                // Spawn an instance of the bullet prefab
+                Instantiate(Resources.Load("pistol"));
+                canFire = false;
+                anim.SetTrigger("shoot");
+            }
+
+            // Fire machinegun
+            if (Input.GetKey("f") && canFire)
+            {
+                // Spawn an instance of the bullet prefab
+                Instantiate(Resources.Load("machinegun"));
+                canFire = false;
+                anim.SetTrigger("shoot");
+            }
         }
 
         // For testing/during dev
@@ -85,7 +90,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Move the player
-    private void move(float h)
+    private void Move(float h)
     {
         if (Mathf.Abs(h) < .2)
         {
@@ -192,15 +197,24 @@ public class PlayerController : MonoBehaviour
     // TODO: Ease camera follow so screen doesn't jerk
     private void knockback()
     {
-        // TODO: I don't think this works at all right now.
-        Vector2 pos = gameObject.transform.position;
-        Vector2 newPos = new Vector2(pos.x - 2 * facing, pos.y);
-        gameObject.transform.position = newPos;
+        // TODO: This needs improved quite a bit, but works better than it did before.
+        Vector2 destination = transform.position;
+        destination.x = destination.x + (facing * -1);
+        destination.y = destination.y + 1;
+        transform.position = Vector2.MoveTowards(destination, new Vector2(transform.position.x, transform.position.y), .3f * Time.deltaTime);
+        anim.SetTrigger("knockback");
+
+    
     }
 
     public void resetFire()
     {
         canFire = true;  
+    }
+
+    public void resetMove()
+    {
+        canMove = true;  
     }
 
     public void startResetFireTimer(float delay)
