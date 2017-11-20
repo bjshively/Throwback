@@ -70,6 +70,12 @@ public abstract class Weapon : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (col.gameObject.tag == "Breakable")
+        {
+            Destroy(col.gameObject);
+            Destroy(gameObject);
+        }
     }
 
     protected void SelfDestruct()
