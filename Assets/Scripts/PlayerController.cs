@@ -52,9 +52,18 @@ public class PlayerController : MonoBehaviour
 
         if (canMove)
         {
-            float h = Input.GetAxis("Horizontal");
-            Move(h);
-
+            if (Input.GetKey("d"))
+            {
+                Move(1);
+            }
+            else if (Input.GetKey("a"))
+            {
+                Move(-1);
+            }
+            else
+            {
+                Move(0);
+            }
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
