@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 // Spawn an instance of the bullet prefab
                 Instantiate(Resources.Load("pistol"));
                 canFire = false;
-                anim.SetTrigger("shoot");
+                anim.SetTrigger("zap");
             }
 
             // Fire machinegun
