@@ -11,12 +11,12 @@ public class ScopeShot : Weapon
     private GameObject shot;
 
     private GameObject player;
-    protected PlayerController pc;
+
 
     public float xOffset;
     public float yOffset;
 
-    void Start()
+    new void Start()
     {
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();

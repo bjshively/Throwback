@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
 {
     protected Rigidbody2D body;
     protected GameObject player;
+    protected PlayerController pc;
     protected SpriteRenderer renderer;
     protected float facing;
     protected float playerDirection;
@@ -25,6 +26,7 @@ public abstract class Enemy : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
+        pc = player.GetComponent<PlayerController>();
         facing = 1;
     }
 
@@ -68,4 +70,11 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            pc.takeDamage();
+        }
+    }
 }
