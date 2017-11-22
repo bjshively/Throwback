@@ -128,7 +128,6 @@ public class PlayerController : MonoBehaviour
         {
             body.velocity = new Vector2(0, body.velocity.y);
             anim.SetBool("run", false);
-
         }
     }
 
@@ -157,12 +156,7 @@ public class PlayerController : MonoBehaviour
             canMove = false;
             Stop();
             Invoke("resetMove", 1);
-
-            invincible = true;
-            knockback();
-
             currentHealth -= 1;
-            spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
 
             if (currentHealth <= 0)
             {
@@ -170,7 +164,11 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
+                knockback();
+
                 // 3 seconds of invincibility
+                invincible = true;
                 Invoke("resetInvincibility", 3);
 
             }
