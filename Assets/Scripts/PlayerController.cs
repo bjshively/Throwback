@@ -14,14 +14,16 @@ public class PlayerController : MonoBehaviour
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
     private int lives = 100;
+    private float moveSpeed = 3.5F;
 
     public int livesCount
     {
         get { return lives; }
     }
 
-    private float moveSpeed = 3.5F;
-
+    private GameObject groundPoint1;
+    private GameObject groundPoint2;
+    private GameObject groundPoint3;
 
     // State
     public bool grounded;
@@ -30,11 +32,14 @@ public class PlayerController : MonoBehaviour
     private bool canMove;
     public float facing;
 
-
     // Use this for initialization
     void Start()
     {
         startLocation = transform.position;
+        groundPoint1 = transform.Find("groundPoint1");
+        groundPoint2 = transform.Find("groundPoint2");
+        groundPoint3 = transform.Find("groundPoint3");
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -98,8 +103,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
- 
-
     // Move the player
     private void Move(float h)
     {
@@ -132,9 +135,9 @@ public class PlayerController : MonoBehaviour
     // Returns true if character is on the ground
     public bool IsGrounded()
     {
-        if (Physics2D.Raycast(transform.Find("groundPoint1").position, Vector2.down, 0.1f, ground.value)
-            || Physics2D.Raycast(transform.Find("groundPoint2").position, Vector2.down, 0.1f, ground.value)
-            || Physics2D.Raycast(transform.Find("groundPoint3").position, Vector2.down, 0.1f, ground.value))
+        if (Physics2D.Raycast(groundPoint1.transform.position, Vector2.down, 0.1f, ground.value)
+            || Physics2D.Raycast(groundPoint2.transform.position, Vector2.down, 0.1f, ground.value)
+            || Physics2D.Raycast(groundPoint3.transform.position, Vector2.down, 0.1f, ground.value))
         {
             anim.SetBool("grounded", true);
             return true;
