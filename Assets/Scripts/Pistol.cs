@@ -9,7 +9,7 @@ public class Pistol : Weapon
     {
         get
         {
-            return 5;
+            return 7;
         } 
     }
 

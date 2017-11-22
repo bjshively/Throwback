@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScopeShot : Weapon
 {
-    private float moveSpeed = 3;
+    private float moveSpeed = 5;
     private Vector2 target;
     private Rigidbody2D body;
     private SpriteRenderer renderer;
