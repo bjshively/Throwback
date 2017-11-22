@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             body.velocity = new Vector2(0, body.velocity.y);
-            anim.SetBool(("run"), false);
+            anim.SetBool("run", false);
 
         }
     }
