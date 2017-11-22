@@ -134,7 +134,8 @@ public class PlayerController : MonoBehaviour
     public bool IsGrounded()
     {
         if (Physics2D.Raycast(transform.Find("groundPoint1").position, Vector2.down, 0.1f, ground.value)
-            || Physics2D.Raycast(transform.Find("groundPoint2").position, Vector2.down, 0.1f, ground.value))
+            || Physics2D.Raycast(transform.Find("groundPoint2").position, Vector2.down, 0.1f, ground.value)
+            || Physics2D.Raycast(transform.Find("groundPoint3").position, Vector2.down, 0.1f, ground.value))
         {
             anim.SetBool("grounded", true);
             return true;
