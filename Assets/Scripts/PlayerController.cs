@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         get { return lives; }
     }
 
-    private float moveSpeed = 5.0F;
+    private float moveSpeed = 3.5F;
 
 
     // State
