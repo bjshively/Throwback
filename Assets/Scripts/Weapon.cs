@@ -41,8 +41,12 @@ public abstract class Weapon : MonoBehaviour
         transform.position = spawnPosition;
 
         // Fire bullets the direction the player is facing
-        // TODO: Bullet sprites do not actually switch direction
         body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
+
+        // Flip bullet sprites to match the direction they are being fired
+        Vector2 scale = transform.localScale;
+        scale.x *= pc.facing;
+        transform.localScale = scale;
         pc.canFire = false;
         pc.startResetFireTimer(fireDelay);
     }

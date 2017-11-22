@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212504795984788828}
   - component: {fileID: 61677917561732678}
   - component: {fileID: 50901503359248634}
-  - component: {fileID: 114292725655754978}
+  - component: {fileID: 114142469255418464}
   m_Layer: 0
-  m_Name: machinegun
+  m_Name: scope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.14}
   m_EdgeRadius: 0
---- !u!114 &114292725655754978
+--- !u!114 &114142469255418464
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1517081241629736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf0b82b3cf4254f0ea6e71dd3738673a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4619f0d0e7a85456e9223a135209eeb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212504795984788828

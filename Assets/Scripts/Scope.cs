@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Machinegun : Weapon
+public class Scope : Weapon
 {
 
     public override float projectileSpeed
