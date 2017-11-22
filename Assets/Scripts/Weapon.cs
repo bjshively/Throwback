@@ -34,9 +34,7 @@ public abstract class Weapon : MonoBehaviour
         player = GameObject.Find("Player");
         pc = player.GetComponent<PlayerController>();
 
-        // Fire the bullet out of the player's position
-        // (plus a small adjustment to spawn outside of the player sprite)
-        // TODO: May want to update to some gun barrel position eventually
+        // Fire bullet out of barrel location
         Vector2 spawnPosition = GameObject.Find("zapperBarrelPoint").transform.position;
         transform.position = spawnPosition;
 
