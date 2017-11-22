@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
-                body.AddForce(new Vector2(0, 500), ForceMode2D.Impulse);
+                body.AddForce(new Vector2(0, 300), ForceMode2D.Impulse);
             }
 
             // Fire pistol
