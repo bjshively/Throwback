@@ -36,9 +36,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         startLocation = transform.position;
-        groundPoint1 = transform.Find("groundPoint1");
-        groundPoint2 = transform.Find("groundPoint2");
-        groundPoint3 = transform.Find("groundPoint3");
+        groundPoint1 = GameObject.Find("groundPoint1");
+        groundPoint2 = GameObject.Find("groundPoint2");
+        groundPoint3 = GameObject.Find("groundPoint3");
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
