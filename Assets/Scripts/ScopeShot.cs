@@ -37,10 +37,6 @@ public class ScopeShot : Weapon
         Vector2 scale = transform.localScale;
         scale.x *= pc.facing;
         transform.localScale = scale;
-
-        // TODO: This weapon is pretty powerful so likely it should have a long cooldown
-        // But we don't want to completely lockout firing
-        // Need to create a separate cooldown for the weapon from canFire.
         pc.canFire = false;
         pc.startResetFireTimer(fireDelay);
 
