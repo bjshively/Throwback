@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public int currentHealth = 3;
     private int lives = 100;
     private float moveSpeed = 3.5F;
+    private float jumpForce = 350;
 
     public int livesCount
     {
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
-                body.AddForce(new Vector2(0, 300), ForceMode2D.Impulse);
+                body.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             }
 
             // Fire pistol
