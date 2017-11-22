@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Scope : Weapon
 {
-
     public override float projectileSpeed
     {
         get

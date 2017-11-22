@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class DisappearingBlock : MonoBehaviour
 {
-    private int timeToDisappear = 1;
-
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
