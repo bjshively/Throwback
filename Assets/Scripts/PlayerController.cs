@@ -194,6 +194,8 @@ public class PlayerController : MonoBehaviour
         currentHealth = STARTHEALTH;
         resetInvincibility();
         resetMove();
+        resetFire();
+        resetScopeCool();
         Stop();
         gameObject.transform.position = startLocation;
     }
