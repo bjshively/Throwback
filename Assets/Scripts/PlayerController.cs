@@ -242,6 +242,6 @@ public class PlayerController : MonoBehaviour
     // Reset the cooldown for the scope shot
     public void resetScopeCool()
     {
-        scopeCool = true;
+        scopeIsCool = true;
     }
 }
