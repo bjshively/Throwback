@@ -17,7 +17,7 @@ public class Pistol : Weapon
     {
         get
         {
-            return 1f;
+            return .5f;
         }
     }
 }
