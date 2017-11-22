@@ -40,30 +40,25 @@ public abstract class Weapon : MonoBehaviour
 
         // Fire bullets the direction the player is facing
         body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
-        Flip();
 
+        // Flip bullet sprites to match the direction they are being fired
+        Vector2 scale = transform.localScale;
+        scale.x *= pc.facing;
+        transform.localScale = scale;
         pc.canFire = false;
         pc.startResetFireTimer(fireDelay);
     }
 
     void FixedUpdate()
     {
-        if (!renderer.isVisible)
+        if (Mathf.Abs(Vector2.Distance(transform.position, pc.transform.position)) > 4)
         {
             SelfDestruct();
         }
     }
 
-    // Flip bullet sprites to match the direction they are being fired
-    protected void Flip()
-    {
-        Vector2 scale = transform.localScale;
-        scale.x *= pc.facing;
-        transform.localScale = scale;
-    }
-
     // Destroy the enemy and bullet on contact
-    protected void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         // Destroy enemy and bullet on contact
         if (col.gameObject.tag == "Enemy")

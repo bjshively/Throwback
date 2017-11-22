@@ -34,22 +34,26 @@ public abstract class Enemy : MonoBehaviour
     {
         Flip();
         // Enemies only move when visible
-        if (renderer.isVisible)
+        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
         {
             Move();
+        }
+        else
+        {
+            body.velocity = Vector2.zero;
         }
     }
 
     // Might be useful for other on-screen behaviors such as firing, etc.
     void OnBecameVisible()
     {
-
+        
     }
 
     // Stop the enemy from flying/walking away when the player is off screen
     void OnBecameInvisible()
     {
-        body.velocity = Vector2.zero;
+        
     }
    
     // Determine direction of player and compare to the direction the enemy is facing

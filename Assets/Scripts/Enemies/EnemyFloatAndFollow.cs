@@ -21,10 +21,9 @@ public class EnemyFloatAndFollow : Enemy
 
     void Update()
     {
-        if (renderer.isVisible)
+        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
         {
             Move();
-
             // Every 2 seconds, re-pinpoint the target (player)
             timer += Time.deltaTime;
             if (timer > 2)
@@ -32,6 +31,10 @@ public class EnemyFloatAndFollow : Enemy
                 UpdateTarget();
                 timer = 0;
             }
+        }
+        else
+        {
+            body.velocity = Vector2.zero;
         }
     }
 

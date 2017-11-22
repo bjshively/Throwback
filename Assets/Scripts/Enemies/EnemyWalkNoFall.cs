@@ -16,9 +16,13 @@ public class EnemyWalkNoFall : Enemy
 
     void Update()
     {
-        if (renderer.isVisible)
+        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
         {
             Move();
+        }
+        else
+        {
+            body.velocity = Vector2.zero;
         }
     }
 
