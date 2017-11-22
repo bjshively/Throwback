@@ -22,8 +22,9 @@ public class ScopeShot : Weapon
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
         pc = player.GetComponent<PlayerController>();
-        shot = GameObject.Find("superScopeShot");
-
+        shot = GameObject.Find("superScopeShot(Clone)");
+        // TODO: There are still some circumstances where this doesn't get destroyed/cleaned up properly.
+        // Need to put some better safeguards in here to prevent the game getting bogged down.
 
         moveSpeed *= pc.facing;
 
