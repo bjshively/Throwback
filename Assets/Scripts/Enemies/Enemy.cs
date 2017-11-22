@@ -51,7 +51,7 @@ public abstract class Enemy : MonoBehaviour
     {
         body.velocity = Vector2.zero;
     }
-
+   
     // Determine direction of player and compare to the direction the enemy is facing
     protected abstract void Move();
 
@@ -70,7 +70,7 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    protected void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {

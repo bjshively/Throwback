@@ -51,6 +51,7 @@ public class EnemyWalkNoFall : Enemy
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        base.OnTriggerEnter2D(col);
         if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Breakable")
         {
             Flip();
