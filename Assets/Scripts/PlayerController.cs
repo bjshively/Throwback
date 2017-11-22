@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public bool grounded;
     private bool invincible;
     public bool canFire;
+    private bool scopeIsCool = true;
+    private float scopeCooldownTime = 10;
     private bool canMove;
     public float facing;
 
@@ -84,10 +86,11 @@ public class PlayerController : MonoBehaviour
                 anim.SetTrigger("zap");
             }
 
-            // Fire machinegun
-            if (Input.GetKey("f") && canFire)
+            // Fire Super Scope
+            if (Input.GetKey("f") && canFire && scopeIsCool)
             {
-                // Spawn an instance of the bullet prefab
+                scopeIsCool = false;
+                Invoke("resetScopeCool", scopeCooldownTime);
                 Instantiate(Resources.Load("superScopeShot"));
                 canFire = false;
                 anim.SetTrigger("scope");
@@ -234,5 +237,11 @@ public class PlayerController : MonoBehaviour
     public void startResetFireTimer(float delay)
     {
         Invoke("resetFire", delay);
+    }
+
+    // Reset the cooldown for the scope shot
+    public void resetScopeCool()
+    {
+        scopeCool = true;
     }
 }
