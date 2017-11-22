@@ -146,17 +146,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Enemy")
-        {
-            takeDamage();
-        }
-    }
-
-
-    // TODO: Make player and enemy not interact in physics but still damage on collision
-
     // Take damage, die if health goes to 0
     public void takeDamage()
     {
