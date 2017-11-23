@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4376547622270344}
   m_Layer: 0
-  m_Name: MovingPlatform
+  m_Name: MoveHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,6 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e73dcd7cae8d4d41aca7b27f635c90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  currentPoint: {fileID: 0}
   points:
   - {fileID: 4010322554073714}
   - {fileID: 4052525502265892}
