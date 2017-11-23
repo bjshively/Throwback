@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 11/23/2017 2:55:36 AM-->
+<!--Last exported: 11/23/2017 3:04:07 PM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
   <AssignMaterial mesh="mesh_0003" material="mario3levels" />
@@ -14,7 +14,7 @@
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
       <GameObject name="mario3levels" copy="mesh_0002" sortingLayerName="" sortingOrder="0" opacity="1" />
     </GameObject>
-    <GameObject name="thru platforms" x="0" y="0" z="0">
+    <GameObject name="thru platforms" x="0" y="0" z="0" layer="ground">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
       <GameObject name="mario3levels" copy="mesh_0003" sortingLayerName="" sortingOrder="1" opacity="1" />
       <GameObject name="Collision">
