@@ -218,7 +218,6 @@ public class PlayerController : MonoBehaviour
         destination.y = destination.y + 1;
         transform.position = Vector2.MoveTowards(destination, new Vector2(transform.position.x, transform.position.y), .3f * Time.deltaTime);
         anim.SetTrigger("knockback");
-
     
     }
 
