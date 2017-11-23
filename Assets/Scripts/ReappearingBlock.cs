@@ -23,18 +23,21 @@ public class ReappearingBlock : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (block.enabled)
         {
-            Invoke("Disappear", 1.5f);
+            if (col.gameObject.tag == "Player")
+            {
+                Invoke("Disappear", 1.5f);
+            }
         }
     }
 
 
     void Disappear()
     {
-        renderer.color = new Color(1f, 1f, 1f, .2f);
         block.enabled = false;
-        Invoke("Reset", 1);
+        renderer.color = new Color(1f, 1f, 1f, .2f);
+        Invoke("Reset", 2);
 
     }
 
