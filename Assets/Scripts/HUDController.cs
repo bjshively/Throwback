@@ -10,12 +10,15 @@ public class HUDController : MonoBehaviour
     private PlayerController pc;
     private Text healthText;
     private Text livesText;
+    private Animator healthDisplay;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.Find("Player");
         pc = player.GetComponent<PlayerController>();
+        healthDisplay = GameObject.Find("healthDisplay").GetComponent<Animator>();
+
 
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         healthText.text = "Health: " + pc.currentHealth;
@@ -26,6 +29,7 @@ public class HUDController : MonoBehaviour
     void FixedUpdate()
     {
         healthText.text = "Health: " + pc.currentHealth;
+        healthDisplay.SetInteger("health", pc.currentHealth);
         livesText.text = "Lives: " + pc.livesCount;
     }
 }
