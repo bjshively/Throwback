@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212603380182591522}
   - component: {fileID: 95805586898697834}
   - component: {fileID: 61915865839458074}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PowerGlove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
