@@ -6,8 +6,6 @@
 // start thinking about an opening animation
 // reappearing blocks
 // enemies 
-// powerglove sprite
-// update player sprite for stand and run without glove
 
 
 
@@ -17,3 +15,5 @@
 // visually distinct platform sprites
 // Animate tetris sprites as pickups
 // end of level rocket
+// update player sprite for stand and run without glove
+// powerglove sprite
