@@ -94,9 +94,12 @@ public class PlayerController : MonoBehaviour
             {
                 Stop();
                 canMove = false;
+
+                // Start the animation trigger
                 anim.SetTrigger("melee");
+
+                // After some delay, enable the melee collision box, then disable it
                 Invoke("setMelee", .2f);
-                //melee.enabled = true;
                 Invoke("resetMelee", .5f);
 
             }
