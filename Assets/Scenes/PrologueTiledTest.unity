@@ -508,6 +508,10 @@ Prefab:
       propertyPath: m_Name
       value: Breakable (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
   m_IsPrefabParent: 0
@@ -646,6 +650,10 @@ Prefab:
       propertyPath: m_Name
       value: Breakable (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
   m_IsPrefabParent: 0
@@ -691,6 +699,10 @@ Prefab:
     - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
       propertyPath: m_Name
       value: Breakable (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
@@ -757,6 +769,10 @@ Prefab:
     - target: {fileID: 1338535553197964, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1415032131575420, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: World
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
@@ -887,6 +903,10 @@ Prefab:
     - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
       propertyPath: m_Name
       value: Breakable (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
@@ -1183,6 +1203,10 @@ Prefab:
       propertyPath: m_Name
       value: Breakable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
   m_IsPrefabParent: 0
@@ -1228,6 +1252,16 @@ Prefab:
     - target: {fileID: 1994916986567122, guid: 343ad832620054126a01af3e6c984ee0, type: 2}
       propertyPath: m_Name
       value: GreenKoopa-Style Sentry (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 61047059584734296, guid: 343ad832620054126a01af3e6c984ee0,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61047059584734296, guid: 343ad832620054126a01af3e6c984ee0,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 343ad832620054126a01af3e6c984ee0, type: 2}
@@ -1626,6 +1660,10 @@ Prefab:
     - target: {fileID: 4932140672436858, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947884959658620, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
+      propertyPath: m_TagString
+      value: Breakable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf1dccd95c824a78830eed4f7789b11, type: 2}
