@@ -26,4 +26,13 @@ public class BlockBreakable : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name == "melee")
+        {
+            Debug.Log("melee");
+            Damage();
+        }
+    }
 }

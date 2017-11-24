@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     protected Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
     private Animator anim;
+    private BoxCollider2D melee;
 
     // Player attributes
     private const int STARTHEALTH = 3;
@@ -46,6 +47,8 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        melee = GameObject.Find("melee").GetComponent<BoxCollider2D>();
+        melee.enabled = false;
         grounded = IsGrounded();      
         invincible = false;
         canFire = true;
@@ -85,6 +88,17 @@ public class PlayerController : MonoBehaviour
                 Instantiate(Resources.Load("pistol"));
                 canFire = false;
                 anim.SetTrigger("zap");
+            }
+
+            if (Input.GetKey("z") && canMove)
+            {
+                Stop();
+                canMove = false;
+                anim.SetTrigger("melee");
+                Invoke("setMelee", .2f);
+                //melee.enabled = true;
+                Invoke("resetMelee", .5f);
+
             }
 
             // Fire Super Scope
@@ -245,5 +259,17 @@ public class PlayerController : MonoBehaviour
     public void resetScopeCool()
     {
         scopeIsCool = true;
+    }
+
+
+    private void setMelee()
+    {
+        melee.enabled = true;
+    }
+
+    private void resetMelee()
+    {
+        resetMove();
+        melee.enabled = false;
     }
 }
