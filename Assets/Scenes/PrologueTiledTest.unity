@@ -774,6 +774,22 @@ Prefab:
       propertyPath: m_TagString
       value: World
       objectReference: {fileID: 0}
+    - target: {fileID: 1154873212958602, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628197343541130, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323218916935236, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323218916935236, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: MovingPlatform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
   m_IsPrefabParent: 0
@@ -1346,6 +1362,26 @@ Prefab:
     - target: {fileID: 4980238968005188, guid: ef75d8c69f6ca4da8aa1953ccb484ced, type: 2}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 61449191758332876, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.05469513
+      objectReference: {fileID: 0}
+    - target: {fileID: 61449191758332876, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.0029170066
+      objectReference: {fileID: 0}
+    - target: {fileID: 61449191758332876, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.36447468
+      objectReference: {fileID: 0}
+    - target: {fileID: 61449191758332876, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.27625275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef75d8c69f6ca4da8aa1953ccb484ced, type: 2}
