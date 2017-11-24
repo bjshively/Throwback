@@ -35,7 +35,8 @@
  <tile id="645">
   <objectgroup draworder="index">
    <properties>
-    <property name="unity:layer" value="platforms"/>
+    <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="Wall"/>
    </properties>
    <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
@@ -67,9 +68,14 @@
  <tile id="921">
   <objectgroup draworder="index">
    <properties>
-    <property name="unity:layer" value="Hazards"/>
+    <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="hazard"/>
    </properties>
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="975">
@@ -100,6 +106,7 @@
   <objectgroup draworder="index">
    <properties>
     <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="Wall"/>
    </properties>
    <object id="7" x="0" y="0" width="16" height="16"/>
   </objectgroup>
@@ -116,6 +123,7 @@
   <objectgroup draworder="index">
    <properties>
     <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="Wall"/>
    </properties>
    <object id="2" x="0" y="0" width="16" height="16"/>
   </objectgroup>
@@ -124,8 +132,13 @@
   <objectgroup draworder="index">
    <properties>
     <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="Wall"/>
    </properties>
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1192">
@@ -137,6 +150,7 @@
   <objectgroup draworder="index">
    <properties>
     <property name="unity:layer" value="ground"/>
+    <property name="unity:tag" value="Wall"/>
    </properties>
    <object id="3" x="0" y="0" width="16" height="16"/>
   </objectgroup>
