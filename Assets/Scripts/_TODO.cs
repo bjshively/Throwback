@@ -1,11 +1,18 @@
 ﻿// EMO TODO
-// finish melee sprite
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
-// explosion animation
 // start thinking about an opening animation
-// reappearing blocks
-// enemies 
+
+
+// BRAD TODO
+// P0 Veritcal moving platform
+// Add small explosions to enemy kill
+// Hide player when touches red rocket
+// Move rocket up when level finished, then queue next level
+
+
+
+
 
 
 
@@ -17,3 +24,5 @@
 // end of level rocket
 // update player sprite for stand and run without glove
 // powerglove sprite
+// explosion animation
+// finish melee sprite
