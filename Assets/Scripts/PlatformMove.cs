@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SidewaysMovingPlatform : MonoBehaviour
+public class PlatformMove : MonoBehaviour
 {
     private float speed = 1;
     private Transform currentPoint;

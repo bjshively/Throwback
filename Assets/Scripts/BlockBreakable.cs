@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreakableBlock : MonoBehaviour
+public class BlockBreakable : MonoBehaviour
 {
     private int health = 1;
 
