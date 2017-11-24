@@ -101,7 +101,6 @@ public class PlayerController : MonoBehaviour
                 // After some delay, enable the melee collision box, then disable it
                 Invoke("setMelee", .2f);
                 Invoke("resetMelee", .5f);
-
             }
 
             // Fire Super Scope

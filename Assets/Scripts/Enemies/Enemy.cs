@@ -80,5 +80,10 @@ public abstract class Enemy : MonoBehaviour
         {
             pc.takeDamage();
         }
+
+        if (col.gameObject.name == "melee")
+        {
+            Destroy(gameObject);
+        }
     }
 }

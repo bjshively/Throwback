@@ -5,11 +5,13 @@ using UnityEngine;
 public class BlockBreakable : MonoBehaviour
 {
     private int health = 1;
+    private Animator anim;
 
     // Use this for initialization
     void Start()
     {
         gameObject.tag = "Breakable";
+        anim = GetComponent<Animator>();
     }
 	
     // Update is called once per frame
@@ -20,19 +22,20 @@ public class BlockBreakable : MonoBehaviour
 
     public void Damage()
     {
-        health -= 1;
-        if (health == 0)
-        {
-            Destroy(gameObject);
-        }
+        anim.SetTrigger("break");
+        Invoke("removeBlock", .25f);
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name == "melee")
         {
-            Debug.Log("melee");
             Damage();
         }
+    }
+
+    void removeBlock()
+    {
+        Destroy(gameObject);
     }
 }
