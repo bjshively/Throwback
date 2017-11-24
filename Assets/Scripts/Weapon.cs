@@ -61,7 +61,7 @@ public abstract class Weapon : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         // Destroy enemy and bullet on contact
-        if (col.gameObject.tag == "Enemy" || col.gameObject.tag == "Breakable")
+        if (col.gameObject.tag == "Enemy")
         {
             Destroy(col.gameObject);
             SelfDestruct();
