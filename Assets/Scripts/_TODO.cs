@@ -5,7 +5,6 @@
 
 
 // BRAD TODO
-// P0 Veritcal moving platform
 // Wire Melee animations - should destroy only one block in front of player (see Mario bricks for testing)
 // Add small explosions to enemy kill
 // Hide player when touches red rocket
@@ -28,3 +27,4 @@
 // powerglove sprite
 // explosion animation
 // finish melee sprite
+// Veritcal moving platform
