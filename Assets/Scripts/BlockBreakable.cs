@@ -10,7 +10,6 @@ public class BlockBreakable : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        gameObject.tag = "Breakable";
         anim = GetComponent<Animator>();
     }
 	

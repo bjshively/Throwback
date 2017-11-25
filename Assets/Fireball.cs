@@ -33,13 +33,13 @@ public class Fireball : MonoBehaviour
     }
 
     // Destroy when bullet hits the ground
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.layer == 8)
-        {
-            Destroy(gameObject);
-        }
-    }
+    //    void OnCollisionEnter2D(Collision2D col)
+    //    {
+    //        if (col.gameObject.layer == 8)
+    //        {
+    //            Destroy(gameObject);
+    //        }
+    //    }
 
     // Damage the player on contact
     void OnTriggerEnter2D(Collider2D col)
@@ -47,6 +47,11 @@ public class Fireball : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             pc.takeDamage();
+        }
+
+        if (col.gameObject.tag == "Wall" || col.gameObject.layer == 8)
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -7,11 +7,11 @@
 
 
 // BRAD TODO
-// Make contra bullets respect walls
 // Constrain Contra firing to within some reasonable range (currently entire level)
 
 
 // DONE =================
+// Make contra bullets respect walls
 // die on pit death
 // -- reset health, counters, reset level
 // Create level management
