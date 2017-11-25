@@ -163,7 +163,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1185794768319556}
   m_LocalRotation: {x: 0.0026179885, y: -0, z: -0, w: 0.9999966}
-  m_LocalPosition: {x: 0.0685, y: -0.168, z: 0.005}
+  m_LocalPosition: {x: 0.0714, y: -0.1718, z: 0.005}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4980238968005188}
@@ -202,7 +202,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026063576847782}
   m_LocalRotation: {x: 0.0026179885, y: -0, z: -0, w: 0.9999966}
-  m_LocalPosition: {x: -0.1879, y: -0.16799998, z: 0.005}
+  m_LocalPosition: {x: -0.2023, y: -0.1718, z: 0.005}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4980238968005188}
@@ -215,7 +215,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1587462582903588}
   m_LocalRotation: {x: 0.0026179885, y: -0, z: -0, w: 0.9999966}
-  m_LocalPosition: {x: -0.0564, y: -0.16799998, z: 0.005}
+  m_LocalPosition: {x: -0.0564, y: -0.1718, z: 0.005}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4980238968005188}
@@ -241,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1540108017521816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20999908, y: -7.08, z: 0}
+  m_LocalPosition: {x: 1.284, y: -5.603, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children:
   - {fileID: 4056570088104868}
@@ -402,10 +402,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d702e12dfd7146cb9236d43df513226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  anim: {fileID: 0}
   currentHealth: 3
   grounded: 0
   canFire: 1
   facing: 0
+  alive: 0
+  hasPowerglove: 0
+  hasZapper: 0
+  hasSuperscope: 0
 --- !u!212 &212071213039391644
 SpriteRenderer:
   m_ObjectHideFlags: 1
