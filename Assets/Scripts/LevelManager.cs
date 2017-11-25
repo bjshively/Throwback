@@ -29,6 +29,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
+        levels = new string[] { "prologue", "Level1" };
     }
 	
     // Update is called once per frame
@@ -37,7 +38,6 @@ public class LevelManager : MonoBehaviour
         // Just using this for testing persistence between scene loads for now
         // LevelManager should keep track of how many lives the player has.
         lives = player.livesCount;
-        Debug.Log(lives);
 
         // If you run out of lives, you lose
         if (lives == 0)

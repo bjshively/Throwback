@@ -36,5 +36,6 @@ public class Rocket : MonoBehaviour
         body.gravityScale = 0;
         anim.SetTrigger("FinishLevel");
         body.velocity = Vector2.up;
+        LevelManager.Instance.Invoke("NextLevel", 2.5f);
     }
 }
