@@ -2,6 +2,7 @@
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
+// Fix nozapper jump frames
 
 
 // BRAD TODO
@@ -12,8 +13,6 @@
 // - START GAME
 // - GAME OVER
 // - LEVEL ADVANCE
-// -- Collect Tetris piece
-// -- send "fall" trigger to Cage
 // -- "collect" rocket
 // -- rocket moves up to edge of screen
 // -- reset health, counters, reset level
@@ -24,6 +23,8 @@
 
 
 // DONE =================
+// -- Collect Tetris piece
+// -- send "fall" trigger to Cage
 // Tell me best way to add 'no glove or gun' and 'no gun' sprites (animator state, or separate player obj)
 // Add small explosions to enemy kill
 // Wire Melee animations - should destroy only one block in front of player (see Mario bricks for testing)
