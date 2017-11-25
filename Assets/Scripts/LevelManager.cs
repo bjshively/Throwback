@@ -87,8 +87,6 @@ public class LevelManager : MonoBehaviour
 
     private void RestartLevel()
     {
-        Debug.Log("restart level");
-        Debug.Log(lives);
         SceneManager.LoadScene(levels[currentLevel]);
     }
 
