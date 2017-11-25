@@ -28170,7 +28170,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="1335"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -45200,6 +45200,7 @@
  <layer name="platforms" width="300" height="50">
   <properties>
    <property name="unity:layer" value="ground"/>
+   <property name="unity:sortingLaterName" value="background"/>
    <property name="untiy:tag" value="World"/>
   </properties>
   <data>
@@ -105226,7 +105227,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="moving platforms" width="300" height="50">
+ <layer name="moving platforms" width="300" height="50" visible="0">
   <properties>
    <property name="unity:layer" value="ground"/>
    <property name="unity:tag" value="MovingPlatform"/>

@@ -3,9 +3,6 @@
  <image source="../../Sprites/Level/mario3levels.png" width="1242" height="358"/>
  <tile id="154">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="platforms"/>
-   </properties>
    <object id="2" x="16" y="0">
     <polygon points="0,0 0,16 -6,16 -16,6 -16,0"/>
    </object>
@@ -104,41 +101,22 @@
  </tile>
  <tile id="1118">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="ground"/>
-    <property name="unity:tag" value="Wall"/>
-   </properties>
    <object id="7" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1119">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="ground"/>
-   </properties>
    <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1120">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="ground"/>
-    <property name="unity:tag" value="Wall"/>
-   </properties>
    <object id="2" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1191">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="ground"/>
-    <property name="unity:tag" value="Wall"/>
-   </properties>
-   <object id="1" x="0" y="0" width="16" height="16">
-    <properties>
-     <property name="unity:tag" value="Wall"/>
-    </properties>
-   </object>
+   <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1192">
@@ -148,10 +126,6 @@
  </tile>
  <tile id="1193">
   <objectgroup draworder="index">
-   <properties>
-    <property name="unity:layer" value="ground"/>
-    <property name="unity:tag" value="Wall"/>
-   </properties>
    <object id="3" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
