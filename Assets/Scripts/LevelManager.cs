@@ -16,9 +16,6 @@ public class LevelManager : MonoBehaviour
     private int currentLevel;
     private string[] levels;
 
-    //TODO: Create array of levels to be loaded
-    //    SceneManager.LoadScene("Level1");
-
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -62,7 +59,7 @@ public class LevelManager : MonoBehaviour
     }
 
     // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
-    public void Reset()
+    public void ResetGame()
     {
         currentLevel = 0;
     }
