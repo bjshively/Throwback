@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Player attributes
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
-    private float moveSpeed = 3.5F;
+    private float moveSpeed = 3F;
     private float jumpForce = 350;
 
     private GameObject groundPoint1;
@@ -117,6 +117,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey("z") && canMove)
                 {
                     Stop();
+                    body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                     canMove = false;
 
                     // Start the animation trigger
@@ -286,6 +287,7 @@ public class PlayerController : MonoBehaviour
     private void resetMelee()
     {
         resetMove();
+        body.constraints = RigidbodyConstraints2D.FreezeRotation;
         melee.enabled = false;
     }
 
