@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     }
 	
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         grounded = IsGrounded();
 
@@ -293,7 +293,6 @@ public class PlayerController : MonoBehaviour
 
     public void collectItem()
     {
-        Stop();
         body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
