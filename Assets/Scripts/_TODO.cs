@@ -1,4 +1,5 @@
 ﻿// EMO TODO
+// Add death state to Contra animator
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
@@ -6,7 +7,8 @@
 
 
 // BRAD TODO
-
+// Make contra bullets respect walls
+// Constrain Contra firing to within some reasonable range (currently entire level)
 
 
 // DONE =================
