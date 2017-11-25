@@ -8,6 +8,18 @@
 // Hide player when touches red rocket
 // Move rocket up when level finished, then queue next level
 // Fix sliding down slopes
+// Create level management
+// - START GAME
+// - GAME OVER
+// - LEVEL ADVANCE
+// -- Collect Tetris piece
+// -- send "fall" trigger to Cage
+// -- "collect" rocket
+// -- rocket moves up to edge of screen
+// -- reset health, counters, reset level
+// die on pit death
+// damage from hazards
+
 
 
 
