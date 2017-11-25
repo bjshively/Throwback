@@ -13,16 +13,16 @@
 // - START GAME
 // - GAME OVER
 // - LEVEL ADVANCE
-// -- "collect" rocket
-// -- rocket moves up to edge of screen
+
 // -- reset health, counters, reset level
 // die on pit death
 // damage from hazards
-
-
+// Enemies can harm you while they are dying
 
 
 // DONE =================
+// -- "collect" rocket
+// -- rocket moves up to edge of screen
 // -- Collect Tetris piece
 // -- send "fall" trigger to Cage
 // Tell me best way to add 'no glove or gun' and 'no gun' sprites (animator state, or separate player obj)

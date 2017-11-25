@@ -25,7 +25,8 @@ public class Collectible : MonoBehaviour
         {
             if (gameObject.name == "TetrisRed")
             {
-                GameObject.Find("cage").GetComponent<Animator>().SetTrigger("fall");
+                GameObject.Find("cage").GetComponent<Cage>().Unlock();
+                collect();
             }
 
             // Weapons
@@ -33,19 +34,28 @@ public class Collectible : MonoBehaviour
             {
                 player.hasPowerglove = true;
                 player.anim.runtimeAnimatorController = Resources.Load("PlayerNoZapper") as RuntimeAnimatorController;
+                collect();
             }
             else if (gameObject.name == "Zapper")
             {
                 player.anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
                 player.hasZapper = true;
+                collect();
             }
             else if (gameObject.name == "SuperScope")
             {
                 player.hasSuperscope = true;
+                collect();
             }
 
-            player.collectItem();
-            Destroy(gameObject);
+
         }
     }
+
+    private void collect()
+    {
+        player.collectItem();
+        Destroy(gameObject);
+    }
 }
+

@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private LayerMask ground;
     private Vector3 startLocation;
-    protected Rigidbody2D body;
+    public Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
     public Animator anim;
     private BoxCollider2D melee;
