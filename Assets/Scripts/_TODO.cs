@@ -5,7 +5,7 @@
 
 
 // BRAD TODO
-// Wire Melee animations - should destroy only one block in front of player (see Mario bricks for testing)
+
 // Add small explosions to enemy kill
 // Hide player when touches red rocket
 // Move rocket up when level finished, then queue next level
@@ -19,6 +19,7 @@
 
 
 // DONE =================
+// Wire Melee animations - should destroy only one block in front of player (see Mario bricks for testing)
 // melee sprites
 // visually distinct platform sprites
 // Animate tetris sprites as pickups
