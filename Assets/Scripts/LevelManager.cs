@@ -15,12 +15,14 @@ public class LevelManager : MonoBehaviour
     private int lives;
     private int currentLevel;
     private string[] levels;
+    private bool active;
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
         Instance = this;
         currentLevel = 0;
+        active = true;
     }
 
     void Start()
@@ -37,9 +39,11 @@ public class LevelManager : MonoBehaviour
         lives = player.livesCount;
 
         // If you run out of lives, you lose
-        if (lives == 0)
+        if (lives == 0 && active)
         {
             SceneManager.LoadScene("Gameover");
+            active = false;
+
         }
     }
         
