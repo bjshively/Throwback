@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 startLocation;
     protected Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
-    private Animator anim;
+    public Animator anim;
     private BoxCollider2D melee;
 
     // Player attributes
@@ -291,5 +291,19 @@ public class PlayerController : MonoBehaviour
     {
         resetMove();
         melee.enabled = false;
+    }
+
+    public void collectItem()
+    {
+        Stop();
+        canMove = false;
+        anim.SetBool("item", true);
+        Invoke("resetItem", 1);
+    }
+
+    private void resetItem()
+    {
+        anim.SetBool("item", false);
+        canMove = true;
     }
 }
