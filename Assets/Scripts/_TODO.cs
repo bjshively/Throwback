@@ -28,3 +28,4 @@
 // explosion animation
 // finish melee sprite
 // Veritcal moving platform
+// make pickup colliders trigger
