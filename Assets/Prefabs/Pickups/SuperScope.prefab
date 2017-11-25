@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212324368385908010}
   - component: {fileID: 95195987161708674}
   - component: {fileID: 61262725214853526}
+  - component: {fileID: 114437335651553314}
   m_Layer: 12
   m_Name: SuperScope
   m_TagString: Untagged
@@ -84,6 +85,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114437335651553314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1925646109741788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a8ca47d77e24f9688486958c6e570a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212324368385908010
 SpriteRenderer:
   m_ObjectHideFlags: 1

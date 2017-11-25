@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212603380182591522}
   - component: {fileID: 95805586898697834}
   - component: {fileID: 61915865839458074}
+  - component: {fileID: 114723329634101958}
   m_Layer: 12
   m_Name: PowerGlove
   m_TagString: Untagged
@@ -84,6 +85,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114723329634101958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547835910784204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a8ca47d77e24f9688486958c6e570a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212603380182591522
 SpriteRenderer:
   m_ObjectHideFlags: 1
