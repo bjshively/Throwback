@@ -63,7 +63,7 @@ public abstract class Weapon : MonoBehaviour
         // Destroy enemy and bullet on contact
         if (col.gameObject.tag == "Enemy")
         {
-            Destroy(col.gameObject);
+            //  Destroy(col.gameObject);
             SelfDestruct();
         }
 

@@ -5,21 +5,15 @@
 
 
 // BRAD TODO
-
-// Add small explosions to enemy kill
 // Hide player when touches red rocket
 // Move rocket up when level finished, then queue next level
-// Tell me best way to add 'no glove or gun' and 'no gun' sprites (animator state, or separate player obj)
-// Add collect Items
-
-
-
-
-
+// Fix sliding down slopes
 
 
 
 // DONE =================
+// Tell me best way to add 'no glove or gun' and 'no gun' sprites (animator state, or separate player obj)
+// Add small explosions to enemy kill
 // Wire Melee animations - should destroy only one block in front of player (see Mario bricks for testing)
 // melee sprites
 // visually distinct platform sprites

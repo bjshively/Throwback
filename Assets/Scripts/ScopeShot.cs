@@ -32,7 +32,6 @@ public class ScopeShot : Weapon
         transform.position = spawnPosition;
         target = new Vector2(transform.position.x + xOffset, transform.position.y + yOffset);
 
-
         // Flip bullet sprites to match the direction they are being fired
         Vector2 scale = transform.localScale;
         scale.x *= pc.facing;
@@ -50,7 +49,6 @@ public class ScopeShot : Weapon
 
     protected void SelfDestruct()
     {
-        Destroy(gameObject);
         Destroy(shot);
     }
 }

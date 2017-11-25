@@ -10,14 +10,10 @@ public abstract class Enemy : MonoBehaviour
     protected SpriteRenderer renderer;
     protected float facing;
     protected float playerDirection;
+    protected Animator anim;
 
-    public virtual float moveSpeed
-    {
-        get
-        {
-            return 1;
-        }
-    }
+    protected bool canMove = true;
+    public float moveSpeed = 1;
 
     // Use this for initialization
     protected virtual void Start()
@@ -25,6 +21,7 @@ public abstract class Enemy : MonoBehaviour
         gameObject.tag = "Enemy";
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
         pc = player.GetComponent<PlayerController>();
         facing = 1;
@@ -71,7 +68,26 @@ public abstract class Enemy : MonoBehaviour
 
         if (col.gameObject.name == "melee")
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    protected void SelfDestruct()
+    {
+        Destroy(gameObject);
+    }
+
+    protected void Die()
+    {
+        Stop();
+        anim.SetTrigger("die");
+        Invoke("SelfDestruct", .5f);
+    }
+
+    protected void Stop()
+    {
+        canMove = false;
+        moveSpeed = 0;
+        body.velocity = Vector2.zero;
     }
 }
