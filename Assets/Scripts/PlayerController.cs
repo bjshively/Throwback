@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
     private float moveSpeed = 3F;
-    private float jumpForce = 350;
+    private float jumpForce = 7;
 
     private GameObject groundPoint1;
     private GameObject groundPoint2;
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
-                body.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+                body.velocity = new Vector2(body.velocity.x, jumpForce);
             }
                 
             // Weapons
@@ -185,9 +185,9 @@ public class PlayerController : MonoBehaviour
     // Returns true if character is on the ground
     public bool IsGrounded()
     {
-        if (Physics2D.Raycast(groundPoint1.transform.position, Vector2.down, 0.1f, ground.value)
-            || Physics2D.Raycast(groundPoint2.transform.position, Vector2.down, 0.1f, ground.value)
-            || Physics2D.Raycast(groundPoint3.transform.position, Vector2.down, 0.1f, ground.value))
+        if (Physics2D.Raycast(groundPoint1.transform.position, Vector2.down, 0.2f, ground.value)
+            || Physics2D.Raycast(groundPoint2.transform.position, Vector2.down, 0.2f, ground.value)
+            || Physics2D.Raycast(groundPoint3.transform.position, Vector2.down, 0.2f, ground.value))
         {
             anim.SetBool("grounded", true);
             return true;
