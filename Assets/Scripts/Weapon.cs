@@ -67,8 +67,8 @@ public abstract class Weapon : MonoBehaviour
             SelfDestruct();
         }
 
-        // Destroy bullet when it hits a wall or other piece of the world
-        if (col.gameObject.tag == "World" || col.gameObject.tag == "MovingPlatform")
+        // Destroy bullet when it hits the ground layer
+        if (col.gameObject.layer == 8)
         {
             SelfDestruct();
         }

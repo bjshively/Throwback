@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public LayerMask ground;
+    private LayerMask ground;
     private Vector3 startLocation;
     protected Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
@@ -39,6 +39,12 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // Combine ground and jumpthrough layers into a binary layermask
+        // For detecting if player IsGrounded();
+        int groundLayer = 8;
+        int jumpthroughLayer = 13;
+        ground = (1 << groundLayer) | (1 << jumpthroughLayer);
+            
         startLocation = transform.position;
         groundPoint1 = GameObject.Find("groundPoint1");
         groundPoint2 = GameObject.Find("groundPoint2");
@@ -60,6 +66,18 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         grounded = IsGrounded();
+
+        // Enable jumpthrough platforms by disabled collissions when player is jumping
+        // Layer 10 = player
+        // Layer 13 = jumpthrough
+        if (body.velocity.y >= 0.05f)
+        {
+            Physics2D.IgnoreLayerCollision(13, 10, true);
+        }
+        else
+        {
+            Physics2D.IgnoreLayerCollision(13, 10, false);
+        }
 
         if (canMove)
         {
@@ -185,7 +203,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
-                knockback();
+                //knockback();
 
                 // 3 seconds of invincibility
                 invincible = true;
