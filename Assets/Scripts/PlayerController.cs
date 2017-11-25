@@ -326,4 +326,13 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("item", false);
         canMove = true;
     }
+
+    // Player should repeatedly take damage from hazards if standing on/in them
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.transform.tag == "Hazard")
+        {
+            takeDamage();
+        }
+    }
 }

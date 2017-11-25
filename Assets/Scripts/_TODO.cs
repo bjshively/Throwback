@@ -14,10 +14,10 @@
 
 // -- reset health, counters, reset level
 // die on pit death
-// damage from hazards
 
 
 // DONE =================
+// damage from hazards
 // Enemies can harm you while they are dying
 // Fix sliding down slopes
 // - LEVEL ADVANCE
