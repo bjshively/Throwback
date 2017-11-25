@@ -15,35 +15,50 @@ public class LevelManager : MonoBehaviour
     private int lives;
     private int currentLevel;
     private string[] levels;
-    private bool active;
+    private bool gameStarted;
+    private bool gameover;
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
         Instance = this;
         currentLevel = 0;
-        active = true;
+        gameStarted = false;
     }
 
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<PlayerController>();
-        levels = new string[] { "prologue", "Level1" };
+        levels = new string[] { "start", "prologue", "Level1" };
     }
 	
     // Update is called once per frame
     void Update()
     {
-        // Just using this for testing persistence between scene loads for now
-        // LevelManager should keep track of how many lives the player has.
-        lives = player.livesCount;
-
-        // If you run out of lives, you lose
-        if (lives == 0 && active)
+        // Start menu
+        if (!gameStarted)
         {
-            SceneManager.LoadScene("Gameover");
-            active = false;
+            if (Input.GetKey("return"))
+            {
+                gameStarted = true;
+                NextLevel();
+            }
+        }
 
+        // In Game
+        else
+        {
+            player = GameObject.Find("Player").GetComponent<PlayerController>();
+            // Just using this for testing persistence between scene loads for now
+            // LevelManager should keep track of how many lives the player has.
+            lives = player.livesCount;
+
+            // If you run out of lives, you lose
+            if (lives == 0 && !gameover)
+            {
+                SceneManager.LoadScene("Gameover");
+                gameover = true;
+
+            }
         }
     }
         

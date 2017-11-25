@@ -9,7 +9,7 @@
 
 // Create level management
 // - START GAME
-// - GAME OVER
+
 
 
 // -- reset health, counters, reset level
@@ -17,6 +17,7 @@
 
 
 // DONE =================
+// - GAME OVER
 // damage from hazards
 // Enemies can harm you while they are dying
 // Fix sliding down slopes
