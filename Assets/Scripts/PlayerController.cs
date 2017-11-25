@@ -216,6 +216,9 @@ public class PlayerController : MonoBehaviour
             else
             {
                 spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
+                anim.SetTrigger("knockback");
+
+                // Disabled because this sucks
                 //knockback();
 
                 // 3 seconds of invincibility
