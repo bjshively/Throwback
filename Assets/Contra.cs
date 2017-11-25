@@ -5,6 +5,7 @@ using UnityEngine;
 public class Contra : Enemy
 {
     private float timer = 0;
+    private int shotDelay = 2;
     private Vector2 target;
     private Vector3 barrelPoint;
 	
@@ -19,10 +20,16 @@ public class Contra : Enemy
         playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);
         Flip();
         timer += Time.deltaTime;
-        if (timer > 2)
+
+        // Only shoot when within range of player
+        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
         {
-            Shoot();
-            timer = 0;
+            // Enemy has a shot cooldown
+            if (timer > shotDelay)
+            {
+                Shoot();
+                timer = 0;
+            }
         }
     }
 
