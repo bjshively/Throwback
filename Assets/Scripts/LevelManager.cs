@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { set; get; }
 
     private PlayerController player;
-    private int lives;
+    public int lives;
     private int currentLevel;
     private string[] levels;
     private bool gameStarted;
@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
         Instance = this;
         currentLevel = 0;
         gameStarted = false;
+        lives = 100;
     }
 
     void Start()
@@ -48,17 +49,24 @@ public class LevelManager : MonoBehaviour
         else
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
-            // Just using this for testing persistence between scene loads for now
-            // LevelManager should keep track of how many lives the player has.
-            lives = player.livesCount;
 
-            // If you run out of lives, you lose
-            if (lives == 0 && !gameover)
+            if (!player.alive)
             {
-                SceneManager.LoadScene("Gameover");
-                gameover = true;
+                lives--;
+                // If you run out of lives, you lose
+                if (lives == 0 && !gameover)
+                {
+                    SceneManager.LoadScene("Gameover");
+                    gameover = true;
 
+                }
+                else
+                {
+                    RestartLevel();
+                }                
             }
+
+
         }
     }
         
@@ -75,6 +83,13 @@ public class LevelManager : MonoBehaviour
         {
             SceneManager.LoadScene(levels[currentLevel]);
         }
+    }
+
+    private void RestartLevel()
+    {
+        Debug.Log("restart level");
+        Debug.Log(lives);
+        SceneManager.LoadScene(levels[currentLevel]);
     }
 
     // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)

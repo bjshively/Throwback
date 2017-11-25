@@ -14,14 +14,8 @@ public class PlayerController : MonoBehaviour
     // Player attributes
     private const int STARTHEALTH = 3;
     public int currentHealth = 3;
-    private int lives = 100;
     private float moveSpeed = 3.5F;
     private float jumpForce = 350;
-
-    public int livesCount
-    {
-        get { return lives; }
-    }
 
     private GameObject groundPoint1;
     private GameObject groundPoint2;
@@ -35,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private float scopeCooldownTime = 10;
     private bool canMove;
     public float facing;
+    public bool alive;
 
     public bool hasPowerglove = false;
     public bool hasZapper = false;
@@ -64,6 +59,7 @@ public class PlayerController : MonoBehaviour
         canFire = true;
         facing = 1;
         canMove = true;
+        alive = true;
     }
 	
     // Update is called once per frame
@@ -145,8 +141,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // For testing/during dev
-        // Respawn player at start location if they fall below y=-10
         if (transform.position.y < -10)
         {
             die();
@@ -234,23 +228,7 @@ public class PlayerController : MonoBehaviour
     // Reduce lives, respawn if you have lives
     private void die()
     {
-        lives -= 1;
-        if (lives > 0)
-        {
-            respawn();
-        }
-    }
-
-    // Respawn the character, and reset any necessary state such as health, location
-    private void respawn()
-    {
-        currentHealth = STARTHEALTH;
-        resetInvincibility();
-        resetMove();
-        resetFire();
-        resetScopeCool();
-        Stop();
-        gameObject.transform.position = startLocation;
+        alive = false;
     }
 
     // Called after iframes expire

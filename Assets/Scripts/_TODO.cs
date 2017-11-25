@@ -6,17 +6,13 @@
 
 
 // BRAD TODO
-
-// Create level management
-// - START GAME
-
-
-
-// -- reset health, counters, reset level
 // die on pit death
 
 
 // DONE =================
+// -- reset health, counters, reset level
+// Create level management
+// - START GAME
 // - GAME OVER
 // damage from hazards
 // Enemies can harm you while they are dying
