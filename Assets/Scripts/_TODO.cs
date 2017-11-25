@@ -6,21 +6,21 @@
 
 
 // BRAD TODO
-// Hide player when touches red rocket
-// Move rocket up when level finished, then queue next level
-// Fix sliding down slopes
+
 // Create level management
 // - START GAME
 // - GAME OVER
-// - LEVEL ADVANCE
+
 
 // -- reset health, counters, reset level
 // die on pit death
 // damage from hazards
-// Enemies can harm you while they are dying
 
 
 // DONE =================
+// Enemies can harm you while they are dying
+// Fix sliding down slopes
+// - LEVEL ADVANCE
 // -- "collect" rocket
 // -- rocket moves up to edge of screen
 // -- Collect Tetris piece

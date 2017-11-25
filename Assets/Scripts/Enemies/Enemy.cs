@@ -92,6 +92,7 @@ public abstract class Enemy : MonoBehaviour
     protected void Die()
     {
         Stop();
+        body.simulated = false;
         anim.SetTrigger("die");
         Invoke("SelfDestruct", .5f);
     }
