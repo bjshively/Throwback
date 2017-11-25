@@ -6,10 +6,11 @@
 
 
 // BRAD TODO
-// die on pit death
+
 
 
 // DONE =================
+// die on pit death
 // -- reset health, counters, reset level
 // Create level management
 // - START GAME

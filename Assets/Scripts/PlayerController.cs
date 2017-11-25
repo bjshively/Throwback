@@ -315,11 +315,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Die from falling in a pit
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name == "abyss")
         {
-            Debug.Log("cliff");
             die();
         }
     }
