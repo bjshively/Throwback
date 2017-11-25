@@ -36,6 +36,10 @@ public class PlayerController : MonoBehaviour
     private bool canMove;
     public float facing;
 
+    public bool hasPowerglove = false;
+    public bool hasZapper = false;
+    public bool hasSuperscope = false;
+
     // Use this for initialization
     void Start()
     {
@@ -98,37 +102,45 @@ public class PlayerController : MonoBehaviour
             {
                 body.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             }
-
-            // Fire pistol
-            if (Input.GetKey("x") && canFire)
+                
+            // Weapons
+            if (hasZapper)
             {
-                // Spawn an instance of the bullet prefab
-                Instantiate(Resources.Load("pistol"));
-                canFire = false;
-                anim.SetTrigger("zap");
+                if (Input.GetKey("x") && canFire)
+                {
+                    // Spawn an instance of the bullet prefab
+                    Instantiate(Resources.Load("pistol"));
+                    canFire = false;
+                    anim.SetTrigger("zap");
+                }
             }
 
-            if (Input.GetKey("z") && canMove)
+            if (hasPowerglove)
             {
-                Stop();
-                canMove = false;
+                if (Input.GetKey("z") && canMove)
+                {
+                    Stop();
+                    canMove = false;
 
-                // Start the animation trigger
-                anim.SetTrigger("melee");
+                    // Start the animation trigger
+                    anim.SetTrigger("melee");
 
-                // After some delay, enable the melee collision box, then disable it
-                Invoke("setMelee", .2f);
-                Invoke("resetMelee", .5f);
+                    // After some delay, enable the melee collision box, then disable it
+                    Invoke("setMelee", .2f);
+                    Invoke("resetMelee", .5f);
+                }
             }
 
-            // Fire Super Scope
-            if (Input.GetKey("f") && canFire && scopeIsCool)
+            if (hasSuperscope)
             {
-                scopeIsCool = false;
-                Invoke("resetScopeCool", scopeCooldownTime);
-                Instantiate(Resources.Load("superScopeShot"));
-                canFire = false;
-                anim.SetTrigger("scope");
+                if (Input.GetKey("f") && canFire && scopeIsCool)
+                {
+                    scopeIsCool = false;
+                    Invoke("resetScopeCool", scopeCooldownTime);
+                    Instantiate(Resources.Load("superScopeShot"));
+                    canFire = false;
+                    anim.SetTrigger("scope");
+                }
             }
         }
 
