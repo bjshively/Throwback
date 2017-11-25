@@ -5,26 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    // This is a basic level manager. It persists between scene loads as written.
+    // Should be added to an empty game object in the first scene.
+    // Can be accessed globally via LevelManager.Instance.x();
+
+    public static LevelManager Instance { set; get; }
 
     public string levelToLoad;
+    private int lives;
+    private PlayerController player;
 
-    // Use this for initialization
+    private int currentLevel;
+
+    //TODO: Create array of levels to be loaded
+    //    SceneManager.LoadScene("Level1");
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        Instance = this;
+        currentLevel = 0;
+    }
+
     void Start()
     {
-		
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 	
     // Update is called once per frame
     void Update()
     {
-		
+        lives = player.livesCount;
+        Debug.Log(lives);
     }
 
-    void OnTrigger2DEnter(Collider col)
+    public void Win()
     {
-        if (col.tag == "Player")
-        {
-            SceneManager.LoadScene(levelToLoad);
-        }
+        Debug.Log("Victory");
     }
+    
 }
