@@ -314,4 +314,13 @@ public class PlayerController : MonoBehaviour
             takeDamage();
         }
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name == "abyss")
+        {
+            Debug.Log("cliff");
+            die();
+        }
+    }
 }
