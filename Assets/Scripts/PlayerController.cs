@@ -38,6 +38,13 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // If the level manager isn't present (most likely during dev/debug), spawn it and restart level
+        if (!LevelManager.Instance)
+        {
+            Instantiate(Resources.Load("LevelManager"));
+            LevelManager.Instance.gameStarted = true;
+            LevelManager.Instance.RestartLevel();
+        }
         // Combine ground and jumpthrough layers into a binary layermask
         // For detecting if player IsGrounded();
         int groundLayer = 8;

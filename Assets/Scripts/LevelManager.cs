@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour
     public int lives;
     private int currentLevel;
     private string[] levels;
-    private bool gameStarted;
+    public bool gameStarted;
     private bool gameover;
     private bool levelReady;
 
@@ -88,10 +88,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
+        Debug.Log("restart");
         levelReady = false;
-        SceneManager.LoadScene(levels[currentLevel]);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
