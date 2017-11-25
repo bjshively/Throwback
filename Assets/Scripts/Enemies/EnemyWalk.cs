@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyWalk : Enemy
 {
-    private float moveSpeed = -1;
+    
     private bool canTurn;
     // Use this for initialization
     void Start()
     {
         base.Start();
         canTurn = true;
+        moveSpeed = -1;
     }
 
     protected override void Move()
@@ -25,11 +26,7 @@ public class EnemyWalk : Enemy
     // If the enemy bumps into part of the World, change directions
     void OnCollisionEnter2D(Collision2D col)
     {
-        // bullets
-        if (col.collider.gameObject.layer == 11)
-        {
-            Die();
-        }
+        base.OnCollisionEnter2D(col);
 
         if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Breakable")
         {

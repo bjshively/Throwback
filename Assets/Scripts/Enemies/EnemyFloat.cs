@@ -7,14 +7,10 @@ public class EnemyFloat : Enemy
     private float yDirection = 1;
     float timer;
 
-    public virtual float moveSpeed
-    {
-        get { return .5f; }
-    }
-
     protected void Start()
     {
         base.Start();
+        moveSpeed = .5f;
         timer = 0;
     }
 

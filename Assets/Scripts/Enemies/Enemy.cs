@@ -13,7 +13,7 @@ public abstract class Enemy : MonoBehaviour
     protected Animator anim;
 
     protected bool canMove = true;
-    public float moveSpeed = 1;
+    public float moveSpeed;
 
     // Use this for initialization
     protected virtual void Start()
@@ -24,13 +24,16 @@ public abstract class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
         pc = player.GetComponent<PlayerController>();
+
         facing = 1;
+        moveSpeed = 1;
     }
 
     protected void Update()
     {
         Flip();
-        // Enemies only move when visible
+
+        // Most enemies only move within a certain range of the player
         if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
         {
             Move();
@@ -56,6 +59,15 @@ public abstract class Enemy : MonoBehaviour
 
             // Update facing value
             facing = Mathf.Sign(scale.x);
+        }
+    }
+
+    protected void OnCollisionEnter2D(Collision2D col)
+    {
+        // bullets
+        if (col.collider.gameObject.layer == 11)
+        {
+            Die();
         }
     }
 

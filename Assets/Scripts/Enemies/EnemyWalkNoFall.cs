@@ -39,15 +39,6 @@ public class EnemyWalkNoFall : Enemy
         moveSpeed *= -1;
     }
 
-    // If the enemy bumps into part of the World, change directions
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Breakable")
-        {
-            Flip();
-        }
-    }
-
     // NOTE: After trying a bunch of clever things with raycasting to detect the edge of a platform
     // Putting an invisible trigger turned out to be much easier and more reliable
     // We should use triggers tagged with wall (or something more accurate) to support this sentry
