@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
             {
                 Move(0);
             }
+
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
@@ -158,6 +159,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Mathf.Abs(h) > 0)
         {
+            body.constraints = RigidbodyConstraints2D.FreezeRotation;
             anim.SetBool("run", true);
             Vector3 scale = transform.localScale;
             body.velocity = new Vector2(moveSpeed * Mathf.Sign(h), body.velocity.y);
@@ -176,6 +178,10 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (grounded)
+            {
+                body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            }
             body.velocity = new Vector2(0, body.velocity.y);
             anim.SetBool("run", false);
         }
@@ -308,6 +314,7 @@ public class PlayerController : MonoBehaviour
     public void collectItem()
     {
         Stop();
+        body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
         Invoke("resetItem", 1);
@@ -315,6 +322,7 @@ public class PlayerController : MonoBehaviour
 
     private void resetItem()
     {
+        body.constraints = RigidbodyConstraints2D.FreezeRotation;
         anim.SetBool("item", false);
         canMove = true;
     }
