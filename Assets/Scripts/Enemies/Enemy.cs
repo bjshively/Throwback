@@ -44,18 +44,6 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    // Might be useful for other on-screen behaviors such as firing, etc.
-    void OnBecameVisible()
-    {
-        
-    }
-
-    // Stop the enemy from flying/walking away when the player is off screen
-    void OnBecameInvisible()
-    {
-        
-    }
-   
     // Determine direction of player and compare to the direction the enemy is facing
     protected abstract void Move();
 
