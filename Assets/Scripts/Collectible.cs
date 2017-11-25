@@ -25,7 +25,7 @@ public class Collectible : MonoBehaviour
         {
             if (gameObject.name == "TetrisRed")
             {
-                GameObject.Find("cage").GetComponent<Cage>().Unlock();
+                GameObject.Find("Cage").GetComponent<Cage>().Unlock();
                 collect();
             }
 
