@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
     private string[] levels;
     private bool gameStarted;
     private bool gameover;
+    private bool levelReady;
 
     void Awake()
     {
@@ -25,11 +26,14 @@ public class LevelManager : MonoBehaviour
         currentLevel = 0;
         gameStarted = false;
         lives = 100;
+        levelReady = false;
     }
 
     void Start()
     {
         levels = new string[] { "start", "prologue", "Level1" };
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
     }
 	
     // Update is called once per frame
@@ -45,34 +49,33 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        // In Game
-        else
+        // In game, level has been loaded
+        else if (levelReady == true)
         {
-            player = GameObject.Find("Player").GetComponent<PlayerController>();
-
-            if (!player.alive)
             {
-                lives--;
-                // If you run out of lives, you lose
-                if (lives == 0 && !gameover)
+                if (!player.alive)
                 {
-                    SceneManager.LoadScene("Gameover");
-                    gameover = true;
+                    lives--;
+                    // If you run out of lives, you lose
+                    if (lives == 0 && !gameover)
+                    {
+                        SceneManager.LoadScene("Gameover");
+                        gameover = true;
 
+                    }
+                    else
+                    {
+                        RestartLevel();
+                    }                
                 }
-                else
-                {
-                    RestartLevel();
-                }                
             }
-
-
         }
     }
         
     // Call this whenever a level is beaten to move to the next level
     public void NextLevel()
     {
+        levelReady = false;
         currentLevel++;
         // If you've beaten the last level, you win.
         if (currentLevel == levels.Length)
@@ -87,6 +90,7 @@ public class LevelManager : MonoBehaviour
 
     private void RestartLevel()
     {
+        levelReady = false;
         SceneManager.LoadScene(levels[currentLevel]);
     }
 
@@ -95,5 +99,14 @@ public class LevelManager : MonoBehaviour
     {
         currentLevel = 0;
     }
-    
+
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != "Start")
+        {
+            player = GameObject.Find("Player").GetComponent<PlayerController>();
+            levelReady = true;
+        }
+    }
 }
