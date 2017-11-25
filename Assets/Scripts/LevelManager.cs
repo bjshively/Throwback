@@ -11,11 +11,10 @@ public class LevelManager : MonoBehaviour
 
     public static LevelManager Instance { set; get; }
 
-    public string levelToLoad;
-    private int lives;
     private PlayerController player;
-
+    private int lives;
     private int currentLevel;
+    private string[] levels;
 
     //TODO: Create array of levels to be loaded
     //    SceneManager.LoadScene("Level1");
@@ -35,13 +34,37 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Just using this for testing persistence between scene loads for now
+        // LevelManager should keep track of how many lives the player has.
         lives = player.livesCount;
         Debug.Log(lives);
+
+        // If you run out of lives, you lose
+        if (lives == 0)
+        {
+            SceneManager.LoadScene("Gameover");
+        }
+    }
+        
+    // Call this whenever a level is beaten to move to the next level
+    public void NextLevel()
+    {
+        currentLevel++;
+        // If you've beaten the last level, you win.
+        if (currentLevel == levels.Length)
+        {
+            SceneManager.LoadScene("Youwin");
+        }
+        else
+        {
+            SceneManager.LoadScene(levels[currentLevel]);
+        }
     }
 
-    public void Win()
+    // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
+    public void Reset()
     {
-        Debug.Log("Victory");
+        currentLevel = 0;
     }
     
 }
