@@ -110,4 +110,9 @@ public class LevelManager : MonoBehaviour
             levelReady = true;
         }
     }
+
+    public void updateCurrentLevel()
+    {
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
+    }
 }

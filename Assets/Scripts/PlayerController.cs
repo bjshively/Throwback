@@ -43,7 +43,9 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(Resources.Load("LevelManager"));
             LevelManager.Instance.gameStarted = true;
+            LevelManager.Instance.updateCurrentLevel();
             LevelManager.Instance.RestartLevel();
+
         }
         // Combine ground and jumpthrough layers into a binary layermask
         // For detecting if player IsGrounded();
