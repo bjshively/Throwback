@@ -163,7 +163,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1185794768319556}
   m_LocalRotation: {x: 0.0026179885, y: -0, z: -0, w: 0.9999966}
-  m_LocalPosition: {x: 0.0685, y: -0.168, z: 0.005}
+  m_LocalPosition: {x: 0.0453, y: -0.168, z: 0.005}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4980238968005188}
@@ -202,7 +202,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1026063576847782}
   m_LocalRotation: {x: 0.0026179885, y: -0, z: -0, w: 0.9999966}
-  m_LocalPosition: {x: -0.1879, y: -0.16799998, z: 0.005}
+  m_LocalPosition: {x: -0.1455, y: -0.16799998, z: 0.005}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4980238968005188}
@@ -311,7 +311,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05469513, y: 0.0029170066}
+  m_Offset: {x: -0.046024024, y: -0.0042676926}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -322,7 +322,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27625275, y: 0.36447468}
+  m_Size: {x: 0.32404095, y: 0.3501053}
   m_EdgeRadius: 0
 --- !u!61 &61495963571444600
 BoxCollider2D:
@@ -361,9 +361,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.039098144, y: 0.02}
+  m_Offset: {x: -0.049711242, y: 0.007205993}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0.06, z: 0.11, w: 0.089999996}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.43, y: 0.46}
     newSize: {x: 0.38, y: 0.34}
@@ -372,8 +372,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16781116, y: 0.33030874}
-  m_EdgeRadius: 0.01
+  m_Size: {x: 0.18992892, y: 0.31558806}
+  m_EdgeRadius: 0.005
 --- !u!95 &95410451779592406
 Animator:
   serializedVersion: 3
@@ -402,9 +402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d702e12dfd7146cb9236d43df513226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
   currentHealth: 3
   grounded: 0
   canFire: 1
