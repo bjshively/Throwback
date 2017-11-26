@@ -36,7 +36,7 @@ public class Contra : Enemy
     void Shoot()
     {
         barrelPoint = transform.Find("barrel").transform.position;
-        GameObject bullet = Instantiate(Resources.Load("fireball") as GameObject);
+        GameObject bullet = Instantiate(Resources.Load("contraBullet") as GameObject);
         bullet.transform.position = barrelPoint;
     }
 }

@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 61803301324497034}
   - component: {fileID: 50332498096895184}
   - component: {fileID: 114948110837427866}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: fireball
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1949687496769706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6378443, y: -0.935, z: 0}
+  m_LocalPosition: {x: 1.9407599, y: -6.824048, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1949687496769706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84550b04a24fb4127b726b9ec8a892fb, type: 3}
+  m_Script: {fileID: 11500000, guid: d312d4bae502246b892ef3fc6bba9f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212293490620388552

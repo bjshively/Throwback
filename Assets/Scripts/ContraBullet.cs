@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fireball : MonoBehaviour
+public class ContraBullet : MonoBehaviour
 {
     private Vector3 target;
     private float moveSpeed;

@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey("x") && canFire)
                 {
                     // Spawn an instance of the bullet prefab
-                    Instantiate(Resources.Load("pistol"));
+                    Instantiate(Resources.Load("fireball"));
                     canFire = false;
                     anim.SetTrigger("zap");
                 }
