@@ -28,7 +28,7 @@ public class EnemyWalk : Enemy
     {
         base.OnCollisionEnter2D(col);
 
-        if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Breakable")
+        if (col.gameObject.tag == "Wall")
         {
             if (canTurn)
             {
