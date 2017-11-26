@@ -6,13 +6,13 @@ public class ContraBullet : MonoBehaviour
 {
     private Vector3 target;
     private float moveSpeed;
-    private PlayerController pc;
+    private PlayerController player;
 
 
     // Use this for initialization
     void Start()
     {
-        pc = GameObject.Find("Player").GetComponent<PlayerController>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         target = GameObject.Find("Player").transform.position;
         moveSpeed = 2;
     }
@@ -46,7 +46,7 @@ public class ContraBullet : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            pc.takeDamage();
+            player.takeDamage();
         }
 
         if (col.gameObject.tag == "Wall" || col.gameObject.layer == 8)

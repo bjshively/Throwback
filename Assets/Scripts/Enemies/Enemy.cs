@@ -5,8 +5,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     protected Rigidbody2D body;
-    protected GameObject player;
-    protected PlayerController pc;
+    protected PlayerController player;
     protected SpriteRenderer renderer;
     protected float facing;
     protected float playerDirection;
@@ -22,9 +21,7 @@ public abstract class Enemy : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        player = GameObject.Find("Player");
-        pc = player.GetComponent<PlayerController>();
-
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         facing = 1;
         moveSpeed = 1;
     }
@@ -34,7 +31,7 @@ public abstract class Enemy : MonoBehaviour
         Flip();
 
         // Most enemies only move within a certain range of the player
-        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
+        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
         {
             Move();
         }
@@ -75,7 +72,7 @@ public abstract class Enemy : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            pc.takeDamage();
+            player.takeDamage();
         }
 
         if (col.gameObject.name == "melee")

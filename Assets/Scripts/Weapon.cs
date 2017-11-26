@@ -6,8 +6,7 @@ public abstract class Weapon : MonoBehaviour
 {
 
     private Rigidbody2D body;
-    private GameObject player;
-    protected PlayerController pc;
+    protected PlayerController player;
     protected SpriteRenderer renderer;
 
     public virtual float projectileSpeed
@@ -31,27 +30,26 @@ public abstract class Weapon : MonoBehaviour
     {
         renderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player");
-        pc = player.GetComponent<PlayerController>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
 
         // Fire bullet out of barrel location
         Vector2 spawnPosition = GameObject.Find("zapperBarrelPoint").transform.position;
         transform.position = spawnPosition;
 
         // Fire bullets the direction the player is facing
-        body.velocity = new Vector2(projectileSpeed * pc.facing, 0);
+        body.velocity = new Vector2(projectileSpeed * player.facing, 0);
 
         // Flip bullet sprites to match the direction they are being fired
         Vector2 scale = transform.localScale;
-        scale.x *= pc.facing;
+        scale.x *= player.facing;
         transform.localScale = scale;
-        pc.canFire = false;
-        pc.startResetFireTimer(fireDelay);
+        player.canFire = false;
+        player.startResetFireTimer(fireDelay);
     }
 
     void FixedUpdate()
     {
-        if (Mathf.Abs(Vector2.Distance(transform.position, pc.transform.position)) > 4)
+        if (Mathf.Abs(Vector2.Distance(transform.position, player.transform.position)) > 4)
         {
             SelfDestruct();
         }

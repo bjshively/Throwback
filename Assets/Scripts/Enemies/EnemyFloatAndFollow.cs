@@ -21,7 +21,7 @@ public class EnemyFloatAndFollow : Enemy
 
     void Update()
     {
-        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
+        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
         {
             Move();
             // Every 2 seconds, re-pinpoint the target (player)

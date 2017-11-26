@@ -9,8 +9,7 @@ public class ScopeShot : Weapon
     private Rigidbody2D body;
     private SpriteRenderer renderer;
     private GameObject shot;
-
-    private GameObject player;
+    private PlayerController player;
 
 
     public float xOffset;
@@ -20,13 +19,12 @@ public class ScopeShot : Weapon
     {
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player");
-        pc = player.GetComponent<PlayerController>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         shot = GameObject.Find("superScopeShot(Clone)");
         // TODO: There are still some circumstances where this doesn't get destroyed/cleaned up properly.
         // Need to put some better safeguards in here to prevent the game getting bogged down.
 
-        moveSpeed *= pc.facing;
+        moveSpeed *= player.facing;
 
         Vector2 spawnPosition = GameObject.Find("zapperBarrelPoint").transform.position;
         transform.position = spawnPosition;
@@ -34,10 +32,10 @@ public class ScopeShot : Weapon
 
         // Flip bullet sprites to match the direction they are being fired
         Vector2 scale = transform.localScale;
-        scale.x *= pc.facing;
+        scale.x *= player.facing;
         transform.localScale = scale;
-        pc.canFire = false;
-        pc.startResetFireTimer(fireDelay);
+        player.canFire = false;
+        player.startResetFireTimer(fireDelay);
 
         Invoke("SelfDestruct", 5);
     }

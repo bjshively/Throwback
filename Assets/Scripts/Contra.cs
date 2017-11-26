@@ -22,7 +22,7 @@ public class Contra : Enemy
         timer += Time.deltaTime;
 
         // Only shoot when within range of player
-        if (Mathf.Abs(Vector2.Distance(pc.transform.position, transform.position)) < 4)
+        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
         {
             // Enemy has a shot cooldown
             if (timer > shotDelay)
