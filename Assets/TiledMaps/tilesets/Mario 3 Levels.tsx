@@ -101,22 +101,56 @@
  </tile>
  <tile id="1118">
   <objectgroup draworder="index">
-   <object id="7" x="0" y="0" width="16" height="16"/>
+   <object id="7" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:layer" value="ground"/>
+    </properties>
+   </object>
+   <object id="8" x="-1" y="0" width="6" height="16">
+    <properties>
+     <property name="unity:isTrigger" type="bool" value="true"/>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1119">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:layer" value="ground"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1120">
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="16" height="16"/>
+   <object id="2" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:layer" value="ground"/>
+    </properties>
+   </object>
+   <object id="3" x="11" y="0" width="6" height="16">
+    <properties>
+     <property name="unity:isTrigger" type="bool" value="true"/>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1191">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="-1" y="0" width="6" height="16">
+    <properties>
+     <property name="unity:isTrigger" type="bool" value="true"/>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
+   <object id="4" x="0" y="0" width="11" height="16">
+    <properties>
+     <property name="unity:layer" value="ground"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1192">
@@ -126,7 +160,17 @@
  </tile>
  <tile id="1193">
   <objectgroup draworder="index">
-   <object id="3" x="0" y="0" width="16" height="16"/>
+   <object id="3" x="0" y="0" width="16" height="16">
+    <properties>
+     <property name="unity:layer" value="ground"/>
+    </properties>
+   </object>
+   <object id="4" x="11" y="0" width="6" height="16">
+    <properties>
+     <property name="unity:isTrigger" type="bool" value="true"/>
+     <property name="unity:tag" value="Wall"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="1261">

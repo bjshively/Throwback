@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-up" width="300" height="50" tilewidth="16" tileheight="16" nextobjectid="53">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-up" width="300" height="50" tilewidth="16" tileheight="16" nextobjectid="57">
  <properties>
   <property name="unity:scale" value=".01"/>
  </properties>
@@ -45025,10 +45025,10 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="WallTriggers">
+ <objectgroup name="TurnAroundTriggers">
   <properties>
    <property name="unity:isTrigger" type="bool" value="true"/>
-   <property name="unity:tag" value="Wall"/>
+   <property name="unity:tag" value="TurnAround"/>
   </properties>
   <object id="7" x="1032" y="624" width="8" height="16">
    <properties>
@@ -45205,11 +45205,6 @@
     <property name="unity:tag" value="Wall"/>
    </properties>
   </object>
-  <object id="48" x="889" y="672" width="8" height="16">
-   <properties>
-    <property name="unity:tag" value="Wall"/>
-   </properties>
-  </object>
   <object id="49" x="1917" y="737" width="8" height="16">
    <properties>
     <property name="unity:tag" value="Wall"/>
@@ -45225,6 +45220,14 @@
     <property name="unity:tag" value="Wall"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="WallTriggers">
+  <properties>
+   <property name="unity:isTrigger" type="bool" value="true"/>
+   <property name="unity:tag" value="Wall"/>
+  </properties>
+  <object id="54" x="507" y="689" width="8" height="15"/>
+  <object id="56" x="702" y="672" width="8" height="15"/>
  </objectgroup>
  <layer name="JumpThroughPlatforms" width="300" height="50">
   <properties>
@@ -75246,9 +75249,7 @@
  </layer>
  <layer name="Ground" width="300" height="50">
   <properties>
-   <property name="unity:layer" value="ground"/>
    <property name="unity:sortingLayerName" value="background"/>
-   <property name="unity:tag" value="World"/>
   </properties>
   <data>
    <tile gid="0"/>

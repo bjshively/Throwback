@@ -2,14 +2,15 @@
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
+// Fix nozapper jump frames
+// Spike damage not working
+// Unable to collect Tetris piece
+// Add iFrames to hit sprite
+
 
 
 // BRAD TODO
 // Melee bug: if you get hit during the first frame of melee, you take damage and still destory the enemy even if the melee FX never show up
-// Dim screen with collectibles
-// - Don't clear until the relevant button is pressed
-// - Can use MessageBG.png sprite behind text to darken everything else
-
 // Swivel contraUpper in prefab based on angle of shot
 // There is a difference with the enemies and their Wall collisions. The shyguy works, the goomba does not.
 // - It looks like OnCollisionEnter vs OnTriggerEnter. I didn't want to mess with it.
@@ -18,11 +19,16 @@
 
 
 
+// PAULISH
+// Dim screen with collectibles
+// - Don't clear until the relevant button is pressed
+// - Can use MessageBG.png sprite behind text to darken everything else
+
+
 // DONE =================
 // Swap Contra's bullet with contrabullet
 // Add death state to Contra animator
 // Fix ContraLower sprite
-// Fix nozapper jump frames
 // Constrain Contra firing to within some reasonable range (currently entire level)
 // Make contra bullets respect walls
 // die on pit death
