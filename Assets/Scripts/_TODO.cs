@@ -1,5 +1,4 @@
 ﻿// EMO TODO
-// Add death state to Contra animator
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
@@ -20,6 +19,7 @@
 
 
 // DONE =================
+// Add death state to Contra animator
 // Fix ContraLower sprite
 // Fix nozapper jump frames
 // Constrain Contra firing to within some reasonable range (currently entire level)
