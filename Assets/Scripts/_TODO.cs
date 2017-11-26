@@ -3,14 +3,18 @@
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
-// Fix nozapper jump frames
+// Fix ContraLower sprite
 
 
 // BRAD TODO
-
+// Melee bug: if you get hit during the first frame of melee, you take damage and still destory the enemy even if the melee FX never show up
+// Dim screen with collectibles
+// - Don't clear until the relevant button is pressed
+// - Can use MessageBG.png sprite behind text to darken everything else
 
 
 // DONE =================
+// Fix nozapper jump frames
 // Constrain Contra firing to within some reasonable range (currently entire level)
 // Make contra bullets respect walls
 // die on pit death
