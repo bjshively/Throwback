@@ -11,7 +11,7 @@ public class EnemyWalk : Enemy
     {
         base.Start();
         canTurn = true;
-        moveSpeed = -1;
+        moveSpeed = -.5f;
     }
 
     protected override void Move()

@@ -3,7 +3,6 @@
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
-// Fix ContraLower sprite
 
 
 // BRAD TODO
@@ -11,9 +10,13 @@
 // Dim screen with collectibles
 // - Don't clear until the relevant button is pressed
 // - Can use MessageBG.png sprite behind text to darken everything else
+// Swap Contra's bullet with contrabullet
+// Swivel contraUpper in prefab based on angle of shot
+
 
 
 // DONE =================
+// Fix ContraLower sprite
 // Fix nozapper jump frames
 // Constrain Contra firing to within some reasonable range (currently entire level)
 // Make contra bullets respect walls
