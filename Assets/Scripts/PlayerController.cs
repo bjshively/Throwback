@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey("x") && canFire)
                 {
                     // Spawn an instance of the bullet prefab
-                    Instantiate(Resources.Load("Lemon"));
+                    Instantiate(Resources.Load("pistol"));
                     canFire = false;
                     anim.SetTrigger("zap");
                 }
@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
                 {
                     scopeIsCool = false;
                     Invoke("resetScopeCool", scopeCooldownTime);
-                    Instantiate(Resources.Load("SuperScope"));
+                    Instantiate(Resources.Load("superScopeShot"));
                     canFire = false;
                     anim.SetTrigger("scope");
                 }
