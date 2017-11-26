@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyWalkNoFall : Enemy
 {
-    private float moveSpeed = .5f;
+    
     public LayerMask ground;
     private float timer;
 
@@ -12,6 +12,7 @@ public class EnemyWalkNoFall : Enemy
     void Start()
     {
         base.Start();
+        moveSpeed = .5f;
     }
 
     void Update()
