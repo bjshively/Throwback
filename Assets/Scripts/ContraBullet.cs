@@ -13,7 +13,7 @@ public class ContraBullet : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
-        target = GameObject.Find("Player").transform.position;
+        target = player.transform.position;
         moveSpeed = 2;
     }
 	

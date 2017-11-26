@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
+    private GameObject player;
     private float speed = 1;
     private Transform currentPoint;
     public Transform[] points;
@@ -13,6 +14,7 @@ public class PlatformMove : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("Player");
         currentPoint = points[pointSelection];
     }
 	
@@ -46,7 +48,7 @@ public class PlatformMove : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            GameObject.Find("Player").transform.SetParent(gameObject.transform);
+            player.transform.SetParent(transform);
         }
     }
 
@@ -54,7 +56,7 @@ public class PlatformMove : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            GameObject.Find("Player").transform.SetParent(null);
+            player.transform.SetParent(null);
         }
     }
 }

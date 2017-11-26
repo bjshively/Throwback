@@ -21,12 +21,12 @@ public class Collectible : MonoBehaviour
 		
     }
 
-
     protected void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            if (gameObject.name == "TetrisRed")
+            // TODO: Create a "key" tag that can be applied to any collectible to make it unlock the rocket
+            if (gameObject.tag == "TetrisRed")
             {
                 GameObject.Find("Cage").GetComponent<Cage>().Unlock();
                 collect();
