@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BlockBreakable : MonoBehaviour
 {
-    private int health = 1;
     private Animator anim;
 
     // Use this for initialization
