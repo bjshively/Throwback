@@ -12,6 +12,10 @@
 // - Can use MessageBG.png sprite behind text to darken everything else
 // Swap Contra's bullet with contrabullet
 // Swivel contraUpper in prefab based on angle of shot
+// There is a difference with the enemies and their Wall collisions. The shyguy works, the goomba does not.
+// - It looks like OnCollisionEnter vs OnTriggerEnter. I didn't want to mess with it.
+// - On that note, can we get goomba to turnaround on actual walls, and not the ones I add via Tiled? I can make multiple object layers if you need both.
+// - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
 
 
 
