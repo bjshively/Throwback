@@ -11,6 +11,7 @@ public abstract class Enemy : MonoBehaviour
     protected float playerDirection;
     protected Animator anim;
 
+    protected bool alive;
     protected bool canMove = true;
     public float moveSpeed;
 
@@ -24,15 +25,16 @@ public abstract class Enemy : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         facing = 1;
         moveSpeed = 1;
+        alive = true;
     }
 
     protected void Update()
     {
-        Flip();
 
         // Most enemies only move within a certain range of the player
-        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
+        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4 && alive)
         {
+            Flip();
             Move();
         }
         else
@@ -88,6 +90,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected void Die()
     {
+        alive = false;
         Stop();
         body.simulated = false;
         anim.SetTrigger("die");
