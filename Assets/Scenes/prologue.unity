@@ -1291,6 +1291,19 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1139866815965442, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926035368602182, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
+      propertyPath: m_TagString
+      value: Hazard
+      objectReference: {fileID: 0}
+    - target: {fileID: 60921259405780806, guid: e5bac0764049c4ee2a12cc686bd3cc9a,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5bac0764049c4ee2a12cc686bd3cc9a, type: 2}
   m_IsPrefabParent: 0
