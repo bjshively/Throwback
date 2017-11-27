@@ -7,6 +7,7 @@ public class Rocket : MonoBehaviour
     private GameObject player;
     private Rigidbody2D body;
     private Animator anim;
+    private AudioSource audio;
 
     // Use this for initialization
     void Start()
@@ -14,6 +15,7 @@ public class Rocket : MonoBehaviour
         player = GameObject.Find("Player");
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audio = GetComponent <AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class Rocket : MonoBehaviour
 
     void Launch()
     {
+        audio.Play();
         player.SetActive(false);
         body.gravityScale = 0;
         anim.SetTrigger("FinishLevel");
