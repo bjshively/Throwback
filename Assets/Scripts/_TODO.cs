@@ -1,4 +1,11 @@
-﻿// EMO TODO
+﻿// GENERAL TODO
+// Add attribution for graphics (at least list games) and music/sound fx
+
+// SoundFX: https://opengameart.org/content/512-sound-effects-8-bit-style
+// Music: ericskiff.com/music/
+
+
+// EMO TODO
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // start thinking about an opening animation
