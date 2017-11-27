@@ -7,12 +7,14 @@ public class EnemyWalkNoFall : Enemy
     
     public LayerMask ground;
     private float timer;
+    private bool canTurn;
 
     // Use this for initialization
     void Start()
     {
         base.Start();
         moveSpeed = .5f;
+        canTurn = true;
     }
 
     void Update()
@@ -34,10 +36,15 @@ public class EnemyWalkNoFall : Enemy
 
     protected void Flip()
     {
-        Vector2 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-        moveSpeed *= -1;
+        if (canTurn)
+        {
+            canTurn = false;
+            Invoke("resetCanTurn", .4f);
+            Vector2 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+            moveSpeed *= -1;
+        }
     }
 
     // NOTE: After trying a bunch of clever things with raycasting to detect the edge of a platform
@@ -52,5 +59,20 @@ public class EnemyWalkNoFall : Enemy
         {
             Flip();
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        base.OnCollisionEnter2D(col);
+        if (col.gameObject.tag == "Wall")
+        {
+            Debug.Log("bonk"); 
+            Flip();
+        }
+    }
+
+    private void resetCanTurn()
+    {
+        canTurn = true;
     }
 }
