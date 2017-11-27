@@ -24,10 +24,8 @@ public class EnemyWalk : Enemy
 
 
     // If the enemy bumps into part of the World, change directions
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        base.OnCollisionEnter2D(col);
-
         if (col.gameObject.tag == "Wall")
         {
             if (canTurn)
