@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
-    private GameObject player;
-    private float speed = 1;
-    private Transform currentPoint;
+    protected GameObject player;
+    protected float speed = 1;
+    protected Transform currentPoint;
     public Transform[] points;
 
     // Begin by traveling towards the end point
@@ -24,7 +24,7 @@ public class PlatformMove : MonoBehaviour
         Move();
     }
 
-    private void Move()
+    protected virtual void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, currentPoint.transform.position, speed * Time.deltaTime);
         if (transform.position == currentPoint.transform.position)
