@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 11/26/2017 10:43:42 PM-->
+<!--Last exported: 11/27/2017 12:19:47 AM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0001" material="mario3levels" />
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
@@ -23,161 +23,149 @@
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
       <GameObject name="mario3levels" copy="mesh_0003" sortingLayerName="background" sortingOrder="2" opacity="1" />
     </GameObject>
-    <GameObject name="TurnAroundTriggers" x="0" y="0" z="0" isTrigger="true" tag="Turnaround">
+    <GameObject name="TurnAroundTriggers" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
-      <GameObject name="RectangleObject" x="3952" y="-142" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="3952" y="-142" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="52" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3952" tmx-object-y="142" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="3818" y="-144" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="3818" y="-144" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="51" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3818" tmx-object-y="144" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="4202" y="-160" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="4202" y="-160" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="40" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4202" tmx-object-y="160" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="4304" y="-160" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="4304" y="-160" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="41" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4304" tmx-object-y="160" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="3984" y="-224" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="3984" y="-224" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="36" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3984" tmx-object-y="224" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="4122" y="-224" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="4122" y="-224" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="37" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4122" tmx-object-y="224" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2762" y="-304" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2762" y="-304" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="33" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2762" tmx-object-y="304" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2992" y="-304" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2992" y="-304" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="34" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2992" tmx-object-y="304" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="3642" y="-304" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="3642" y="-304" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="35" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3642" tmx-object-y="304" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2090" y="-400" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2090" y="-400" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="28" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2090" tmx-object-y="400" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2160" y="-400" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2160" y="-400" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="29" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2160" tmx-object-y="400" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2218" y="-400" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2218" y="-400" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="30" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2218" tmx-object-y="400" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2320" y="-400" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2320" y="-400" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="31" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2320" tmx-object-y="400" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="2000" y="-416" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="2000" y="-416" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="27" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2000" tmx-object-y="416" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1488" y="-448" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1488" y="-448" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="23" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1488" tmx-object-y="448" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1802" y="-448" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1802" y="-448" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="26" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1802" tmx-object-y="448" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1258" y="-464" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1258" y="-464" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="22" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1258" tmx-object-y="464" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1996" y="-496" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
-        <RectangleObjectComponent tmx-object-id="45" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1996" tmx-object-y="496" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="889" y="-512" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="889" y="-512" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="10" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="889" tmx-object-y="512" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1024" y="-544" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1024" y="-544" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="9" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1024" tmx-object-y="544" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="864" y="-576" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="864" y="-576" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="11" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="864" tmx-object-y="576" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="8" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="810" y="-576" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="810" y="-576" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="12" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="810" tmx-object-y="576" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="649" y="-592" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="649" y="-592" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="13" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="649" tmx-object-y="592" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1032" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1032" y="-624" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="7" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1032" tmx-object-y="624" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="8" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1088" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1088" y="-624" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="8" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1088" tmx-object-y="624" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="8" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="624" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="624" y="-624" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="14" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="624" tmx-object-y="624" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="537" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="537" y="-624" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="15" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="537" tmx-object-y="624" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1274" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1274" y="-624" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="21" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1274" tmx-object-y="624" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1321" y="-624" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
-        <RectangleObjectComponent tmx-object-id="44" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1321" tmx-object-y="624" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="8" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="1226" y="-656" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1226" y="-656" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="19" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1226" tmx-object-y="656" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="1278" y="-656" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="1278" y="-656" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="20" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1278" tmx-object-y="656" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="512" y="-665" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="512" y="-665" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="16" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="512" tmx-object-y="665" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="8" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="425" y="-665" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="425" y="-665" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="17" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="425" tmx-object-y="665" tmx-object-width="7" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="7" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="216" y="-697" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
+      <GameObject name="RectangleObject" x="216" y="-697" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="18" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="216" tmx-object-y="697" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="8" height="16" />
       </GameObject>
-      <GameObject name="RectangleObject" x="956" y="-704" rotation="0" isTrigger="true" layer="Turnaround" tag="Turnaround">
-        <RectangleObjectComponent tmx-object-id="43" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="956" tmx-object-y="704" tmx-object-width="8" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="8" height="16" />
-      </GameObject>
     </GameObject>
-    <GameObject name="JumpThroughPlatforms" x="0" y="0" z="0" layer="jumpthrough" tag="World">
+    <GameObject name="JumpThroughPlatforms" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
       <GameObject name="mario3levels" copy="mesh_0004" sortingLayerName="background" sortingOrder="3" opacity="1" />
-      <GameObject name="Collision">
+      <GameObject name="Collision_jumpthrough" layer="jumpthrough">
         <PolygonCollider2D>
-          <Path>2160,-416 2096,-416 2096,-424 2160,-424</Path>
-          <Path>864,-592 816,-592 816,-600 864,-600</Path>
-          <Path>720,-608 656,-608 656,-616 720,-616</Path>
-          <Path>1328,-640 1280,-640 1280,-648 1328,-648</Path>
-          <Path>1088,-640 1040,-640 1040,-648 1088,-648</Path>
-          <Path>1280,-672 1232,-672 1232,-680 1280,-680</Path>
-          <Path>0,-744 208,-744 208,-745 224,-745 224,-736 0,-736</Path>
+          <Path>2160,-416 2096,-416 2096,-418 2160,-418</Path>
+          <Path>864,-592 816,-592 816,-594 864,-594</Path>
+          <Path>720,-608 656,-608 656,-610 720,-610</Path>
+          <Path>1328,-640 1280,-640 1280,-642 1328,-642</Path>
+          <Path>1088,-640 1040,-640 1040,-642 1088,-642</Path>
+          <Path>1280,-672 1232,-672 1232,-674 1280,-674</Path>
+          <Path>0,-738 224,-738 224,-736 0,-736</Path>
         </PolygonCollider2D>
       </GameObject>
     </GameObject>
@@ -253,30 +241,180 @@
       </GameObject>
       <GameObject name="Collision_Wall" layer="Wall">
         <PolygonCollider2D>
-          <Path>4129,-243 4127,-243 4127,-272 4129,-272</Path>
-          <Path>3985,-243 3983,-243 3983,-272 3985,-272</Path>
-          <Path>3681,-752 3681,-320 3679,-320 3679,-752</Path>
-          <Path>2961,-688 2961,-320 2959,-320 2959,-688</Path>
-          <Path>2801,-688 2801,-320 2799,-320 2799,-688</Path>
-          <Path>2001,-528 2001,-435 1999,-435 1999,-528</Path>
-          <Path>1921,-688 1921,-464 1919,-464 1919,-688</Path>
-          <Path>1409,-640 1409,-467 1407,-467 1407,-640</Path>
-          <Path>1329,-480 1327,-480 1327,-640 1329,-640</Path>
-          <Path>897,-688 897,-531 895,-531 895,-688</Path>
-          <Path>2353,-688 2353,-544 2351,-544 2351,-688</Path>
-          <Path>961,-720 961,-560 959,-560 959,-720</Path>
-          <Path>705,-688 705,-611 703,-611 703,-688</Path>
-          <Path>513,-688 511,-688 511,-704 513,-704</Path>
-          <Path>433,-688 431,-688 431,-784 433,-784</Path>
-          <Path>225,-720 223,-720 223,-784 225,-784</Path>
-          <Path>305,-720 303,-720 303,-784 305,-784</Path>
+          <Path>3985,-243 3983,-243 3983,-256 3985,-256</Path>
+          <Path>4129,-244 4127,-244 4127,-256 4129,-256</Path>
+          <Path>4129,-258 4127,-258 4127,-272 4129,-272</Path>
+          <Path>3985,-258 3983,-258 3983,-272 3985,-272</Path>
+          <Path>3681,-322 3679,-322 3679,-336 3681,-336</Path>
+          <Path>2961,-322 2959,-322 2959,-336 2961,-336</Path>
+          <Path>2801,-322 2799,-322 2799,-336 2801,-336</Path>
+          <Path>3681,-338 3679,-338 3679,-352 3681,-352</Path>
+          <Path>2961,-338 2959,-338 2959,-352 2961,-352</Path>
+          <Path>2801,-338 2799,-338 2799,-352 2801,-352</Path>
+          <Path>3681,-354 3679,-354 3679,-368 3681,-368</Path>
+          <Path>2961,-354 2959,-354 2959,-368 2961,-368</Path>
+          <Path>2801,-354 2799,-354 2799,-368 2801,-368</Path>
+          <Path>3681,-370 3679,-370 3679,-384 3681,-384</Path>
+          <Path>2961,-370 2959,-370 2959,-384 2961,-384</Path>
+          <Path>2801,-370 2799,-370 2799,-384 2801,-384</Path>
+          <Path>3681,-386 3679,-386 3679,-400 3681,-400</Path>
+          <Path>2961,-386 2959,-386 2959,-400 2961,-400</Path>
+          <Path>2801,-386 2799,-386 2799,-400 2801,-400</Path>
+          <Path>3681,-402 3679,-402 3679,-416 3681,-416</Path>
+          <Path>2961,-402 2959,-402 2959,-416 2961,-416</Path>
+          <Path>2801,-402 2799,-402 2799,-416 2801,-416</Path>
+          <Path>3681,-418 3679,-418 3679,-432 3681,-432</Path>
+          <Path>2961,-418 2959,-418 2959,-432 2961,-432</Path>
+          <Path>2801,-418 2799,-418 2799,-432 2801,-432</Path>
+          <Path>3681,-434 3679,-434 3679,-448 3681,-448</Path>
+          <Path>2961,-434 2959,-434 2959,-448 2961,-448</Path>
+          <Path>2801,-434 2799,-434 2799,-448 2801,-448</Path>
+          <Path>2001,-435 1999,-435 1999,-448 2001,-448</Path>
+          <Path>2001,-450 1999,-450 1999,-464 2001,-464</Path>
+          <Path>3681,-450 3679,-450 3679,-464 3681,-464</Path>
+          <Path>2961,-450 2959,-450 2959,-464 2961,-464</Path>
+          <Path>2801,-450 2799,-450 2799,-464 2801,-464</Path>
+          <Path>1921,-466 1919,-466 1919,-480 1921,-480</Path>
+          <Path>2001,-466 1999,-466 1999,-480 2001,-480</Path>
+          <Path>3681,-466 3679,-466 3679,-480 3681,-480</Path>
+          <Path>2961,-466 2959,-466 2959,-480 2961,-480</Path>
+          <Path>2801,-466 2799,-466 2799,-480 2801,-480</Path>
+          <Path>1409,-467 1407,-467 1407,-480 1409,-480</Path>
+          <Path>3681,-482 3679,-482 3679,-496 3681,-496</Path>
+          <Path>2961,-482 2959,-482 2959,-496 2961,-496</Path>
+          <Path>2801,-482 2799,-482 2799,-496 2801,-496</Path>
+          <Path>1921,-482 1919,-482 1919,-496 1921,-496</Path>
+          <Path>2001,-482 1999,-482 1999,-496 2001,-496</Path>
+          <Path>1329,-482 1327,-482 1327,-496 1329,-496</Path>
+          <Path>1409,-482 1407,-482 1407,-496 1409,-496</Path>
+          <Path>3681,-498 3679,-498 3679,-512 3681,-512</Path>
+          <Path>2961,-498 2959,-498 2959,-512 2961,-512</Path>
+          <Path>2801,-498 2799,-498 2799,-512 2801,-512</Path>
+          <Path>1921,-498 1919,-498 1919,-512 1921,-512</Path>
+          <Path>2001,-498 1999,-498 1999,-512 2001,-512</Path>
+          <Path>1329,-498 1327,-498 1327,-512 1329,-512</Path>
+          <Path>1409,-498 1407,-498 1407,-512 1409,-512</Path>
+          <Path>3681,-514 3679,-514 3679,-528 3681,-528</Path>
+          <Path>2961,-514 2959,-514 2959,-528 2961,-528</Path>
+          <Path>2801,-514 2799,-514 2799,-528 2801,-528</Path>
+          <Path>1921,-514 1919,-514 1919,-528 1921,-528</Path>
+          <Path>2001,-514 1999,-514 1999,-528 2001,-528</Path>
+          <Path>1329,-514 1327,-514 1327,-528 1329,-528</Path>
+          <Path>1409,-514 1407,-514 1407,-528 1409,-528</Path>
+          <Path>3681,-530 3679,-530 3679,-544 3681,-544</Path>
+          <Path>2961,-530 2959,-530 2959,-544 2961,-544</Path>
+          <Path>2801,-530 2799,-530 2799,-544 2801,-544</Path>
+          <Path>1921,-530 1919,-530 1919,-544 1921,-544</Path>
+          <Path>1329,-530 1327,-530 1327,-544 1329,-544</Path>
+          <Path>1409,-530 1407,-530 1407,-544 1409,-544</Path>
+          <Path>897,-532 895,-532 895,-544 897,-544</Path>
+          <Path>2353,-546 2351,-546 2351,-560 2353,-560</Path>
+          <Path>897,-546 895,-546 895,-560 897,-560</Path>
+          <Path>3681,-546 3679,-546 3679,-560 3681,-560</Path>
+          <Path>2961,-546 2959,-546 2959,-560 2961,-560</Path>
+          <Path>2801,-546 2799,-546 2799,-560 2801,-560</Path>
+          <Path>1921,-546 1919,-546 1919,-560 1921,-560</Path>
+          <Path>1329,-546 1327,-546 1327,-560 1329,-560</Path>
+          <Path>1409,-546 1407,-546 1407,-560 1409,-560</Path>
+          <Path>2353,-562 2351,-562 2351,-576 2353,-576</Path>
+          <Path>897,-562 895,-562 895,-576 897,-576</Path>
+          <Path>961,-562 959,-562 959,-576 961,-576</Path>
+          <Path>3681,-562 3679,-562 3679,-576 3681,-576</Path>
+          <Path>2961,-562 2959,-562 2959,-576 2961,-576</Path>
+          <Path>2801,-562 2799,-562 2799,-576 2801,-576</Path>
+          <Path>1921,-562 1919,-562 1919,-576 1921,-576</Path>
+          <Path>1329,-562 1327,-562 1327,-576 1329,-576</Path>
+          <Path>1409,-562 1407,-562 1407,-576 1409,-576</Path>
+          <Path>2353,-578 2351,-578 2351,-592 2353,-592</Path>
+          <Path>897,-578 895,-578 895,-592 897,-592</Path>
+          <Path>961,-578 959,-578 959,-592 961,-592</Path>
+          <Path>3681,-578 3679,-578 3679,-592 3681,-592</Path>
+          <Path>2961,-578 2959,-578 2959,-592 2961,-592</Path>
+          <Path>2801,-578 2799,-578 2799,-592 2801,-592</Path>
+          <Path>1921,-578 1919,-578 1919,-592 1921,-592</Path>
+          <Path>1329,-578 1327,-578 1327,-592 1329,-592</Path>
+          <Path>1409,-578 1407,-578 1407,-592 1409,-592</Path>
+          <Path>2353,-594 2351,-594 2351,-608 2353,-608</Path>
+          <Path>897,-594 895,-594 895,-608 897,-608</Path>
+          <Path>961,-594 959,-594 959,-608 961,-608</Path>
+          <Path>3681,-594 3679,-594 3679,-608 3681,-608</Path>
+          <Path>2961,-594 2959,-594 2959,-608 2961,-608</Path>
+          <Path>2801,-594 2799,-594 2799,-608 2801,-608</Path>
+          <Path>1921,-594 1919,-594 1919,-608 1921,-608</Path>
+          <Path>1329,-594 1327,-594 1327,-608 1329,-608</Path>
+          <Path>1409,-594 1407,-594 1407,-608 1409,-608</Path>
+          <Path>2353,-610 2351,-610 2351,-624 2353,-624</Path>
+          <Path>897,-610 895,-610 895,-624 897,-624</Path>
+          <Path>961,-610 959,-610 959,-624 961,-624</Path>
+          <Path>3681,-610 3679,-610 3679,-624 3681,-624</Path>
+          <Path>2961,-610 2959,-610 2959,-624 2961,-624</Path>
+          <Path>2801,-610 2799,-610 2799,-624 2801,-624</Path>
+          <Path>1921,-610 1919,-610 1919,-624 1921,-624</Path>
+          <Path>1329,-610 1327,-610 1327,-624 1329,-624</Path>
+          <Path>1409,-610 1407,-610 1407,-624 1409,-624</Path>
+          <Path>705,-612 703,-612 703,-624 705,-624</Path>
+          <Path>705,-626 703,-626 703,-640 705,-640</Path>
+          <Path>2353,-626 2351,-626 2351,-640 2353,-640</Path>
+          <Path>897,-626 895,-626 895,-640 897,-640</Path>
+          <Path>961,-626 959,-626 959,-640 961,-640</Path>
+          <Path>3681,-626 3679,-626 3679,-640 3681,-640</Path>
+          <Path>2961,-626 2959,-626 2959,-640 2961,-640</Path>
+          <Path>2801,-626 2799,-626 2799,-640 2801,-640</Path>
+          <Path>1921,-626 1919,-626 1919,-640 1921,-640</Path>
+          <Path>1329,-626 1327,-626 1327,-640 1329,-640</Path>
+          <Path>1409,-626 1407,-626 1407,-640 1409,-640</Path>
+          <Path>3681,-642 3679,-642 3679,-656 3681,-656</Path>
+          <Path>2961,-642 2959,-642 2959,-656 2961,-656</Path>
+          <Path>2801,-642 2799,-642 2799,-656 2801,-656</Path>
+          <Path>2353,-642 2351,-642 2351,-656 2353,-656</Path>
+          <Path>1921,-642 1919,-642 1919,-656 1921,-656</Path>
+          <Path>897,-642 895,-642 895,-656 897,-656</Path>
+          <Path>961,-642 959,-642 959,-656 961,-656</Path>
+          <Path>705,-642 703,-642 703,-656 705,-656</Path>
+          <Path>3681,-658 3679,-658 3679,-672 3681,-672</Path>
+          <Path>2961,-658 2959,-658 2959,-672 2961,-672</Path>
+          <Path>2801,-658 2799,-658 2799,-672 2801,-672</Path>
+          <Path>2353,-658 2351,-658 2351,-672 2353,-672</Path>
+          <Path>1921,-658 1919,-658 1919,-672 1921,-672</Path>
+          <Path>897,-658 895,-658 895,-672 897,-672</Path>
+          <Path>961,-658 959,-658 959,-672 961,-672</Path>
+          <Path>705,-658 703,-658 703,-672 705,-672</Path>
+          <Path>3681,-674 3679,-674 3679,-688 3681,-688</Path>
+          <Path>2961,-674 2959,-674 2959,-688 2961,-688</Path>
+          <Path>2801,-674 2799,-674 2799,-688 2801,-688</Path>
+          <Path>2353,-674 2351,-674 2351,-688 2353,-688</Path>
+          <Path>1921,-674 1919,-674 1919,-688 1921,-688</Path>
+          <Path>897,-674 895,-674 895,-688 897,-688</Path>
+          <Path>961,-674 959,-674 959,-688 961,-688</Path>
+          <Path>705,-674 703,-674 703,-688 705,-688</Path>
+          <Path>513,-690 511,-690 511,-704 513,-704</Path>
+          <Path>433,-690 431,-690 431,-704 433,-704</Path>
+          <Path>3681,-690 3679,-690 3679,-704 3681,-704</Path>
+          <Path>961,-690 959,-690 959,-704 961,-704</Path>
+          <Path>433,-706 431,-706 431,-720 433,-720</Path>
+          <Path>3681,-706 3679,-706 3679,-720 3681,-720</Path>
+          <Path>961,-706 959,-706 959,-720 961,-720</Path>
+          <Path>225,-722 223,-722 223,-736 225,-736</Path>
+          <Path>305,-722 303,-722 303,-736 305,-736</Path>
+          <Path>433,-722 431,-722 431,-736 433,-736</Path>
+          <Path>3681,-722 3679,-722 3679,-736 3681,-736</Path>
+          <Path>225,-738 223,-738 223,-752 225,-752</Path>
+          <Path>305,-738 303,-738 303,-752 305,-752</Path>
+          <Path>433,-738 431,-738 431,-752 433,-752</Path>
+          <Path>3681,-738 3679,-738 3679,-752 3681,-752</Path>
+          <Path>225,-754 223,-754 223,-768 225,-768</Path>
+          <Path>305,-754 303,-754 303,-768 305,-768</Path>
+          <Path>433,-754 431,-754 431,-768 433,-768</Path>
+          <Path>225,-770 223,-770 223,-784 225,-784</Path>
+          <Path>305,-770 303,-770 303,-784 305,-784</Path>
+          <Path>433,-770 431,-770 431,-784 433,-784</Path>
         </PolygonCollider2D>
       </GameObject>
     </GameObject>
-    <GameObject name="Hazards" x="0" y="0" z="0" layer="ground" tag="Hazard">
+    <GameObject name="Hazards" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
       <GameObject name="mario3levels" copy="mesh_0007" sortingLayerName="" sortingOrder="6" opacity="1" />
-      <GameObject name="Collision">
+      <GameObject name="Collision_Hazard" layer="Hazard">
         <PolygonCollider2D>
           <Path>3984,-272 4128,-272 4128,-256 3984,-256</Path>
           <Path>2000,-528 2352,-528 2352,-512 2000,-512</Path>

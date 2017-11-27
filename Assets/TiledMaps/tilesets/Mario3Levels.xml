@@ -2,15 +2,21 @@
 <objecttypes>
  <objecttype name="" color="#a0a0a4"/>
  <objecttype name="Wall" color="#fff40a">
-  <property name="unity:isTrigger" type="bool" default="true"/>
+  <property name="unity:isTrigger" type="string" default="true"/>
   <property name="unity:tag" type="string" default="Wall"/>
  </objecttype>
- <objecttype name="ground" color="#fc0006">
+ <objecttype name="ground" color="#22ff0c">
   <property name="unity:layer" type="string" default="ground"/>
  </objecttype>
  <objecttype name="Turnaround" color="#0000ff">
-  <property name="unity:isTrigger" type="bool" default="true"/>
-  <property name="unity:layer" type="string" default="Default"/>
+  <property name="unity:isTrigger" type="string" default="true"/>
   <property name="unity:tag" type="string" default="Turnaround"/>
+ </objecttype>
+ <objecttype name="Hazard" color="#fd5f08">
+  <property name="unity:tag" type="string" default="Hazard"/>
+ </objecttype>
+ <objecttype name="jumpthrough" color="#21ffb8">
+  <property name="unity:layer" type="string" default="jumpthrough"/>
+  <property name="unity:tag" type="string" default="World"/>
  </objecttype>
 </objecttypes>
