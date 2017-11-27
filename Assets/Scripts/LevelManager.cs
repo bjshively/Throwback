@@ -44,8 +44,10 @@ public class LevelManager : MonoBehaviour
         {
             if (Input.GetKey("return"))
             {
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
+                GameObject.Find("menu-startsound").GetComponent<AudioSource>().Play();
                 gameStarted = true;
-                NextLevel();
+                Invoke("NextLevel", .25f);
             }
         }
 
