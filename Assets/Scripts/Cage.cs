@@ -5,11 +5,13 @@ using UnityEngine;
 public class Cage : MonoBehaviour
 {
     private Animator anim;
+    private AudioSource audio;
 
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 	
     // Update is called once per frame
@@ -20,8 +22,9 @@ public class Cage : MonoBehaviour
 
     public void Unlock()
     {
+        audio.PlayDelayed(.8f);
         anim.SetTrigger("fall");
-        Invoke("Disable", 1);
+        Invoke("Disable", 2);
     }
 
     private void Disable()
