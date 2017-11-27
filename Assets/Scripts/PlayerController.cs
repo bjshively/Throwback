@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
     public bool hasZapper = false;
     public bool hasSuperscope = false;
 
+    // How long to freeze player after collecting an item
+    private float collectibleDelay = 3f;
+
     // Use this for initialization
     void Start()
     {
@@ -135,7 +138,7 @@ public class PlayerController : MonoBehaviour
                     anim.SetTrigger("melee");
 
                     // After some delay, enable the melee collision box, then disable it
-                    Invoke("setMelee", .2f);
+                    Invoke("setMelee", .15f);
                     Invoke("resetMelee", .5f);
                 }
             }
@@ -217,7 +220,11 @@ public class PlayerController : MonoBehaviour
         {
             canMove = false;
             Stop();
+
+            // TODO: Should create a canMoveTimer to prevent this from reducing move time wait
+            // e.g. if canMoveTimer < 1, canMoveTimer=1
             Invoke("resetMove", 1);
+
             currentHealth -= 1;
 
             if (currentHealth <= 0)
@@ -311,14 +318,14 @@ public class PlayerController : MonoBehaviour
         body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
-        Invoke("resetItem", 1);
+        Invoke("resetItem", collectibleDelay);
     }
 
     private void resetItem()
     {
         body.constraints = RigidbodyConstraints2D.FreezeRotation;
         anim.SetBool("item", false);
-        canMove = true;
+        resetMove();
     }
 
     // Player should repeatedly take damage from hazards if standing on/in them

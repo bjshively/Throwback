@@ -27,7 +27,7 @@ public class Notification : MonoBehaviour
         notifyText.text = "";
     }
 
-    public void show(string t, int delay)
+    public void show(string t, float delay)
     {
         notifyText.text = t;
         Invoke("clearMessage", delay);
