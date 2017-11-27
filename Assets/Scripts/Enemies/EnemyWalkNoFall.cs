@@ -66,7 +66,6 @@ public class EnemyWalkNoFall : Enemy
         base.OnCollisionEnter2D(col);
         if (col.gameObject.tag == "Wall")
         {
-            Debug.Log("bonk"); 
             Flip();
         }
     }
