@@ -43,28 +43,29 @@ public class Collectible : MonoBehaviour
             // TODO: Create a "key" tag that can be applied to any collectible to make it unlock the rocket
             if (gameObject.tag == "key")
             {
-                GameObject.Find("Cage").GetComponent<Cage>().Invoke("Unlock", 2);
+                GameObject.Find("Cage").GetComponent<Cage>().Invoke("Unlock", 2.18f);
+                notifyText.show("Escape unlocked", 2f);
                 collect();
             }
 
             // Weapons
             else if (gameObject.name == "PowerGlove")
             {
-                notifyText.show("You got the Powerglove.\n\n\nPress Z to melee obstacles and small enemies.", messageDisplayTime);
+                notifyText.show("Powerglove\n\n\nPress Z to melee obstacles and small enemies.", messageDisplayTime);
                 player.hasPowerglove = true;
                 player.anim.runtimeAnimatorController = Resources.Load("PlayerNoZapper") as RuntimeAnimatorController;
                 collect();
             }
             else if (gameObject.name == "Zapper")
             {
-                notifyText.show("You got the Zapper.\n\n\nPress X to fire.", messageDisplayTime);
+                notifyText.show("Zapper\n\n\nPress X to fire.", messageDisplayTime);
                 player.anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
                 player.hasZapper = true;
                 collect();
             }
             else if (gameObject.name == "SuperScope")
             {
-                notifyText.show("You got the SuperScope.\n\nPress F to fire.\n\nIt's powerful but slow to reload.", messageDisplayTime);
+                notifyText.show("SuperScope\n\nPress F to fire.\n\nIt's powerful but slow to reload.", messageDisplayTime);
                 player.hasSuperscope = true;
                 collect();
             }
