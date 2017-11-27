@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Animator anim;
     private BoxCollider2D melee;
+    private AudioSource audio;
 
     // Player attributes
     private const int STARTHEALTH = 3;
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
         groundPoint2 = GameObject.Find("groundPoint2");
         groundPoint3 = GameObject.Find("groundPoint3");
 
+        audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -293,6 +295,7 @@ public class PlayerController : MonoBehaviour
 
     private void setMelee()
     {
+        audio.Play();
         melee.enabled = true;
     }
 

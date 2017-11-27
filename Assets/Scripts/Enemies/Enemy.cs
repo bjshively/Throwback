@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
+    protected AudioSource audio;
     protected Rigidbody2D body;
     protected PlayerController player;
     protected SpriteRenderer renderer;
@@ -22,6 +23,7 @@ public abstract class Enemy : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         renderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         facing = 1;
         moveSpeed = 1;
@@ -90,6 +92,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected void Die()
     {
+        audio.Play();
         alive = false;
         Stop();
         body.simulated = false;
