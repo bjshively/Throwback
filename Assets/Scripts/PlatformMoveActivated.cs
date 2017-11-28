@@ -9,7 +9,6 @@ public class PlatformMoveActivated : PlatformMove
 
     protected override void Move()
     {
-        Debug.Log("move");
         // If the platform has been activated and isn't at the end yet, move
         if (activated && !reachedTheEnd)
         { 
