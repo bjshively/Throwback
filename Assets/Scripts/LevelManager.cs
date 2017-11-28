@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
     public bool gameStarted;
     private bool gameover;
     private bool levelReady;
+    public int playerLevel;
 
     void Awake()
     {
@@ -27,6 +28,7 @@ public class LevelManager : MonoBehaviour
         gameStarted = false;
         lives = 100;
         levelReady = false;
+        playerLevel = 0;
     }
 
     void Start()
@@ -77,6 +79,9 @@ public class LevelManager : MonoBehaviour
     // Call this whenever a level is beaten to move to the next level
     public void NextLevel()
     {
+        // Update the level that the player should start at in the next game level
+        playerLevel = player.getLevel();
+
         levelReady = false;
         currentLevel++;
         // If you've beaten the last level, you win.
@@ -108,6 +113,9 @@ public class LevelManager : MonoBehaviour
         if (scene.name != "Start")
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
+
+            // Reset the player state
+            player.setLevel(playerLevel);
             levelReady = true;
         }
     }

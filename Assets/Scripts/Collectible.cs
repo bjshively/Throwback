@@ -52,21 +52,19 @@ public class Collectible : MonoBehaviour
             else if (gameObject.name == "PowerGlove")
             {
                 notifyText.show("Powerglove\n\n\nPress Z to melee obstacles and small enemies.", messageDisplayTime);
-                player.hasPowerglove = true;
-                player.anim.runtimeAnimatorController = Resources.Load("PlayerNoZapper") as RuntimeAnimatorController;
+                player.setLevel(1);
                 collect();
             }
             else if (gameObject.name == "Zapper")
             {
                 notifyText.show("Zapper\n\n\nPress X to fire.", messageDisplayTime);
-                player.anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
-                player.hasZapper = true;
+                player.setLevel(2);
                 collect();
             }
             else if (gameObject.name == "SuperScope")
             {
                 notifyText.show("SuperScope\n\nPress F to fire.\n\nIt's powerful but slow to reload.", messageDisplayTime);
-                player.hasSuperscope = true;
+                player.setLevel(3);
                 collect();
             }
 

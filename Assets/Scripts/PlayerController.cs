@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     private bool canMove;
     public float facing;
     public bool alive;
+    private int currentLevel;
 
     // Use this flag to set an attack (melee) as cancelled/interrupted if the player takes damage
     // before executing the melee attack fully
@@ -83,12 +84,7 @@ public class PlayerController : MonoBehaviour
 
         if (debug)
         {
-
-            hasPowerglove = true;
-            hasZapper = true;
-            hasSuperscope = true;
-            anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
-
+            setLevel(3);
         }
     }
 	
@@ -370,5 +366,29 @@ public class PlayerController : MonoBehaviour
         {
             die();
         }
+    }
+
+    public void setLevel(int l)
+    {
+        currentLevel = l;
+        if (l == 1)
+        {
+            hasPowerglove = true;
+            anim.runtimeAnimatorController = Resources.Load("PlayerNoZapper") as RuntimeAnimatorController;
+        }
+        else if (l == 2)
+        {
+            anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
+            hasZapper = true;
+        }
+        else if (l == 3)
+        {
+            hasSuperscope = true;
+        }
+    }
+
+    public int getLevel()
+    {
+        return currentLevel;
     }
 }
