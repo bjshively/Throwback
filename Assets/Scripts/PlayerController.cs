@@ -155,12 +155,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
-        if (transform.position.y < -10)
-        {
-            die();
-        }
-
     }
 
     // Move the player
