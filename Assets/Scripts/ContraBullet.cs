@@ -15,6 +15,9 @@ public class ContraBullet : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         target = player.transform.position;
         moveSpeed = 2;
+
+        // All bullets will self destruct after 3 seconds
+        Invoke("SelfDestruct", 3);
     }
 	
     // Update is called once per frame
@@ -32,15 +35,6 @@ public class ContraBullet : MonoBehaviour
         }
     }
 
-    // Destroy when bullet hits the ground
-    //    void OnCollisionEnter2D(Collision2D col)
-    //    {
-    //        if (col.gameObject.layer == 8)
-    //        {
-    //            Destroy(gameObject);
-    //        }
-    //    }
-
     // Damage the player on contact
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -53,5 +47,10 @@ public class ContraBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void SelfDestruct()
+    {
+        Destroy(GameObject);
     }
 }
