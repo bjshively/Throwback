@@ -16,8 +16,8 @@ public class ContraBullet : MonoBehaviour
         target = player.transform.position;
         moveSpeed = 2;
 
-        // All bullets will self destruct after 3 seconds
-        Invoke("SelfDestruct", 3);
+        // All bullets will self destruct after 2 seconds
+        Invoke("SelfDestruct", 2);
     }
 	
     // Update is called once per frame
