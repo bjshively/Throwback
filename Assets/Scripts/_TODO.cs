@@ -26,12 +26,11 @@
 
 
 // PAULISH
-// Dim screen with collectibles
 // - Don't clear until the relevant button is pressed
-// - Can use MessageBG.png sprite behind text to darken everything else
 
 
 // DONE =================
+// Dim screen with collectibles
 // Send "die" trigger to BlockReappearing animator to trigger crumbly animation
 // Send "die" trigger to trackplatform animator to turn on iframes until you kill it
 // Something up with the scope bullet trajectory & speed, not quite 45 deg and maybe too fast?

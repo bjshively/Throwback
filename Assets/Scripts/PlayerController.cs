@@ -41,9 +41,6 @@ public class PlayerController : MonoBehaviour
     public bool hasZapper = false;
     public bool hasSuperscope = false;
 
-    // How long to freeze player after collecting an item
-    private float collectibleDelay = 3f;
-
     public bool debug;
 
     // Use this for initialization
@@ -337,13 +334,13 @@ public class PlayerController : MonoBehaviour
         melee.enabled = false;
     }
 
-    public void collectItem()
+    public void collectItem(float t)
     {
         LevelManager.Instance.playerIsCollectingItem = true;
         body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
-        Invoke("resetItem", collectibleDelay);
+        Invoke("resetItem", t);
     }
 
     private void resetItem()
