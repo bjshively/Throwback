@@ -39,8 +39,7 @@ public class Collectible : MonoBehaviour
             {
                 audio.Play();
             }
-
-            // TODO: Create a "key" tag that can be applied to any collectible to make it unlock the rocket
+                
             if (gameObject.tag == "key")
             {
                 GameObject.Find("Cage").GetComponent<Cage>().Invoke("Unlock", 2.18f);
