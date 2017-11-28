@@ -379,10 +379,14 @@ public class PlayerController : MonoBehaviour
         else if (l == 2)
         {
             anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
+            hasPowerglove = true;
             hasZapper = true;
         }
         else if (l == 3)
         {
+            anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
+            hasPowerglove = true;
+            hasZapper = true;
             hasSuperscope = true;
         }
     }

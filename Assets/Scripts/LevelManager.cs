@@ -114,6 +114,11 @@ public class LevelManager : MonoBehaviour
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
 
+            // In debug mode, max out player
+            if (player.debug)
+            {
+                playerLevel = 3;
+            }
             // Reset the player state
             player.setLevel(playerLevel);
             levelReady = true;
