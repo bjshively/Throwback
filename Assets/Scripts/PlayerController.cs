@@ -128,20 +128,9 @@ public class PlayerController : MonoBehaviour
             }
                 
             // Weapons
-            if (hasZapper)
-            {
-                if (Input.GetKey("x") && canFire)
-                {
-                    // Spawn an instance of the bullet prefab
-                    Instantiate(Resources.Load("fireball"));
-                    canFire = false;
-                    anim.SetTrigger("zap");
-                }
-            }
-
             if (hasPowerglove)
             {
-                if (Input.GetKey("z") && canMove)
+                if (Input.GetKey("j") && canMove)
                 {
                     Stop();
                     body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
@@ -155,10 +144,22 @@ public class PlayerController : MonoBehaviour
                     Invoke("resetMelee", .5f);
                 }
             }
+            if (hasZapper)
+            {
+                if (Input.GetKey("k") && canFire)
+                {
+                    // Spawn an instance of the bullet prefab
+                    Instantiate(Resources.Load("fireball"));
+                    canFire = false;
+                    anim.SetTrigger("zap");
+                }
+            }
+
+
 
             if (hasSuperscope)
             {
-                if (Input.GetKey("f") && canFire && scopeIsCool)
+                if (Input.GetKey("l") && canFire && scopeIsCool)
                 {
                     scopeIsCool = false;
                     Invoke("resetScopeCool", scopeCooldownTime);
