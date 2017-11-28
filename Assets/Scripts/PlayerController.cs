@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Animator anim;
     private BoxCollider2D melee;
-    private AudioSource audio;
+    private AudioSource[] audio;
 
     // Player attributes
     private const int STARTHEALTH = 3;
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         groundPoint2 = GameObject.Find("groundPoint2");
         groundPoint3 = GameObject.Find("groundPoint3");
 
-        audio = GetComponent<AudioSource>();
+        audio = GetComponents<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -115,6 +115,7 @@ public class PlayerController : MonoBehaviour
             // Jump       
             if (Input.GetKeyDown("space") && grounded)
             {
+                audio[1].Play();
                 body.velocity = new Vector2(body.velocity.x, jumpForce);
             }
                 
@@ -309,7 +310,7 @@ public class PlayerController : MonoBehaviour
         // Only enable the melee collider if the attack hasn't been interrupted
         if (!cancelAttack)
         {
-            audio.Play();
+            audio[0].Play();
             melee.enabled = true;
         }
         else
