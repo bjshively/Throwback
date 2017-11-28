@@ -12,7 +12,7 @@ public class PlatformMove : MonoBehaviour
     // Begin by traveling towards the end point
     public int pointSelection = 1;
 
-    void Start()
+    protected void Start()
     {
         player = GameObject.Find("Player");
         currentPoint = points[pointSelection];
