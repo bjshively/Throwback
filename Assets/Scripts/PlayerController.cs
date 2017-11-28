@@ -217,6 +217,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!invincible)
         {
+            audio[2].Play();
             // Interrupt an in-progress melee attack
             cancelAttack = true;
 
