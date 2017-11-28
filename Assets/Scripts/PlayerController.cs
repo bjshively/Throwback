@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
             // Weapons
             if (hasPowerglove)
             {
-                if (Input.GetKey("j") && canMove)
+                if (Input.GetKey("j") && canMove && grounded)
                 {
                     Stop();
                     body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
