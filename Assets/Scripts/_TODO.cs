@@ -19,7 +19,6 @@
 
 
 // BRAD TODO
-// Melee bug: if you get hit during the first frame of melee, you take damage and still destory the enemy even if the melee FX never show up
 // - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
 
 
@@ -31,6 +30,7 @@
 
 
 // DONE =================
+// Melee bug: if you get hit during the first frame of melee, you take damage and still destory the enemy even if the melee FX never show up
 // There is a difference with the enemies and their Wall collisions. The shyguy works, the goomba does not.
 // - It looks like OnCollisionEnter vs OnTriggerEnter. I didn't want to mess with it.
 // - On that note, can we get goomba to turnaround on actual walls, and not the ones I add via Tiled? I can make multiple object layers if you need both.

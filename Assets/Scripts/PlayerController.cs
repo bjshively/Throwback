@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     public float facing;
     public bool alive;
 
+    // Use this flag to set an attack (melee) as cancelled/interrupted if the player takes damage
+    // before executing the melee attack fully
+    private bool cancelAttack = false;
+
     public bool hasPowerglove = false;
     public bool hasZapper = false;
     public bool hasSuperscope = false;
@@ -212,6 +216,9 @@ public class PlayerController : MonoBehaviour
     {
         if (!invincible)
         {
+            // Interrupt an in-progress melee attack
+            cancelAttack = true;
+
             canMove = false;
             Stop();
 
@@ -252,6 +259,9 @@ public class PlayerController : MonoBehaviour
     {
         invincible = false;
         spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+
+        // Reset the attack interrupt flag
+        cancelAttack = false;
     }
 
     // Player is knocked backwards upon collidding with an enemy
@@ -296,8 +306,16 @@ public class PlayerController : MonoBehaviour
 
     private void setMelee()
     {
-        audio.Play();
-        melee.enabled = true;
+        // Only enable the melee collider if the attack hasn't been interrupted
+        if (!cancelAttack)
+        {
+            audio.Play();
+            melee.enabled = true;
+        }
+        else
+        {
+            cancelAttack = false;
+        }
     }
 
     private void resetMelee()
