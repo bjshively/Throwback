@@ -79,9 +79,6 @@ public class LevelManager : MonoBehaviour
     // Call this whenever a level is beaten to move to the next level
     public void NextLevel()
     {
-        // Update the level that the player should start at in the next game level
-        playerLevel = player.getLevel();
-
         levelReady = false;
         currentLevel++;
         // If you've beaten the last level, you win.

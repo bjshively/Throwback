@@ -391,8 +391,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public int getLevel()
+
+    // At the end of the level, publish any relevant state details to the Level Manager
+    public void UpdateState()
     {
-        return currentLevel;
+        LevelManager.Instance.playerLevel = currentLevel;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
-    private GameObject player;
+    private PlayerController player;
     private Rigidbody2D body;
     private Animator anim;
     private AudioSource audio;
@@ -12,7 +12,7 @@ public class Rocket : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audio = GetComponent <AudioSource>();
@@ -34,8 +34,9 @@ public class Rocket : MonoBehaviour
 
     void Launch()
     {
+        player.UpdateState();
         audio.Play();
-        player.SetActive(false);
+        player.gameObject.SetActive(false);
         body.gravityScale = 0;
         anim.SetTrigger("FinishLevel");
         body.velocity = Vector2.up;
