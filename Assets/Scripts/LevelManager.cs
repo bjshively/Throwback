@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        levels = new string[] { "start", "prologue", "Level1" };
+        levels = new string[] { "start", "prologue", "Level1", "credits" };
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -109,7 +109,7 @@ public class LevelManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name != "Start")
+        if (scene.name != "Start" && scene.name != "credits")
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
             playerIsCollectingItem = false;
