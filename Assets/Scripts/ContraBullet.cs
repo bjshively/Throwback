@@ -51,6 +51,6 @@ public class ContraBullet : MonoBehaviour
 
     void SelfDestruct()
     {
-        Destroy(GameObject);
+        Destroy(gameObject);
     }
 }
