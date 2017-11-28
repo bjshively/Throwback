@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class EnemyWalkFollow : Enemy
 {
-
-    // Use this for initialization
-    void Start()
-    {
-        base.Start();
-    }
-	
-    // Update is called once per frame
-    void Update()
-    {
-        base.Update();
-    }
-
     protected override void Move()
     {
         if (Mathf.Abs(player.transform.position.x - gameObject.transform.position.x) > 1)

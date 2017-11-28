@@ -19,12 +19,20 @@ public class EnemyWalkNoFall : Enemy
 
     void Update()
     {
-        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
+        if (!LevelManager.Instance.stopAllAction())
         {
-            Move();
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
+            {
+                Move();
+            }
+            else
+            {
+                body.velocity = Vector2.zero;
+            }
         }
         else
         {
+            //Stop the enemy if stopAllAction is true
             body.velocity = Vector2.zero;
         }
     }

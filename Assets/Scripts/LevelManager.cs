@@ -18,7 +18,9 @@ public class LevelManager : MonoBehaviour
     public bool gameStarted;
     private bool gameover;
     private bool levelReady;
+
     public int playerLevel;
+    public bool playerIsCollectingItem;
 
     void Awake()
     {
@@ -110,7 +112,7 @@ public class LevelManager : MonoBehaviour
         if (scene.name != "Start")
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
-
+            playerIsCollectingItem = false;
             // In debug mode, max out player
             if (player.debug)
             {
@@ -125,5 +127,13 @@ public class LevelManager : MonoBehaviour
     public void updateCurrentLevel()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
+    }
+
+    // Indicates whether enemies should move, etc.
+    // return TRUE = stop everything
+    public bool stopAllAction()
+    {
+        // Can easily add additional clauses to this with && conditions
+        return playerIsCollectingItem;
     }
 }

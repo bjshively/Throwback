@@ -339,6 +339,7 @@ public class PlayerController : MonoBehaviour
 
     public void collectItem()
     {
+        LevelManager.Instance.playerIsCollectingItem = true;
         body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
@@ -347,6 +348,7 @@ public class PlayerController : MonoBehaviour
 
     private void resetItem()
     {
+        LevelManager.Instance.playerIsCollectingItem = false;
         body.constraints = RigidbodyConstraints2D.FreezeRotation;
         anim.SetBool("item", false);
         resetMove();

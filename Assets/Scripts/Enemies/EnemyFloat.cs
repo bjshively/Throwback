@@ -14,11 +14,6 @@ public class EnemyFloat : Enemy
         timer = 0;
     }
 
-    void Update()
-    {
-        base.Update();
-    }
-
     protected override void Move()
     {
         playerDirection = Mathf.Sign(player.transform.position.x - gameObject.transform.position.x);

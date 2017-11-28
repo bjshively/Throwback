@@ -21,19 +21,27 @@ public class EnemyFloatAndFollow : Enemy
 
     void Update()
     {
-        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
+        if (!LevelManager.Instance.stopAllAction())
         {
-            Move();
-            // Every 2 seconds, re-pinpoint the target (player)
-            timer += Time.deltaTime;
-            if (timer > 2)
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
             {
-                UpdateTarget();
-                timer = 0;
+                Move();
+                // Every 2 seconds, re-pinpoint the target (player)
+                timer += Time.deltaTime;
+                if (timer > 2)
+                {
+                    UpdateTarget();
+                    timer = 0;
+                }
+            }
+            else
+            {
+                body.velocity = Vector2.zero;
             }
         }
         else
         {
+            //Stop the enemy if stopAllAction is true
             body.velocity = Vector2.zero;
         }
     }

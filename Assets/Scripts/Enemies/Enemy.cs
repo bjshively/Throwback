@@ -32,15 +32,23 @@ public abstract class Enemy : MonoBehaviour
 
     protected void Update()
     {
-
-        // Most enemies only move within a certain range of the player
-        if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4 && alive)
+        // All enemy activity should only occur if stopAllAction is false
+        if (!LevelManager.Instance.stopAllAction())
         {
-            Flip();
-            Move();
+            // Most enemies only move within a certain range of the player
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4 && alive)
+            {
+                Flip();
+                Move();
+            }
+            else
+            {
+                body.velocity = Vector2.zero;
+            }
         }
         else
         {
+            //Stop the enemy if stopAllAction is true
             body.velocity = Vector2.zero;
         }
     }

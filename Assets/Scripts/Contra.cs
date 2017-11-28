@@ -8,12 +8,6 @@ public class Contra : Enemy
     private int shotDelay = 2;
     private Vector2 target;
     private Vector3 barrelPoint;
-	
-    //    // Update is called once per frame
-    //    void Update()
-    //    {
-    //
-    //    }
 
     protected override void Move()
     {
