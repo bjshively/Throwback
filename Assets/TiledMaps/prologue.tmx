@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-up" width="300" height="50" tilewidth="16" tileheight="16" nextobjectid="57">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-up" width="300" height="50" tilewidth="16" tileheight="16" nextobjectid="74">
  <properties>
   <property name="unity:scale" value=".01"/>
  </properties>
@@ -43917,8 +43917,8 @@
    <tile gid="1407"/>
    <tile gid="1407"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="392"/>
+   <tile gid="393"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -44217,8 +44217,8 @@
    <tile gid="1407"/>
    <tile gid="1407"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="392"/>
+   <tile gid="393"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -45058,6 +45058,20 @@
   <object id="41" type="Turnaround" x="4304" y="160" width="6" height="16"/>
   <object id="51" type="Turnaround" x="3818" y="144" width="6" height="16"/>
   <object id="52" type="Turnaround" x="3952" y="142" width="6" height="16"/>
+ </objectgroup>
+ <objectgroup name="WallTriggers">
+  <object id="57" type="Wall" x="0" y="723" width="2" height="13"/>
+  <object id="58" type="Wall" x="223" y="723" width="2" height="13"/>
+  <object id="59" type="Wall" x="431" y="707" width="2" height="13"/>
+  <object id="60" type="Wall" x="511" y="691" width="2" height="13"/>
+  <object id="61" type="Wall" x="703" y="675" width="2" height="13"/>
+  <object id="64" type="Wall" x="895" y="675" width="2" height="13"/>
+  <object id="65" type="Wall" x="959" y="707" width="2" height="13"/>
+  <object id="66" type="Wall" x="3679" y="739" width="2" height="13"/>
+  <object id="67" type="Wall" x="3983" y="246" width="2" height="13"/>
+  <object id="68" type="Wall" x="4127" y="246" width="2" height="13"/>
+  <object id="69" type="Wall" x="4799" y="227" width="2" height="13"/>
+  <object id="70" type="Wall" x="1999" y="501" width="2" height="13"/>
  </objectgroup>
  <layer name="JumpThroughPlatforms" width="300" height="50">
   <properties>
@@ -105086,6 +105100,10 @@
    <tile gid="0"/>
   </data>
  </layer>
+ <objectgroup name="HazardTags">
+  <object id="71" type="Hazard" x="2003" y="511" width="347" height="2"/>
+  <object id="73" type="Hazard" x="3984" y="255" width="144" height="2"/>
+ </objectgroup>
  <layer name="Breakable" width="300" height="50" visible="0">
   <data>
    <tile gid="0"/>
