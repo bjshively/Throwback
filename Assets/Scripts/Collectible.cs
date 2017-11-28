@@ -51,19 +51,19 @@ public class Collectible : MonoBehaviour
             // Weapons
             else if (gameObject.name == "PowerGlove")
             {
-                notifyText.show("Powerglove\n\n\nPress Z to melee obstacles and small enemies.", messageDisplayTime);
+                notifyText.show("Powerglove\n\n\nPress J to melee obstacles and small enemies.", messageDisplayTime);
                 player.setLevel(1);
                 collect();
             }
             else if (gameObject.name == "Zapper")
             {
-                notifyText.show("Zapper\n\n\nPress X to fire.", messageDisplayTime);
+                notifyText.show("Zapper\n\n\nPress K to fire.", messageDisplayTime);
                 player.setLevel(2);
                 collect();
             }
             else if (gameObject.name == "SuperScope")
             {
-                notifyText.show("SuperScope\n\nPress F to fire.\n\nIt's powerful but slow to reload.", messageDisplayTime);
+                notifyText.show("SuperScope\n\nPress L to fire.\n\nIt's powerful but slow to reload.", messageDisplayTime);
                 player.setLevel(3);
                 collect();
             }
