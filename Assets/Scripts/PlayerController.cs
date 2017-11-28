@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Jump       
-            if (Input.GetKeyDown("space") && grounded)
+            if (Input.GetKeyDown("w") && grounded)
             {
                 audio[1].Play();
                 body.velocity = new Vector2(body.velocity.x, jumpForce);
