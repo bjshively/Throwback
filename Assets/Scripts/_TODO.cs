@@ -22,7 +22,7 @@
 // - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
 
 
-// Send "die" trigger to BlockReappearing animator to trigger crumbly animation
+
 
 
 // PAULISH
@@ -32,6 +32,7 @@
 
 
 // DONE =================
+// Send "die" trigger to BlockReappearing animator to trigger crumbly animation
 // Send "die" trigger to trackplatform animator to turn on iframes until you kill it
 // Something up with the scope bullet trajectory & speed, not quite 45 deg and maybe too fast?
 // Melee bug: if you get hit during the first frame of melee, you take damage and still destory the enemy even if the melee FX never show up

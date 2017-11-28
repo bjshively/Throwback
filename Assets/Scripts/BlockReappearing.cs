@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReappearingBlock : MonoBehaviour
+public class BlockReappearing : MonoBehaviour
 {
 
     private SpriteRenderer renderer;
     private BoxCollider2D block;
+    private Animator anim;
 
     // Use this for initialization
     void Start()
     {
-        renderer = transform.parent.GetComponent<SpriteRenderer>();
-        block = transform.parent.GetComponent<BoxCollider2D>();
+        renderer = GetComponent<SpriteRenderer>();
+        block = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,13 +23,14 @@ public class ReappearingBlock : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         if (block.enabled)
         {
             if (col.gameObject.tag == "Player")
             {
-                Invoke("Disappear", 1.5f);
+                anim.SetTrigger("die");
+                Invoke("Disappear", .91f);
             }
         }
     }
@@ -36,7 +39,7 @@ public class ReappearingBlock : MonoBehaviour
     void Disappear()
     {
         block.enabled = false;
-        renderer.color = new Color(1f, 1f, 1f, .2f);
+        renderer.color = new Color(1f, 1f, 1f, .5f);
         Invoke("Reset", 2);
 
     }
