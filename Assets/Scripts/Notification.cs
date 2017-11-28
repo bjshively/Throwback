@@ -9,11 +9,13 @@ public class Notification : MonoBehaviour
 
     private Text notifyText;
     private GameObject background;
+    private Canvas canvas;
 
     // Use this for initialization
     void Start()
     {
-	
+        canvas = transform.parent.gameObject.GetComponent<Canvas>();
+        canvas.sortingLayerName = "UI";
         notifyText = GetComponent<Text>();
         background = GameObject.Find("notifybackground");
         background.SetActive(false);
