@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     // How long to freeze player after collecting an item
     private float collectibleDelay = 3f;
 
+    public bool debug;
+
     // Use this for initialization
     void Start()
     {
@@ -78,6 +80,16 @@ public class PlayerController : MonoBehaviour
         facing = 1;
         canMove = true;
         alive = true;
+
+        if (debug)
+        {
+
+            hasPowerglove = true;
+            hasZapper = true;
+            hasSuperscope = true;
+            anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
+
+        }
     }
 	
     // Update is called once per frame
