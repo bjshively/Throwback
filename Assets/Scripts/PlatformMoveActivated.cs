@@ -45,6 +45,10 @@ public class PlatformMoveActivated : PlatformMove
         {
             reachedTheEnd = true;
         }
+        else
+        {
+            currentPoint = points[pointSelection];
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
