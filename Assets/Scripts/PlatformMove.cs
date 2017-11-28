@@ -21,7 +21,10 @@ public class PlatformMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (!LevelManager.Instance.stopAllAction())
+        {
+            Move();
+        }
     }
 
     protected virtual void Move()
