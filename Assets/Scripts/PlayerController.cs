@@ -84,6 +84,7 @@ public class PlayerController : MonoBehaviour
 
         if (debug)
         {
+            scopeCooldownTime = 0;
             setLevel(3);
         }
     }
