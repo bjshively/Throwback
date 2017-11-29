@@ -193,12 +193,12 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            anim.SetBool("run", false);
             if (grounded)
             {
                 body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
             }
             body.velocity = new Vector2(0, body.velocity.y);
-            anim.SetBool("run", false);
         }
     }
 
