@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
 
     private PlayerController player;
     public int lives;
-    private int currentLevel;
+    public int currentLevel;
     private string[] levels;
     public bool gameStarted;
     private bool gameover;

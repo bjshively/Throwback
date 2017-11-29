@@ -8,13 +8,19 @@ public class Preroll : MonoBehaviour
     private Text text;
     private GameObject background;
     private Canvas canvas;
+    private string level;
 
     void Start()
     {
         canvas = transform.parent.gameObject.GetComponent<Canvas>();
         canvas.sortingLayerName = "UI";
         text = GetComponent<Text>();
-        text.text = "Lives: " + LevelManager.Instance.lives;
+        level = LevelManager.Instance.currentLevel.ToString();
+        if (level == "1")
+        {
+            level = "Prologue";
+        }
+        text.text = "Level: " + level + "\n\nLives: " + LevelManager.Instance.lives;
         LoadLevel();
     }
 
