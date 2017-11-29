@@ -22,13 +22,23 @@ public class LevelManager : MonoBehaviour
     public int playerLevel;
     public bool playerIsCollectingItem;
 
+    // Scenes that aren't levels
+    string[] menus = { "start", "gameover", "preroll", "credits" };
+    private List<string> notLevels;
+
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
         Instance = this;
+        Setup();
+        notLevels = new List<string>(menus);
+    }
+
+    void Setup()
+    {
         currentLevel = 0;
         gameStarted = false;
-        lives = 100;
+        lives = 3;
         levelReady = false;
         playerLevel = 0;
     }
@@ -66,8 +76,10 @@ public class LevelManager : MonoBehaviour
                     // If you run out of lives, you lose
                     if (lives == 0 && !gameover)
                     {
-                        SceneManager.LoadScene("Gameover");
                         gameover = true;
+                        levelReady = false;
+                        SceneManager.LoadScene("gameover");
+
 
                     }
                     else
@@ -90,15 +102,7 @@ public class LevelManager : MonoBehaviour
     {
         levelReady = false;
         currentLevel++;
-        // If you've beaten the last level, you win.
-        if (currentLevel == levels.Length)
-        {
-            SceneManager.LoadScene("Youwin");
-        }
-        else
-        {
-            ShowPreroll();
-        }
+        ShowPreroll();
     }
 
     public void RestartLevel()
@@ -112,8 +116,8 @@ public class LevelManager : MonoBehaviour
     // Do the setup of each scene
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Most setup is only required on playable levels
-        if (scene.name != "Start" && scene.name != "credits" && scene.name != "Preroll")
+        // If the scene isn't in the list "notLevels", perform play setup
+        if (!notLevels.Contains(scene.name))
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
             playerIsCollectingItem = false;
@@ -151,7 +155,8 @@ public class LevelManager : MonoBehaviour
     // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
     public void ResetGame()
     {
-        currentLevel = 0;
+        Setup();
+        SceneManager.LoadScene("start");
     }
 
 }
