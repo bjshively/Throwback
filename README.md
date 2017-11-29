@@ -2,7 +2,7 @@
 
 ## Description
 
-Our entry is a retro-inspired 2D platform, based on some of our favorite games including many incarnations of Super Mario Brothers, Super Metroid, Mega Man X, Contra and others.
+This game was built as an entry for the [GitHub Game Off 2017](itch.io/jam/game-off-2017). It is a retro-inspired 2D platform, based on some of our favorite games including many incarnations of Super Mario Brothers, Super Metroid, Mega Man X, Contra and others.
 
 ## Controls
 
