@@ -228,9 +228,9 @@ public class PlayerController : MonoBehaviour
     // Returns true if character is on the ground
     public bool IsGrounded()
     {
-        if (Physics2D.Raycast(groundPoint1.transform.position, Vector2.down, 0.2f, ground.value)
+        if ((Physics2D.Raycast(groundPoint1.transform.position, Vector2.down, 0.2f, ground.value)
             || Physics2D.Raycast(groundPoint2.transform.position, Vector2.down, 0.2f, ground.value)
-            || Physics2D.Raycast(groundPoint3.transform.position, Vector2.down, 0.2f, ground.value))
+            || Physics2D.Raycast(groundPoint3.transform.position, Vector2.down, 0.2f, ground.value)) && Mathf.Abs(body.velocity.y) < 4f)
         {
             anim.SetBool("grounded", true);
             return true;
