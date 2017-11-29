@@ -1,13 +1,4 @@
-﻿// GENERAL TODO
-// Add attribution for graphics (at least list games) and music/sound fx
-// --SoundFX: https://opengameart.org/content/512-sound-effects-8-bit-style
-// --Music: ericskiff.com/music/
-
-// Brainstorm name
-// Splash screen -- Maybe just player running in an open black space? Or maybe some ~static art of the pg/zapper/scope?
-
-
-// EMO TODO
+﻿// EMO TODO
 // start thinking about an opening animation
 // death sprite - use knockback sprite, mouth closed, less arched
 // Add some meaningful melee blocks in Level1
@@ -16,13 +7,8 @@
 // fix reappearing sprite reappear
 
 
-
-
 // BRAD TODO
 // - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
-
-
-
 
 
 // PAULISH
@@ -30,7 +16,13 @@
 // ground pound/air melee
 
 
+
 // DONE =================
+// Add attribution for graphics (at least list games) and music/sound fx
+// --SoundFX: https://opengameart.org/content/512-sound-effects-8-bit-style
+// --Music: ericskiff.com/music/
+// Brainstorm name
+// Splash screen -- Maybe just player running in an open black space? Or maybe some ~static art of the pg/zapper/scope?
 // enemy sprites that shoot projectiles
 // crumbling sprite that reappears
 // Fix nozapper jump frames
