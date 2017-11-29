@@ -17,9 +17,12 @@ This game was built using [Unity](https://unity3d.com/) Personal edition.
 
 A game by Eric Mofield (art & game design) and Brad Shively (programming), with music contributed by Chris Larkin.
 
-Other resources for this game came from:
+Other resources used in this game came from:
+
 [Eric Skiff](http://ericskiff.com/music/)
+
 [OpenGameArt Sound Effects](https://opengameart.org/content/512-sound-effects-8-bit-style)
+
 Sprites from misc. retro games
 
 ## Thanks
