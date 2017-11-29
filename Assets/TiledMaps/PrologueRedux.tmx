@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="332" height="50" tilewidth="16" tileheight="16" nextobjectid="1">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="332" height="50" tilewidth="16" tileheight="16" nextobjectid="63">
  <tileset firstgid="1" source="tilesets/Mario 3 Levels.tsx"/>
  <layer name="Sky" width="332" height="50">
   <data encoding="csv">
@@ -165,7 +165,6 @@
  </layer>
  <layer name="Ground" width="332" height="50">
   <properties>
-   <property name="unity:layer" value="ground"/>
    <property name="unity:sortingLayerName" value="background"/>
   </properties>
   <data encoding="csv">
@@ -221,4 +220,70 @@
 1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,646,646,646,646,646,646,646,646,646,646,646,646,646,646,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,0,0,0,0,0,0,0,0,0,0,0,0,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,0,0,0,0,0,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118,1118
 </data>
  </layer>
+ <objectgroup name="HazardTriggers">
+  <object id="1" type="Hazard" x="2480" y="735" width="64" height="2"/>
+  <object id="3" type="Hazard" x="1599" y="735" width="64" height="2"/>
+  <object id="4" type="Hazard" x="3443" y="735" width="73" height="2"/>
+ </objectgroup>
+ <objectgroup name="WallTriggers">
+  <object id="5" type="Wall" x="2974" y="576" width="4" height="16"/>
+  <object id="7" type="Wall" x="2974" y="656" width="4" height="16"/>
+  <object id="8" type="Wall" x="2767" y="656" width="4" height="16"/>
+  <object id="9" type="Wall" x="2766" y="576" width="4" height="16"/>
+  <object id="10" type="Wall" x="2670" y="736" width="4" height="16"/>
+  <object id="11" type="Wall" x="2974" y="736" width="4" height="16"/>
+  <object id="12" type="Wall" x="2606" y="656" width="4" height="16"/>
+  <object id="13" type="Wall" x="2542" y="724" width="4" height="16"/>
+  <object id="14" type="Wall" x="2478" y="724" width="4" height="16"/>
+  <object id="15" type="Wall" x="2446" y="726" width="4" height="16"/>
+  <object id="16" type="Wall" x="1598" y="725" width="4" height="16"/>
+  <object id="17" type="Wall" x="1550" y="627" width="4" height="16"/>
+  <object id="18" type="Wall" x="1486" y="707" width="4" height="16"/>
+  <object id="19" type="Wall" x="1358" y="710" width="4" height="16"/>
+  <object id="20" type="Wall" x="1230" y="724" width="4" height="16"/>
+  <object id="21" type="Wall" x="1102" y="726" width="4" height="16"/>
+  <object id="22" type="Wall" x="910" y="724" width="4" height="16"/>
+  <object id="23" type="Wall" x="622" y="725" width="4" height="16"/>
+  <object id="24" type="Wall" x="574" y="725" width="4" height="16"/>
+ </objectgroup>
+ <objectgroup name="TurnaroundTriggers">
+  <object id="25" type="Turnaround" x="909" y="704" width="4" height="16"/>
+  <object id="26" type="Turnaround" x="1103" y="704" width="4" height="16"/>
+  <object id="27" type="Turnaround" x="956" y="654" width="4" height="16"/>
+  <object id="28" type="Turnaround" x="1058" y="654" width="4" height="16"/>
+  <object id="29" type="Turnaround" x="572" y="704" width="4" height="16"/>
+  <object id="30" type="Turnaround" x="624" y="704" width="4" height="16"/>
+  <object id="31" type="Turnaround" x="1228" y="688" width="4" height="16"/>
+  <object id="32" type="Turnaround" x="1359" y="688" width="4" height="16"/>
+  <object id="33" type="Turnaround" x="1484" y="624" width="4" height="16"/>
+  <object id="34" type="Turnaround" x="1548" y="543" width="4" height="16"/>
+  <object id="35" type="Turnaround" x="1599" y="544" width="4" height="16"/>
+  <object id="36" type="Turnaround" x="1660" y="720" width="4" height="16"/>
+  <object id="37" type="Turnaround" x="2126" y="673" width="4" height="16"/>
+  <object id="38" type="Turnaround" x="2027" y="669" width="4" height="16"/>
+  <object id="39" type="Turnaround" x="2203" y="657" width="4" height="16"/>
+  <object id="40" type="Turnaround" x="2383" y="609" width="4" height="16"/>
+  <object id="41" type="Turnaround" x="2284" y="608" width="4" height="16"/>
+  <object id="42" type="Turnaround" x="2416" y="657" width="4" height="16"/>
+  <object id="43" type="Turnaround" x="2444" y="704" width="4" height="16"/>
+  <object id="44" type="Turnaround" x="2539" y="657" width="4" height="16"/>
+  <object id="45" type="Turnaround" x="2481" y="700" width="4" height="16"/>
+  <object id="46" type="Turnaround" x="2604" y="576" width="4" height="16"/>
+  <object id="47" type="Turnaround" x="2672" y="577" width="4" height="16"/>
+  <object id="48" type="Turnaround" x="2971" y="497" width="4" height="16"/>
+  <object id="49" type="Turnaround" x="3439" y="720" width="4" height="16"/>
+  <object id="50" type="Turnaround" x="3517" y="719" width="4" height="16"/>
+  <object id="51" type="Turnaround" x="3775" y="623" width="4" height="16"/>
+  <object id="52" type="Turnaround" x="3804" y="624" width="4" height="16"/>
+  <object id="53" type="Turnaround" x="3856" y="624" width="4" height="16"/>
+  <object id="54" type="Turnaround" x="3936" y="624" width="4" height="16"/>
+  <object id="55" type="Turnaround" x="3884" y="624" width="4" height="16"/>
+  <object id="56" type="Turnaround" x="4144" y="623" width="4" height="16"/>
+  <object id="57" type="Turnaround" x="3964" y="624" width="4" height="16"/>
+  <object id="58" type="Turnaround" x="4416" y="687" width="4" height="16"/>
+  <object id="59" type="Turnaround" x="4222" y="624" width="4" height="16"/>
+  <object id="60" type="Turnaround" x="4639" y="688" width="4" height="16"/>
+  <object id="61" type="Turnaround" x="4477" y="688" width="4" height="16"/>
+  <object id="62" type="Turnaround" x="4700" y="686" width="4" height="16"/>
+ </objectgroup>
 </map>

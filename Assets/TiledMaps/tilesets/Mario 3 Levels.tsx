@@ -3,7 +3,7 @@
  <image source="../../Sprites/Level/mario3levels.png" width="1242" height="358"/>
  <tile id="154">
   <objectgroup draworder="index">
-   <object id="2" x="16" y="0">
+   <object id="2" type="ground" x="16" y="0">
     <polygon points="0,0 0,16 -6,16 -16,6 -16,0"/>
    </object>
   </objectgroup>
@@ -13,7 +13,7 @@
    <properties>
     <property name="unity:layer" value="platforms"/>
    </properties>
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="156">
@@ -24,7 +24,7 @@
    <properties>
     <property name="unity:layer" value="platforms"/>
    </properties>
-   <object id="1" x="0" y="0">
+   <object id="1" type="ground" x="0" y="0">
     <polygon points="0,0 0,16 16,0"/>
    </object>
   </objectgroup>
@@ -35,7 +35,7 @@
     <property name="unity:layer" value="ground"/>
     <property name="unity:tag" value="Wall"/>
    </properties>
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="860">
