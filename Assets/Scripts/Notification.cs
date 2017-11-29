@@ -35,6 +35,7 @@ public class Notification : MonoBehaviour
 
     public void show(string t)
     {
+        notifyText.text = t;
         background.SetActive(true);
     }
 }
