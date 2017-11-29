@@ -8,16 +8,17 @@
 
 
 // BRAD TODO
-// - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
 
 
 // PAULISH
-// - Don't clear until the relevant button is pressed
+
 // ground pound/air melee
 
 
 
 // DONE =================
+// - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
+// - Don't clear until the relevant button is pressed
 // Add attribution for graphics (at least list games) and music/sound fx
 // --SoundFX: https://opengameart.org/content/512-sound-effects-8-bit-style
 // --Music: ericskiff.com/music/
