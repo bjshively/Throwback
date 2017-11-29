@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public bool canFire;
     private bool scopeIsCool = true;
     private float scopeCooldownTime = 10;
-    private Animator scopeIndicator;
+    private Animator HUDScope;
     private bool canMove;
     public float facing;
     public bool alive;
@@ -69,10 +69,7 @@ public class PlayerController : MonoBehaviour
         groundPoint3 = GameObject.Find("groundPoint3");
 
         // HUD
-        scopeIndicator = GameObject.Find("HUDScope").GetComponent<Animator>();
-        // Hide scope indicator until player level==3 (player has scope)
-        scopeIndicator.gameObject.SetActive(false);
-
+        HUDScope = GameObject.Find("HUDScope").GetComponent<Animator>();
         audio = GetComponents<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
@@ -188,7 +185,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey("l") && canFire && scopeIsCool)
                 {
-                    scopeIndicator.SetTrigger("cooldown");
+                    HUDScope.SetTrigger("cooldown");
                     scopeIsCool = false;
                     Invoke("resetScopeCool", scopeCooldownTime);
                     Instantiate(Resources.Load("superScopeShot"));
@@ -417,7 +414,7 @@ public class PlayerController : MonoBehaviour
             hasPowerglove = true;
             hasZapper = true;
             hasSuperscope = true;
-            scopeIndicator.gameObject.SetActive(true);
+            HUDScope.SetBool("hasScope", true);
         }
     }
 
