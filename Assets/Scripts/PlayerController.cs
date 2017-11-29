@@ -156,26 +156,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey("j") && canMove && grounded)
                 {
-                    Stop();
-                    body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-                    canMove = false;
-
-                    // Start the animation trigger
-                    anim.SetTrigger("melee");
-
-                    // After some delay, enable the melee collision box, then disable it
-                    Invoke("setMelee", .15f);
-                    Invoke("resetMelee", .5f);
+                    UseMelee();
                 }
             }
             if (hasZapper)
             {
                 if (Input.GetKey("k") && canFire)
                 {
-                    // Spawn an instance of the bullet prefab
-                    Instantiate(Resources.Load("fireball"));
-                    canFire = false;
-                    anim.SetTrigger("zap");
+                    FireZapper();
                 }
             }
 
@@ -185,12 +173,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey("l") && canFire && scopeIsCool)
                 {
-                    HUDScope.SetTrigger("cooldown");
-                    scopeIsCool = false;
-                    Invoke("resetScopeCool", scopeCooldownTime);
-                    Instantiate(Resources.Load("superScopeShot"));
-                    canFire = false;
-                    anim.SetTrigger("scope");
+                    FireSuperScope();
                 }
             }
         }
@@ -308,7 +291,46 @@ public class PlayerController : MonoBehaviour
         destination.y = destination.y + 1;
         transform.position = Vector2.MoveTowards(destination, new Vector2(transform.position.x, transform.position.y), .3f * Time.deltaTime);
         anim.SetTrigger("knockback");
-    
+    }
+
+    public delegate void AttackDelegate();
+
+    void ExecuteAttack(AttackDelegate attack)
+    {
+        attack();
+    }
+
+    // Attack methods
+    public void UseMelee()
+    {
+        Stop();
+        body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        canMove = false;
+
+        // Start the animation trigger
+        anim.SetTrigger("melee");
+
+        // After some delay, enable the melee collision box, then disable it
+        Invoke("setMelee", .15f);
+        Invoke("resetMelee", .5f);
+    }
+
+    public void FireZapper()
+    {
+        // Spawn an instance of the bullet prefab
+        Instantiate(Resources.Load("fireball"));
+        canFire = false;
+        anim.SetTrigger("zap");
+    }
+
+    public void FireSuperScope()
+    {
+        HUDScope.SetTrigger("cooldown");
+        scopeIsCool = false;
+        Invoke("resetScopeCool", scopeCooldownTime);
+        Instantiate(Resources.Load("superScopeShot"));
+        canFire = false;
+        anim.SetTrigger("scope");
     }
 
     public void Stop()
@@ -365,10 +387,9 @@ public class PlayerController : MonoBehaviour
         body.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         canMove = false;
         anim.SetBool("item", true);
-        Invoke("resetItem", t);
     }
 
-    private void resetItem()
+    public void resetItem()
     {
         LevelManager.Instance.playerIsCollectingItem = false;
         body.constraints = RigidbodyConstraints2D.FreezeRotation;

@@ -33,10 +33,8 @@ public class Notification : MonoBehaviour
         notifyText.text = "";
     }
 
-    public void show(string t, float delay)
+    public void show(string t)
     {
         background.SetActive(true);
-        notifyText.text = t;
-        Invoke("clearMessage", delay);
     }
 }
