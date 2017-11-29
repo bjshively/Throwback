@@ -10,25 +10,22 @@ public class HUDController : MonoBehaviour
     private PlayerController player;
     private Text healthText;
     private Text livesText;
-    private Animator healthDisplay;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
-        healthDisplay = GameObject.Find("healthDisplay").GetComponent<Animator>();
+        //healthDisplay = GameObject.Find("healthDisplay").GetComponent<Animator>();
 
-
-        healthText = GameObject.Find("HealthText").GetComponent<Text>();
+        healthText = GameObject.Find("healthText").GetComponent<Text>();
         healthText.text = "Health: " + player.currentHealth;
-        livesText = GameObject.Find("LivesText").GetComponent<Text>();
+        livesText = GameObject.Find("livesText").GetComponent<Text>();
         //healthText.text = "  `: " + LevelManager.Instance.lives;
     }
 
     void FixedUpdate()
     {
         healthText.text = "Health: " + player.currentHealth;
-        healthDisplay.SetInteger("health", player.currentHealth);
         livesText.text = "Lives: " + LevelManager.Instance.lives;
     }
 }
