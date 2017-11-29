@@ -293,13 +293,6 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("knockback");
     }
 
-    public delegate void AttackDelegate();
-
-    void ExecuteAttack(AttackDelegate attack)
-    {
-        attack();
-    }
-
     // Attack methods
     public void UseMelee()
     {
