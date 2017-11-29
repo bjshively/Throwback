@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource[] audio;
 
     // Player attributes
-    private const int STARTHEALTH = 3;
-    public int currentHealth = 3;
+    public int currentHealth;
     private float moveSpeed = 3F;
     private float jumpForce = 7;
 
@@ -78,6 +77,7 @@ public class PlayerController : MonoBehaviour
         facing = 1;
         canMove = true;
         alive = true;
+        currentHealth = 3;
 
         if (debug)
         {

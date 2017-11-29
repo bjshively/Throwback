@@ -62,6 +62,7 @@ public class LevelManager : MonoBehaviour
                 if (!player.alive)
                 {
                     lives--;
+
                     // If you run out of lives, you lose
                     if (lives == 0 && !gameover)
                     {
@@ -71,11 +72,17 @@ public class LevelManager : MonoBehaviour
                     }
                     else
                     {
-                        RestartLevel();
+                        player.alive = true;
+                        ShowPreroll();
                     }                
                 }
             }
         }
+    }
+
+    public void StartLevel()
+    {
+        SceneManager.LoadScene(levels[currentLevel]);
     }
         
     // Call this whenever a level is beaten to move to the next level
@@ -90,7 +97,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(levels[currentLevel]);
+            ShowPreroll();
         }
     }
 
@@ -100,16 +107,13 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
-    public void ResetGame()
-    {
-        currentLevel = 0;
-    }
 
 
+    // Do the setup of each scene
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name != "Start" && scene.name != "credits")
+        // Most setup is only required on playable levels
+        if (scene.name != "Start" && scene.name != "credits" && scene.name != "Preroll")
         {
             player = GameObject.Find("Player").GetComponent<PlayerController>();
             playerIsCollectingItem = false;
@@ -129,6 +133,13 @@ public class LevelManager : MonoBehaviour
         currentLevel = SceneManager.GetActiveScene().buildIndex;
     }
 
+
+    // Display the preroll before each level start
+    public void ShowPreroll()
+    {
+        SceneManager.LoadScene("preroll");
+    }
+
     // Indicates whether enemies should move, etc.
     // return TRUE = stop everything
     public bool stopAllAction()
@@ -136,4 +147,11 @@ public class LevelManager : MonoBehaviour
         // Can easily add additional clauses to this with && conditions
         return playerIsCollectingItem;
     }
+
+    // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
+    public void ResetGame()
+    {
+        currentLevel = 0;
+    }
+
 }
