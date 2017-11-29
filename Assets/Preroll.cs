@@ -20,7 +20,7 @@ public class Preroll : MonoBehaviour
         {
             level = "Prologue";
         }
-        text.text = "Level: " + level + "\n\nLives: " + LevelManager.Instance.lives;
+        text.text = "Level: " + level + "\n\n\n\n\nLives: " + LevelManager.Instance.lives;
         LoadLevel();
     }
 
