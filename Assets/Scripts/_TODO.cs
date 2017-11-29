@@ -8,13 +8,13 @@
 
 
 // EMO TODO
-// enemy sprites that shoot projectiles
-// crumbling sprite that reappears
 // start thinking about an opening animation
-// Fix nozapper jump frames
-// Spike damage not working
-// Unable to collect Tetris piece
-// Add iFrames to hit sprite
+// death sprite - use knockback sprite, mouth closed, less arched
+// Add some meaningful melee blocks in Level1
+// Add some forced through platforms
+// Add scope cooldown frames
+// fix reappearing sprite reappear
+
 
 
 
@@ -27,9 +27,16 @@
 
 // PAULISH
 // - Don't clear until the relevant button is pressed
+// ground pound/air melee
 
 
 // DONE =================
+// enemy sprites that shoot projectiles
+// crumbling sprite that reappears
+// Fix nozapper jump frames
+// Spike damage not working
+// Unable to collect Tetris piece
+// Add iFrames to hit sprite
 // Dim screen with collectibles
 // Send "die" trigger to BlockReappearing animator to trigger crumbly animation
 // Send "die" trigger to trackplatform animator to turn on iframes until you kill it

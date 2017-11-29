@@ -29,8 +29,8 @@ public class BlockReappearing : MonoBehaviour
         {
             if (col.gameObject.tag == "Player")
             {
-                anim.SetTrigger("die");
-                Invoke("Disappear", .91f);
+                anim.SetTrigger("break");
+                Invoke("Disappear", 1f);
             }
         }
     }
@@ -38,9 +38,10 @@ public class BlockReappearing : MonoBehaviour
 
     void Disappear()
     {
+        anim.SetTrigger("die");
         block.enabled = false;
-        renderer.color = new Color(1f, 1f, 1f, .5f);
-        Invoke("Reset", 2);
+        //renderer.color = new Color(1f, 1f, 1f, .5f);
+        Invoke("Reset", 3);
 
     }
 
