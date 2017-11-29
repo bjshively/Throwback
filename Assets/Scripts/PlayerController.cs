@@ -32,10 +32,12 @@ public class PlayerController : MonoBehaviour
     public bool alive;
     private int currentLevel;
 
+    Color fullBrightness = new Color(1f, 1f, 1f, 1f);
+    Color noBrightness = new Color(1f, 1f, 1f, 0f);
+
     // Use this flag to set an attack (melee) as cancelled/interrupted if the player takes damage
     // before executing the melee attack fully
     private bool cancelAttack = false;
-
     public bool hasPowerglove = false;
     public bool hasZapper = false;
     public bool hasSuperscope = false;
@@ -87,6 +89,27 @@ public class PlayerController : MonoBehaviour
     }
 	
     // Update is called once per frame
+
+    void FixedUpdate()
+    {
+        // Flicker the player sprite when invincible
+        if (invincible)
+        {
+            if (spriteRenderer.color.a == 1)
+            {
+                spriteRenderer.color = noBrightness;
+            }
+            else
+            {
+                spriteRenderer.color = fullBrightness;
+            }
+        }
+        else
+        {
+            spriteRenderer.color = fullBrightness;
+        }
+    }
+
     void Update()
     {
         grounded = IsGrounded();
@@ -243,7 +266,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
                 anim.SetTrigger("knockback");
 
                 // Disabled because this sucks
@@ -267,7 +289,6 @@ public class PlayerController : MonoBehaviour
     private void resetInvincibility()
     {
         invincible = false;
-        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
 
         // Reset the attack interrupt flag
         cancelAttack = false;
