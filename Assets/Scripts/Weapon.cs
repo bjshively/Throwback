@@ -72,6 +72,16 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            SelfDestruct();
+            col.gameObject.GetComponent<Enemy>().Die();
+        }
+    }
+
     protected void SelfDestruct()
     {
         Destroy(gameObject);

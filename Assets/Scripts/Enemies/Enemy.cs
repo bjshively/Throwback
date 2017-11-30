@@ -14,7 +14,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected bool alive;
     protected bool canMove = true;
-    public float moveSpeed;
+    protected float moveSpeed;
 
     // Use this for initialization
     protected virtual void Start()
@@ -101,7 +101,7 @@ public abstract class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void Die()
+    public void Die()
     {
         audio.Play();
         alive = false;

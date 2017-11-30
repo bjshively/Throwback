@@ -78,14 +78,4 @@ public class EnemyFloatAndFollow : Enemy
     {
         canSound = true;
     }
-
-    protected void Die()
-    {
-        audio[0].Play();
-        alive = false;
-        Stop();
-        body.simulated = false;
-        anim.SetTrigger("die");
-        Invoke("SelfDestruct", .5f);
-    }
 }
