@@ -1,10 +1,8 @@
 ﻿// EMO TODO
 // PlayerNoitems has no Knockback frames.
-// start thinking about an opening animation
 // death sprite - use knockback sprite, mouth closed, less arched
 // Add some meaningful melee blocks in Level1
 // Add some forced through platforms
-// Add scope cooldown frames
 // fix reappearing sprite reappear
 
 
@@ -18,6 +16,8 @@
 
 
 // DONE =================
+// start thinking about an opening animation
+// Add scope cooldown frames
 // - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.
 // - Don't clear until the relevant button is pressed
 // Add attribution for graphics (at least list games) and music/sound fx
