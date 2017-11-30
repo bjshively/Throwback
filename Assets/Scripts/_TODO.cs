@@ -8,7 +8,6 @@
 
 // BRAD TODO
 // Fix enemy distance to player (check prologue level)
-// Platform that stays flat, but moves/rotates around a point (ciruclar moving platform)
 // seesaw platform with physics
 
 
@@ -20,6 +19,7 @@
 
 
 // DONE =================
+// Platform that stays flat, but moves/rotates around a point (ciruclar moving platform)
 // Fix player iframes/
 // update player sprites on the UI layers
 // Check on point filter for UI sprites
