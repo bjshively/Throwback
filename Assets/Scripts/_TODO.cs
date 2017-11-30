@@ -14,7 +14,7 @@
 // Setup other tetris pieces
 // Make level manager track # of pieces collected
 // Sound effects for door
-// Player death sound effect
+// Set music volume for all stages
 
 
 
@@ -25,6 +25,7 @@
 
 
 // DONE =================
+// Player death sound effect
 // Fix enemy distance to player (check prologue level)
 // Platform that stays flat, but moves/rotates around a point (ciruclar moving platform)
 // Fix player iframes/

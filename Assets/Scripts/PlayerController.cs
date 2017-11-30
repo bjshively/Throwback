@@ -268,6 +268,8 @@ public class PlayerController : MonoBehaviour
         body.simulated = false;
         anim.SetTrigger("die");
         canMove = false;
+        audio[3].Play();
+        audio[4].PlayDelayed(2);
         Invoke("setAliveFalse", 3);
     }
 
