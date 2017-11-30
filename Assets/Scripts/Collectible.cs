@@ -79,18 +79,9 @@ public class Collectible : MonoBehaviour
 
             if (gameObject.name == "MessageNoWeapon")
             {
-                GameObject.Find("ExitDoor").transform.position = new Vector2(52.80136f, -2.260632f);
                 collected = false;
-                notifyText.show("There are dangerous monsters ahead, and you don't have any weapons.\n\nBe careful.");
+                notifyText.show("There are dangerous monsters ahead, and you don't have any weapons yet.\n\nBe careful.");
                 notifyText.Invoke("clearMessage", 4);
-                Invoke("SelfDestruct", 3);
-            }
-
-            if (gameObject.name == "MessageDoor")
-            {
-                collected = false;
-                notifyText.show("An unusual door...\n\nIt won't budge.");
-                notifyText.Invoke("clearMessage", 1.5f);
                 Invoke("SelfDestruct", 3);
             }
 

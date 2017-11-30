@@ -11,7 +11,7 @@
 // Hook up door
 // - Trigger for "complete"
 // - Trigger for "open"
-
+// Setup other tetris pieces
 // Sound effects for door
 // Set music volume for all stages
 
@@ -24,7 +24,6 @@
 
 
 // DONE =================
-// Setup other tetris pieces
 // Make level manager track # of pieces collected
 // Player death sound effect
 // Fix enemy distance to player (check prologue level)
