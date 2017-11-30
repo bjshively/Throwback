@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
     public int playerLevel;
     public bool playerIsCollectingItem;
 
-    // Scenes that aren't levels
+    // Scenes that aren't levels, such as menus, gameover, etc.
     string[] menus = { "start", "gameover", "preroll", "credits" };
     private List<string> notLevels;
 
@@ -30,17 +30,8 @@ public class LevelManager : MonoBehaviour
     {
         DontDestroyOnLoad(transform.gameObject);
         Instance = this;
-        Setup();
+        SetupGame();
         notLevels = new List<string>(menus);
-    }
-
-    void Setup()
-    {
-        currentLevel = 0;
-        gameStarted = false;
-        lives = 3;
-        levelReady = false;
-        playerLevel = 0;
     }
 
     void Start()
@@ -79,8 +70,6 @@ public class LevelManager : MonoBehaviour
                         gameover = true;
                         levelReady = false;
                         SceneManager.LoadScene("gameover");
-
-
                     }
                     else
                     {
@@ -119,16 +108,7 @@ public class LevelManager : MonoBehaviour
         // If the scene isn't in the list "notLevels", perform play setup
         if (!notLevels.Contains(scene.name))
         {
-            player = GameObject.Find("Player").GetComponent<PlayerController>();
-            playerIsCollectingItem = false;
-            // In debug mode, max out player
-            if (player.debug)
-            {
-                playerLevel = 3;
-            }
-            // Reset the player state
-            player.setLevel(playerLevel);
-            levelReady = true;
+            SetupLevel();
         }
     }
 
@@ -155,8 +135,37 @@ public class LevelManager : MonoBehaviour
     // We may want to provide some functionality to reset the game (e.g. reset number of lives and go back to level 1)
     public void ResetGame()
     {
-        Setup();
+        SetupGame();
         SceneManager.LoadScene("start");
     }
 
+    // Set the initial conditions for the game
+    void SetupGame()
+    {
+        gameover = false;
+        gameStarted = false;
+        currentLevel = 0;
+        levelReady = false;
+        lives = 3;
+        playerLevel = 0;
+        playerIsCollectingItem = false;
+    }
+
+    // Set the initial conditions for a level
+    void SetupLevel()
+    {
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
+        playerIsCollectingItem = false;
+        // In debug mode, max out player
+        if (player.debug)
+        {
+            playerLevel = 3;
+        }
+        else
+        {
+            // Reset the player state
+            player.setLevel(playerLevel);
+        }
+        levelReady = true;
+    }
 }
