@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     public int playerLevel;
     public bool playerIsCollectingItem;
     private int collectedPieces;
+    private int totalPieces;
     private Animator exitDoor;
 
     // Scenes that aren't levels, such as menus, gameover, etc.
@@ -34,6 +35,7 @@ public class LevelManager : MonoBehaviour
         SetupGame();
         notLevels = new List<string>(menus);
         collectedPieces = 0;
+        totalPieces = 0;
     }
 
     void Start()
@@ -75,8 +77,7 @@ public class LevelManager : MonoBehaviour
                     }
                     else
                     {
-                        player.alive = true;
-                        ShowPreroll();
+                        RestartLevel();
                     }                
                 }
             }
@@ -99,13 +100,19 @@ public class LevelManager : MonoBehaviour
     {
         levelReady = false;
         currentLevel++;
+
+        // Save any collected pieces once you beat the level
+        totalPieces = collectedPieces;
         ShowPreroll();
     }
 
     public void RestartLevel()
     {
+        // Reset the pieces count if you die
+        player.alive = true;
+        collectedPieces = totalPieces;
         levelReady = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ShowPreroll();
     }
 
     public void updateCurrentLevel()
@@ -146,6 +153,7 @@ public class LevelManager : MonoBehaviour
         playerLevel = 0;
         playerIsCollectingItem = false;
         collectedPieces = 0;
+        totalPieces = 0;
     }
 
     // Set the initial conditions for a level
@@ -154,7 +162,7 @@ public class LevelManager : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         exitDoor = GameObject.Find("ExitDoor").GetComponent<Animator>();
         playerIsCollectingItem = false;
-        exitDoor.SetInteger("pieces", collectedPieces);
+        exitDoor.SetInteger("pieces", totalPieces);
 
         // In debug mode, max out player
         if (player.debug)
