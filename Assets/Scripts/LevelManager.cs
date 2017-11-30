@@ -88,6 +88,10 @@ public class LevelManager : MonoBehaviour
     {
         collectedPieces++;
         exitDoor.SetInteger("pieces", collectedPieces);
+        if (collectedPieces == 7)
+        {
+            exitDoor.SetTrigger("complete");
+        }
     }
 
     public void StartLevel()
