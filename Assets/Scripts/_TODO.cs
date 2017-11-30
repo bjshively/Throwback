@@ -1,16 +1,15 @@
 ﻿// EMO TODO
 // Add some meaningful melee blocks in Level1
-// Add some forced through platforms
+// Add some through platforms that force player to use
 // fix reappearing sprite reappear
-// update player sprites on the UI layers
-// Check on point filter for UI sprites
 // look into zapper collision for small enemies (shouldn't get hit)
 
 
 
 // BRAD TODO
 // Fix enemy distance to player (check prologue level)
-
+// Platform that stays flat, but moves/rotates around a point (ciruclar moving platform)
+// seesaw platform with physics
 
 
 
@@ -21,6 +20,9 @@
 
 
 // DONE =================
+// Fix player iframes/
+// update player sprites on the UI layers
+// Check on point filter for UI sprites
 // PlayerNoitems has no Knockback frames.
 // death sprite - use knockback sprite, mouth closed, less arched
 // Send player animators "die" trigger.

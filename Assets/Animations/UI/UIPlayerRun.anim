@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PlayerRun
+  m_Name: UIPlayerRun
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -26,8 +26,6 @@ AnimationClip:
       value: {fileID: 21300092, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
     - time: 0.375
       value: {fileID: 21300094, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
-    - time: 0.5
-      value: {fileID: 21300088, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -51,13 +49,12 @@ AnimationClip:
     - {fileID: 21300090, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
     - {fileID: 21300092, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
     - {fileID: 21300094, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
-    - {fileID: 21300088, guid: b205a55d03c5f4881a18d35073af95ae, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.625
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
