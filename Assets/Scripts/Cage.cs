@@ -24,7 +24,7 @@ public class Cage : MonoBehaviour
     {
         audio.PlayDelayed(.8f);
         anim.SetTrigger("fall");
-        Invoke("Disable", 2);
+        Invoke("Disable", 1);
     }
 
     private void Disable()
