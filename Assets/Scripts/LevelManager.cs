@@ -18,9 +18,9 @@ public class LevelManager : MonoBehaviour
     public bool gameStarted;
     private bool gameover;
     private bool levelReady;
-
     public int playerLevel;
     public bool playerIsCollectingItem;
+    private int collectedPieces;
 
     // Scenes that aren't levels, such as menus, gameover, etc.
     string[] menus = { "start", "gameover", "preroll", "credits" };
@@ -32,6 +32,7 @@ public class LevelManager : MonoBehaviour
         Instance = this;
         SetupGame();
         notLevels = new List<string>(menus);
+        collectedPieces = 0;
     }
 
     void Start()
@@ -81,6 +82,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void AddPiece()
+    {
+        collectedPieces++;  
+    }
+
     public void StartLevel()
     {
         SceneManager.LoadScene(levels[currentLevel]);
@@ -98,18 +104,6 @@ public class LevelManager : MonoBehaviour
     {
         levelReady = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-
-
-    // Do the setup of each scene
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // If the scene isn't in the list "notLevels", perform play setup
-        if (!notLevels.Contains(scene.name))
-        {
-            SetupLevel();
-        }
     }
 
     public void updateCurrentLevel()
@@ -149,6 +143,7 @@ public class LevelManager : MonoBehaviour
         lives = 3;
         playerLevel = 0;
         playerIsCollectingItem = false;
+        collectedPieces = 0;
     }
 
     // Set the initial conditions for a level
@@ -167,5 +162,15 @@ public class LevelManager : MonoBehaviour
             player.setLevel(playerLevel);
         }
         levelReady = true;
+    }
+
+    // Setup each playable scene
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // If the scene isn't in the list "notLevels", perform play setup
+        if (!notLevels.Contains(scene.name))
+        {
+            SetupLevel();
+        }
     }
 }

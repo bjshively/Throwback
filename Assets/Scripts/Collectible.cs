@@ -68,6 +68,7 @@ public class Collectible : MonoBehaviour
                 
             if (gameObject.tag == "key")
             {
+                LevelManager.Instance.AddPiece();
                 GameObject.Find("Cage").GetComponent<Cage>().Invoke("setOpen", 2.18f);
                 notifyText.show("\n\nEscape unlocked");
                 collect(2f);
