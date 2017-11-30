@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        levels = new string[] { "start", "level00", "level01", "level0a", "credits" };
+        levels = new string[] { "start", "level00", "level01", "level09", "credits" };
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
