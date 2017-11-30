@@ -65,13 +65,17 @@ public class Collectible : MonoBehaviour
             {
                 sfx.Play();
             }
-                
-            if (gameObject.tag == "key")
+
+            if (gameObject.tag == "piece" || gameObject.tag == "key")
             {
                 LevelManager.Instance.AddPiece();
-                GameObject.Find("Cage").GetComponent<Cage>().Invoke("setOpen", 2.18f);
-                notifyText.show("\n\nEscape unlocked");
+                notifyText.show("\n\nYou found a strange relic");
                 collect(2f);
+
+                if (gameObject.tag == "key")
+                {
+                    GameObject.Find("Cage").GetComponent<Cage>().Invoke("setOpen", 2.18f);
+                }
             }
 
             if (gameObject.name == "MessageNoWeapon")
