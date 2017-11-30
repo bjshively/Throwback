@@ -1,6 +1,4 @@
 ﻿// EMO TODO
-// PlayerNoitems has no Knockback frames.
-// death sprite - use knockback sprite, mouth closed, less arched
 // Add some meaningful melee blocks in Level1
 // Add some forced through platforms
 // fix reappearing sprite reappear
@@ -23,6 +21,10 @@
 
 
 // DONE =================
+// PlayerNoitems has no Knockback frames.
+// death sprite - use knockback sprite, mouth closed, less arched
+// Send player animators "die" trigger.
+// Implement no move death for 3 seconds.
 // Add lower boundary object collision, "abyss"
 // object colliders at the edge of the map
 // start thinking about an opening animation
