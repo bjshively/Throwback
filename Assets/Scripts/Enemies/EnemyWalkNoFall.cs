@@ -8,6 +8,7 @@ public class EnemyWalkNoFall : Enemy
     public LayerMask ground;
     private float timer;
     private bool canTurn;
+    public bool movingLeft;
 
     // Use this for initialization
     void Start()
@@ -15,6 +16,11 @@ public class EnemyWalkNoFall : Enemy
         base.Start();
         moveSpeed = .5f;
         canTurn = true;
+        if (movingLeft)
+        {
+            moveSpeed *= -1;
+            renderer.flipX = true;
+        }
     }
 
     void Update()
