@@ -1,13 +1,20 @@
 ﻿// EMO TODO
 // Add some meaningful melee blocks in Level1
 // Add some through platforms that force player to use
-// fix reappearing sprite reappear
+// fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
-
+// Setup door animations
 
 
 // BRAD TODO
 // seesaw platform with physics
+// Hook up door
+// - Trigger for "complete"
+// - Trigger for "open"
+// Setup other tetris pieces
+// Make level manager track # of pieces collected
+// Sound effects for door
+// Player death sound effect
 
 
 
