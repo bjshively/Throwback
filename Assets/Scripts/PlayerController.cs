@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     private bool canMove;
     public float facing;
     public bool alive;
+    private bool hurt = false;
     private int currentLevel;
 
     Color fullBrightness = new Color(1f, 1f, 1f, 1f);
@@ -129,7 +130,12 @@ public class PlayerController : MonoBehaviour
             Physics2D.IgnoreLayerCollision(13, 10, false);
         }
 
-        if (canMove)
+
+        if (hurt)
+        {
+            body.velocity = new Vector2((2 * -facing), 1f);
+        }
+        else if (canMove)
         {
             if (Input.GetKey("d"))
             {
@@ -253,15 +259,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                anim.SetTrigger("knockback");
-
-                // Disabled because this sucks
-                //knockback();
-
-                // 3 seconds of invincibility
-                invincible = true;
-                Invoke("resetInvincibility", 3);
-
+                knockback();
             }
         }
     }
@@ -282,15 +280,19 @@ public class PlayerController : MonoBehaviour
     }
 
     // Player is knocked backwards upon collidding with an enemy
-    // TODO: Ease camera follow so screen doesn't jerk
     private void knockback()
     {
-        // TODO: This needs improved quite a bit, but works better than it did before.
-        Vector2 destination = transform.position;
-        destination.x = destination.x + (facing * -1);
-        destination.y = destination.y + 1;
-        transform.position = Vector2.MoveTowards(destination, new Vector2(transform.position.x, transform.position.y), .3f * Time.deltaTime);
         anim.SetTrigger("knockback");
+        hurt = true;
+        Invoke("resetHurt", .25f);
+        invincible = true;
+        Invoke("resetInvincibility", 3);
+    }
+
+    private void resetHurt()
+    {
+        Stop();
+        hurt = false;
     }
 
     // Attack methods
@@ -424,6 +426,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (l == 3)
         {
+            HUDScope = GameObject.Find("HUDScope").GetComponent<Animator>();
             anim.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
             hasPowerglove = true;
             hasZapper = true;

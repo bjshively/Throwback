@@ -1,4 +1,5 @@
 ﻿// EMO TODO
+// PlayerNoitems has no Knockback frames.
 // start thinking about an opening animation
 // death sprite - use knockback sprite, mouth closed, less arched
 // Add some meaningful melee blocks in Level1
