@@ -56,10 +56,8 @@ public class Collectible : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" && collected == false)
         {
-            collected = true;
-
             // Attempt to play audio
             if (sfx)
             {
@@ -68,6 +66,7 @@ public class Collectible : MonoBehaviour
 
             if (gameObject.tag == "piece" || gameObject.tag == "key")
             {
+                Debug.Log("blah");
                 LevelManager.Instance.AddPiece();
                 notifyText.show("\n\nYou found a strange relic");
                 collect(2f);
@@ -111,6 +110,8 @@ public class Collectible : MonoBehaviour
                 collect(messageDisplayTime);
                 attack = new PlayerAttack(player.FireSuperScope);
             }
+
+            collected = true;
         }
     }
 

@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     public int playerLevel;
     public bool playerIsCollectingItem;
     private int collectedPieces;
+    private Animator exitDoor;
 
     // Scenes that aren't levels, such as menus, gameover, etc.
     string[] menus = { "start", "gameover", "preroll", "credits" };
@@ -84,7 +85,9 @@ public class LevelManager : MonoBehaviour
 
     public void AddPiece()
     {
-        collectedPieces++;  
+        Debug.Log("blah");
+        collectedPieces++;
+        exitDoor.SetInteger("pieces", collectedPieces);
     }
 
     public void StartLevel()
@@ -150,6 +153,7 @@ public class LevelManager : MonoBehaviour
     void SetupLevel()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
+        exitDoor = GameObject.Find("ExitDoor").GetComponent<Animator>();
         playerIsCollectingItem = false;
         // In debug mode, max out player
         if (player.debug)
