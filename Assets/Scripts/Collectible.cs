@@ -73,6 +73,14 @@ public class Collectible : MonoBehaviour
                 collect(2f);
             }
 
+            if (gameObject.name == "MessageNoWeapon")
+            {
+                collected = false;
+                notifyText.show("There are dangerous monsters ahead, and you don't have any weapons yet.\n\nBe careful.");
+                notifyText.Invoke("clearMessage", 4);
+                Invoke("SelfDestruct", 3);
+            }
+
             // Weapons
             else if (gameObject.name == "PowerGlove")
             {
@@ -104,8 +112,17 @@ public class Collectible : MonoBehaviour
     private void collect(float t)
     {
         player.collectItem(t);
-        renderer.enabled = false;
+        if (renderer != null)
+        {
+            renderer.enabled = false;
+        }
         col.enabled = false;
+    }
+
+    private void read()
+    {
+        
+        col.enabled = false;   
     }
 
     private void SelfDestruct()
