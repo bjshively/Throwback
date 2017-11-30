@@ -21,7 +21,7 @@ public class EnemyWalkNoFall : Enemy
     {
         if (!LevelManager.Instance.stopAllAction())
         {
-            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4)
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 6)
             {
                 Move();
             }

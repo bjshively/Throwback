@@ -36,7 +36,7 @@ public abstract class Enemy : MonoBehaviour
         if (!LevelManager.Instance.stopAllAction())
         {
             // Most enemies only move within a certain range of the player
-            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 4 && alive)
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 6 && alive)
             {
                 Flip();
                 Move();
