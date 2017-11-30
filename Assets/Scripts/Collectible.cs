@@ -7,7 +7,7 @@ public class Collectible : MonoBehaviour
 {
     private PlayerController player;
     private Notification notifyText;
-    private AudioSource audio;
+    private AudioSource sfx;
     private SpriteRenderer renderer;
     private BoxCollider2D col;
     private string attackKey = null;
@@ -25,7 +25,7 @@ public class Collectible : MonoBehaviour
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         notifyText = GameObject.Find("Notification").GetComponent<Notification>();
-        audio = GetComponent<AudioSource>();
+        sfx = GetComponent<AudioSource>();
         renderer = GetComponent<SpriteRenderer>();
         col = GetComponent<BoxCollider2D>();
     }
@@ -61,9 +61,9 @@ public class Collectible : MonoBehaviour
             collected = true;
 
             // Attempt to play audio
-            if (audio)
+            if (sfx)
             {
-                audio.Play();
+                sfx.Play();
             }
                 
             if (gameObject.tag == "key")

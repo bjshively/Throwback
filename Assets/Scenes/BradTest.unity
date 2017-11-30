@@ -433,7 +433,7 @@ Prefab:
     - target: {fileID: 114107474206940822, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
         type: 2}
       propertyPath: debug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4943037779892872, guid: ef75d8c69f6ca4da8aa1953ccb484ced, type: 2}
       propertyPath: m_RootOrder
@@ -443,6 +443,11 @@ Prefab:
         type: 2}
       propertyPath: hasSuperscope
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61083851707091914, guid: ef75d8c69f6ca4da8aa1953ccb484ced,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef75d8c69f6ca4da8aa1953ccb484ced, type: 2}
@@ -922,6 +927,16 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886945136422566, guid: 13c41ebe54d10452c95d128d4f3dac44,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -215
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886945136422566, guid: 13c41ebe54d10452c95d128d4f3dac44,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 401
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c41ebe54d10452c95d128d4f3dac44, type: 2}

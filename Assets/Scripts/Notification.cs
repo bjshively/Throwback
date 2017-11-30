@@ -11,6 +11,7 @@ public class Notification : MonoBehaviour
     private GameObject background;
     private Canvas canvas;
 
+
     // Use this for initialization
     void Start()
     {
