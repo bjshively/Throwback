@@ -243,22 +243,19 @@ public class PlayerController : MonoBehaviour
             audio[2].Play();
             // Interrupt an in-progress melee attack
             cancelAttack = true;
-
+            currentHealth -= 1;
             canMove = false;
             Stop();
 
             // TODO: Should create a canMoveTimer to prevent this from reducing move time wait
             // e.g. if canMoveTimer < 1, canMoveTimer=1
-            Invoke("resetMove", 1);
-
-            currentHealth -= 1;
-
             if (currentHealth <= 0)
             {
                 die();
             }
             else
             {
+                Invoke("resetMove", 1);
                 knockback();
             }
         }
@@ -266,6 +263,15 @@ public class PlayerController : MonoBehaviour
 
     // Reduce lives, respawn if you have lives
     private void die()
+    {
+        Stop();
+        body.simulated = false;
+        anim.SetTrigger("die");
+        canMove = false;
+        Invoke("setAliveFalse", 3);
+    }
+
+    void setAliveFalse()
     {
         alive = false;
     }
