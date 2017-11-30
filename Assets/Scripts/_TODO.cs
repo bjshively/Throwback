@@ -4,24 +4,27 @@
 // Add some meaningful melee blocks in Level1
 // Add some forced through platforms
 // fix reappearing sprite reappear
-// Add lower boundary object collision, "abyss"
 // update player sprites on the UI layers
 // Check on point filter for UI sprites
 // look into zapper collision for small enemies (shouldn't get hit)
-// object colliders at the edge of the map
 
 
 
 // BRAD TODO
+// Fix enemy distance to player (check prologue level)
+
+
 
 
 // PAULISH
-
+// 
 // ground pound/air melee
 
 
 
 // DONE =================
+// Add lower boundary object collision, "abyss"
+// object colliders at the edge of the map
 // start thinking about an opening animation
 // Add scope cooldown frames
 // - Also shyguy turns around on collision with Wall, where Platform turns around at center point. Can you set platform up to do this? It would help level layout I could use the edge of the start/end boxes for alignement.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 11/29/2017 10:31:57 PM-->
+<!--Last exported: 11/29/2017 10:57:24 PM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0001" material="mario3levels" />
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
@@ -10,10 +10,6 @@
   <Prefab name="PrologueRedux" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="4" numTilesWide="332" numTilesHigh="30" tileWidth="16" tileHeight="16" exportScale="1" mapWidthInPixels="5312" mapHeightInPixels="480" backgroundColor="#808080">
     <GameObject name="BoundaryTriggers" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
-      <GameObject name="RectangleObject" x="4920" y="256" rotation="0" layer="">
-        <RectangleObjectComponent tmx-object-id="68" tmx-object-name="" tmx-object-type="" tmx-object-x="4920" tmx-object-y="-256" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
-        <BoxCollider2D width="0" height="0" />
-      </GameObject>
       <GameObject name="RightEdge" x="5311" y="10" rotation="0" layer="">
         <RectangleObjectComponent tmx-object-id="67" tmx-object-name="RightEdge" tmx-object-type="" tmx-object-x="5311" tmx-object-y="-10" tmx-object-width="22" tmx-object-height="524" tmx-object-rotation="0" />
         <BoxCollider2D width="22" height="524" />
@@ -275,6 +271,10 @@
       </GameObject>
       <GameObject name="RectangleObject" x="1358" y="-390" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
         <RectangleObjectComponent tmx-object-id="19" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="1358" tmx-object-y="390" tmx-object-width="4" tmx-object-height="16" tmx-object-rotation="0" />
+        <BoxCollider2D width="4" height="16" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="-4" y="-400" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
+        <RectangleObjectComponent tmx-object-id="70" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="-4" tmx-object-y="400" tmx-object-width="4" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="4" height="16" />
       </GameObject>
       <GameObject name="RectangleObject" x="2542" y="-404" rotation="0" isTrigger="true" tag="Wall" layer="Wall">

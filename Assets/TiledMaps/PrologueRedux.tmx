@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="332" height="30" tilewidth="16" tileheight="16" nextobjectid="70">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="332" height="30" tilewidth="16" tileheight="16" nextobjectid="71">
  <tileset firstgid="1" source="tilesets/Mario 3 Levels.tsx"/>
  <objectgroup name="BoundaryTriggers">
   <object id="63" name="abyss" x="-100" y="523" width="5591" height="10">
@@ -9,7 +9,6 @@
   </object>
   <object id="65" name="LeftEdge" x="-24" y="0" width="22" height="524"/>
   <object id="67" name="RightEdge" x="5311" y="-10" width="22" height="524"/>
-  <object id="68" x="4920" y="-256"/>
  </objectgroup>
  <layer name="Sky" width="332" height="30">
   <data encoding="csv">
@@ -175,6 +174,7 @@
   <object id="22" type="Wall" x="910" y="404" width="4" height="16"/>
   <object id="23" type="Wall" x="622" y="405" width="4" height="16"/>
   <object id="24" type="Wall" x="574" y="405" width="4" height="16"/>
+  <object id="70" type="Wall" x="-4" y="400" width="4" height="16"/>
  </objectgroup>
  <objectgroup name="TurnaroundTriggers">
   <object id="25" type="Turnaround" x="909" y="384" width="4" height="16"/>
