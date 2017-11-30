@@ -6,29 +6,43 @@ public class Cage : MonoBehaviour
 {
     private Animator anim;
     private AudioSource audio;
+    private SpriteRenderer renderer;
+    private bool open;
 
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+        renderer = GetComponent<SpriteRenderer>();
+        open = false;
     }
 	
     // Update is called once per frame
     void Update()
     {
-		
+        Unlock();
     }
 
     public void Unlock()
     {
-        audio.PlayDelayed(.8f);
-        anim.SetTrigger("fall");
-        Invoke("Disable", 1);
+        if (renderer.isVisible && open)
+        {
+            // Reset to false to prevent this from firing over and over again 
+            open = false;
+            audio.PlayDelayed(.8f);
+            anim.SetTrigger("fall");
+            Invoke("Disable", 1f);
+        }
     }
 
     private void Disable()
     {
         gameObject.SetActive(false);
+    }
+
+    public void setOpen()
+    {
+        open = true;
     }
 }
