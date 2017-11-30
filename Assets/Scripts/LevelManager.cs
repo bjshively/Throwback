@@ -109,7 +109,6 @@ public class LevelManager : MonoBehaviour
     public void RestartLevel()
     {
         // Reset the pieces count if you die
-        player.alive = true;
         collectedPieces = totalPieces;
         levelReady = false;
         ShowPreroll();
@@ -174,6 +173,8 @@ public class LevelManager : MonoBehaviour
             // Reset the player state
             player.setLevel(playerLevel);
         }
+
+        player.alive = true;
         levelReady = true;
     }
 
