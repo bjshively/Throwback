@@ -4,6 +4,12 @@
 // Add some meaningful melee blocks in Level1
 // Add some forced through platforms
 // fix reappearing sprite reappear
+// Add lower boundary object collision, "abyss"
+// update player sprites on the UI layers
+// Check on point filter for UI sprites
+// look into zapper collision for small enemies (shouldn't get hit)
+// object colliders at the edge of the map
+
 
 
 // BRAD TODO
