@@ -7,6 +7,8 @@ public class EnemyFloatAndFollow : Enemy
 
     private Vector2 targetLocation;
     private float timer;
+    private AudioSource[] audio;
+    private bool canSound;
 
     public virtual float moveSpeed
     {
@@ -16,6 +18,8 @@ public class EnemyFloatAndFollow : Enemy
     void Start()
     {
         base.Start();
+        audio = GetComponents<AudioSource>();
+        canSound = true;
         UpdateTarget();
     }
 
@@ -58,4 +62,30 @@ public class EnemyFloatAndFollow : Enemy
         targetLocation = player.transform.position;
     }
 
+    void OnBecameVisible()
+    {
+        
+        if (canSound)
+        {
+            audio[1].Play();
+            canSound = false;
+            Invoke("resetCanSound", 5);
+        }
+
+    }
+
+    void resetCanSound()
+    {
+        canSound = true;
+    }
+
+    protected void Die()
+    {
+        audio[0].Play();
+        alive = false;
+        Stop();
+        body.simulated = false;
+        anim.SetTrigger("die");
+        Invoke("SelfDestruct", .5f);
+    }
 }
