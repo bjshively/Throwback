@@ -85,7 +85,6 @@ public class LevelManager : MonoBehaviour
 
     public void AddPiece()
     {
-        Debug.Log("blah");
         collectedPieces++;
         exitDoor.SetInteger("pieces", collectedPieces);
     }
