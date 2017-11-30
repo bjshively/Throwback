@@ -154,6 +154,8 @@ public class LevelManager : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         exitDoor = GameObject.Find("ExitDoor").GetComponent<Animator>();
         playerIsCollectingItem = false;
+        exitDoor.SetInteger("pieces", collectedPieces);
+
         // In debug mode, max out player
         if (player.debug)
         {
