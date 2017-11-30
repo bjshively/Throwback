@@ -38,14 +38,18 @@ public class ContraBullet : MonoBehaviour
     // Damage the player on contact
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
-        {
-            player.takeDamage();
-        }
 
         if (col.gameObject.tag == "Wall" || col.gameObject.layer == 8)
         {
             Destroy(gameObject);
+        }
+    }
+
+    protected void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            player.takeDamage();
         }
     }
 

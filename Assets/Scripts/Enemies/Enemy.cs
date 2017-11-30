@@ -82,14 +82,17 @@ public abstract class Enemy : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
-        {
-            player.takeDamage();
-        }
-
         if (col.gameObject.name == "melee")
         {
             Die();
+        }
+    }
+
+    protected void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            player.takeDamage();
         }
     }
 
