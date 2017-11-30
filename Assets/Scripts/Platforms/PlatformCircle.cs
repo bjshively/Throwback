@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformCircle : PlatformMove
 {
-
+    private Vector3 center;
     public float radius = .1f;
     public float timeToCompleteCircle = 10f;
     private float currentAngle = 0f;
@@ -17,6 +17,7 @@ public class PlatformCircle : PlatformMove
 
     void Awake()
     {
+        center = transform.Find("pivotpoint").transform.position;
         speed = (Mathf.PI * 2) / timeToCompleteCircle;
     }
 
@@ -24,8 +25,9 @@ public class PlatformCircle : PlatformMove
     {
         speed = (Mathf.PI * 2) / timeToCompleteCircle;
         currentAngle += Time.deltaTime * speed;
-        float newX = radius * Mathf.Cos(currentAngle);
-        float newY = radius * Mathf.Sin(currentAngle);
+        Debug.Log(currentAngle);
+        float newX = radius * Mathf.Cos(currentAngle) + center.x;
+        float newY = radius * Mathf.Sin(currentAngle) + center.y;
         transform.position = new Vector3(newX, newY, transform.position.z);   
     }
 }
