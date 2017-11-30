@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HUDController : MonoBehaviour
 {
-    // TODO: Rewire this to use values from LevelManager and display them
 
     private PlayerController player;
     private Text livesText;
@@ -24,7 +23,7 @@ public class HUDController : MonoBehaviour
     void Update()
     {
         HUDHealth.SetInteger("health", player.currentHealth);
-        livesText.text = "Lives: " + LevelManager.Instance.lives;
+        livesText.text = "x " + LevelManager.Instance.lives;
         if (LevelManager.Instance.playerLevel == 3)
         {
             HUDScope.SetBool("hasScope", true);
