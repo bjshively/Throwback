@@ -8,14 +8,14 @@ AnimatorController:
   m_Name: BlockCrumbling
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: die
+  - m_Name: break
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: break
-    m_Type: 9
+  - m_Name: die
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -46,11 +46,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.72727275
+  m_ExitTime: 1
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -72,8 +72,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
+  m_ExitTime: 1
+  m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -187,10 +187,10 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 96, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102604752816274860}
-    m_Position: {x: 528, y: 84, z: 0}
+    m_Position: {x: 516, y: 24, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102582167810426992}
-    m_Position: {x: 485, y: 161, z: 0}
+    m_Position: {x: 528, y: 168, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
