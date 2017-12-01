@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 11/30/2017 6:14:23 PM-->
+<!--Last exported: 11/30/2017 9:52:24 PM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0001" material="mario3levels" />
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
@@ -9,7 +9,7 @@
   <AssignMaterial mesh="mesh_0004" material="mario3levels" />
   <AssignMaterial mesh="mesh_0005" material="mario3levels" />
   <Prefab name="Level00" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="5" numTilesWide="332" numTilesHigh="30" tileWidth="16" tileHeight="16" exportScale="1" mapWidthInPixels="5312" mapHeightInPixels="480" backgroundColor="#808080" scale=".01">
-    <GameObject name="BoundaryTriggers" x="0" y="0" z="0">
+    <GameObject name="Boundaries" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
       <GameObject name="RightEdge" x="5311" y="10" rotation="0" layer="">
         <RectangleObjectComponent tmx-object-id="67" tmx-object-name="RightEdge" tmx-object-type="" tmx-object-x="5311" tmx-object-y="-10" tmx-object-width="22" tmx-object-height="524" tmx-object-rotation="0" />
@@ -26,15 +26,15 @@
     </GameObject>
     <GameObject name="Sky" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="mario3levels" copy="mesh_0001" sortingLayerName="" sortingOrder="0" opacity="1" />
+      <GameObject name="mario3levels" copy="mesh_0001" sortingLayerName="background" sortingOrder="0" opacity="1" />
     </GameObject>
     <GameObject name="Clouds" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="mario3levels" copy="mesh_0002" sortingLayerName="" sortingOrder="1" opacity="1" />
+      <GameObject name="mario3levels" copy="mesh_0002" sortingLayerName="background" sortingOrder="1" opacity="1" />
     </GameObject>
     <GameObject name="Background" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="mario3levels" copy="mesh_0003" sortingLayerName="" sortingOrder="2" opacity="1" />
+      <GameObject name="mario3levels" copy="mesh_0003" sortingLayerName="background" sortingOrder="2" opacity="1" />
     </GameObject>
     <GameObject name="Ground" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
