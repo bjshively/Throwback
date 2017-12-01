@@ -51,6 +51,34 @@
    <object id="2" x="14" y="1" width="2" height="15"/>
   </objectgroup>
  </tile>
+ <tile id="310">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="16">
+    <polygon points="0,0 16,-8 16,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="311">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="8">
+    <polygon points="0,0 16,-8 16,8 0,8"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="312">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0">
+    <polygon points="0,0 16,8 16,16 0,16"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="313">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="8">
+    <polygon points="0,0 16,8 0,8"/>
+   </object>
+  </objectgroup>
+ </tile>
  <tile id="380">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="2" height="16"/>
@@ -89,6 +117,11 @@
  <tile id="528">
   <objectgroup draworder="index">
    <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="626">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="627">
