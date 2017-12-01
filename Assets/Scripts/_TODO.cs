@@ -1,7 +1,6 @@
 ﻿// EMO TODO
 // fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
-// spikes on lvl2 not spikey
 
 
 // BRAD TODO
@@ -37,6 +36,10 @@
 
 
 // DONE =================
+// Update lvl3 horizontal platforms to use new prefab
+// lvl3 left wall bullet collection
+// spikes on lvl2 not spikey
+// camera constrain lvl3
 // lvl2 turnarounds are colliding
 // goombas don't bounce of breaking blocks
 // bullets stick to lvl2 left edge
