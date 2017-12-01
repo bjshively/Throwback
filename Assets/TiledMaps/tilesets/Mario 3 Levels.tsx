@@ -206,6 +206,11 @@
    <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
+ <tile id="699">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="14" width="16" height="2"/>
+  </objectgroup>
+ </tile>
  <tile id="700">
   <objectgroup draworder="index">
    <object id="1" type="ground" x="0" y="0" width="2" height="16"/>

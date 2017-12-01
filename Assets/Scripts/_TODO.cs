@@ -1,13 +1,8 @@
 ﻿// EMO TODO
-// Add some meaningful melee blocks in Level1
-// Add some through platforms that force player to use
 // fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
-// Setup door animations
-// lvl1 bullets not destorying on ground
 // lvl2 turnarounds are colliding
-// sorting layer for UI and bullets, rockets
-
+// bullets stick to lvl2 left edge
 
 
 // BRAD TODO
@@ -29,6 +24,10 @@
 
 
 
+// CANNOT REPRODUCE
+// lvl1 bullets not destorying on ground
+
+
 
 
 
@@ -39,6 +38,10 @@
 
 
 // DONE =================
+// sorting layer for UI and bullets, rockets
+// Setup door animations
+// Add some through platforms that force player to use
+// Add some meaningful melee blocks in Level1
 // Make level manager track # of pieces collected
 // Player death sound effect
 // Fix enemy distance to player (check prologue level)
