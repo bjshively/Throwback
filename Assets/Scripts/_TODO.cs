@@ -1,8 +1,7 @@
 ﻿// EMO TODO
 // fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
-// lvl2 turnarounds are colliding
-// bullets stick to lvl2 left edge
+// spikes on lvl2 not spikey
 
 
 // BRAD TODO
@@ -38,6 +37,9 @@
 
 
 // DONE =================
+// lvl2 turnarounds are colliding
+// goombas don't bounce of breaking blocks
+// bullets stick to lvl2 left edge
 // sorting layer for UI and bullets, rockets
 // Setup door animations
 // Add some through platforms that force player to use
