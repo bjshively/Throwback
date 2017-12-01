@@ -5,10 +5,12 @@ using UnityEngine;
 public class ExitDoor : MonoBehaviour
 {
     private Animator anim;
+    private PlayerController player;
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 	
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class ExitDoor : MonoBehaviour
             if (anim.GetBool("complete"))
             {
                 anim.SetTrigger("eat");
+                player.Disappear();
             }
         }
     }

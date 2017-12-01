@@ -443,9 +443,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Disappear()
+    {
+        canMove = false;
+        Stop();
+        body.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
     // At the end of the level, publish any relevant state details to the Level Manager
     public void UpdateState()
     {
         LevelManager.Instance.playerLevel = currentLevel;
+
     }
 }
