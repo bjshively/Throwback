@@ -4,9 +4,14 @@
 // fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
 // Setup door animations
+// lvl1 bullets not destorying on ground
+// lvl2 turnarounds are colliding
+// sorting layer for UI and bullets, rockets
+
 
 
 // BRAD TODO
+// knockback animation feels fucked up
 // seesaw platform with physics
 // Hook up door
 // - Trigger for "complete"
@@ -14,6 +19,16 @@
 // Setup other tetris pieces
 // Sound effects for door
 // Set music volume for all stages
+
+
+
+// EITHER TODO
+// lvl2 needs music
+// lvl3 needs music
+// lvl99 needs music
+
+
+
 
 
 
