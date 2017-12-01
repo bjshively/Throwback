@@ -1,15 +1,10 @@
 ﻿// EMO TODO
-// fix reappearing block sprite reappear
 // look into zapper collision for small enemies (shouldn't get hit)
 
 
 // BRAD TODO
 // knockback animation feels fucked up
 // seesaw platform with physics
-// Hook up door
-// - Trigger for "complete"
-// - Trigger for "open"
-// Setup other tetris pieces
 // Sound effects for door
 // Set music volume for all stages
 
@@ -35,7 +30,12 @@
 
 
 
+// Hook up door
+// - Trigger for "complete"
+// - Trigger for "open"
+// Setup other tetris pieces
 // DONE =================
+// fix reappearing block sprite reappear
 // Update lvl3 horizontal platforms to use new prefab
 // lvl3 left wall bullet collection
 // spikes on lvl2 not spikey
