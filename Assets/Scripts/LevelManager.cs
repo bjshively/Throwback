@@ -50,9 +50,9 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         // Start menu
-        if (!gameStarted)
+        if (SceneManager.GetActiveScene().name == "Start")
         {
-            if (Input.GetKey("return"))
+            if (Input.GetKey("return") && !gameStarted)
             {
                 GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
                 GameObject.Find("menu-startsound").GetComponent<AudioSource>().Play();
@@ -62,7 +62,6 @@ public class LevelManager : MonoBehaviour
             else if (Input.GetKey("space"))
             {
                 SceneManager.LoadScene("credits");
-                
             }
         }
 
