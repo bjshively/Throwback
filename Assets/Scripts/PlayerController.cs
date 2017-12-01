@@ -445,9 +445,11 @@ public class PlayerController : MonoBehaviour
 
     public void Disappear()
     {
+        GameObject.Find("ExitDoor").GetComponent<SpriteRenderer>().sortingLayerName = "Infinity";
         Stop();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         spriteRenderer.sortingLayerName = "Infinity";
+        spriteRenderer.sortingOrder = 100;
         Invoke("DestroyTheWorld", 3);
 
     }
