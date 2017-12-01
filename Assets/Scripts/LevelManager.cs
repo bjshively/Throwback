@@ -159,7 +159,7 @@ public class LevelManager : MonoBehaviour
         gameStarted = false;
         currentLevel = 0;
         levelReady = false;
-        lives = 3;
+        lives = 5;
         playerLevel = 0;
         playerIsCollectingItem = false;
         collectedPieces = 0;
