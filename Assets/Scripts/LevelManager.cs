@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        levels = new string[] { "start", "Level00", "Level01", "Level02", "Level09", "credits" };
+        levels = new string[] { "start", "Level00", "Level01", "Level02", "Level03", "Level09", "credits" };
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -58,6 +58,11 @@ public class LevelManager : MonoBehaviour
                 GameObject.Find("menu-startsound").GetComponent<AudioSource>().Play();
                 gameStarted = true;
                 Invoke("NextLevel", .25f);
+            }
+            else if (Input.GetKey("space"))
+            {
+                SceneManager.LoadScene("credits");
+                
             }
         }
 
