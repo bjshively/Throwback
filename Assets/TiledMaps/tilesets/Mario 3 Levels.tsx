@@ -89,6 +89,34 @@
    <object id="1" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
+ <tile id="383">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0">
+    <polygon points="0,0 16,8 16,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="384">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0">
+    <polygon points="0,0 0,8 16,16 16,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="385">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="16">
+    <polygon points="0,0 16,-8 16,-16 0,-16"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="386">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="8">
+    <polygon points="0,0 16,-8 0,-8"/>
+   </object>
+  </objectgroup>
+ </tile>
  <tile id="453">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="16" height="16"/>
@@ -104,6 +132,20 @@
    <object id="3" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
+ <tile id="458">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="16">
+    <polygon points="0,0 16,-16 16,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="459">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0">
+    <polygon points="0,0 16,16 0,16"/>
+   </object>
+  </objectgroup>
+ </tile>
  <tile id="526">
   <objectgroup draworder="index">
    <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
@@ -117,6 +159,20 @@
  <tile id="528">
   <objectgroup draworder="index">
    <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="531">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0">
+    <polygon points="0,0 16,16 0,16"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="532">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0">
+    <polygon points="0,0 0,16 16,0"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="626">
