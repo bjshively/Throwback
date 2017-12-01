@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="Mario 3 Levels" tilewidth="16" tileheight="16" spacing="1" margin="1" tilecount="1533" columns="73">
  <image source="../../Sprites/Level/mario3levels.png" width="1242" height="358"/>
+ <tile id="65">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
  <tile id="154">
   <objectgroup draworder="index">
    <object id="2" type="ground" x="16" y="0">
@@ -29,6 +34,80 @@
    </object>
   </objectgroup>
  </tile>
+ <tile id="307">
+  <objectgroup draworder="index">
+   <object id="5" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="6" x="0" y="1" width="2" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="308">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="309">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" x="14" y="1" width="2" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="380">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="2" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="382">
+  <objectgroup draworder="index">
+   <object id="1" x="14" y="0" width="2" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="453">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="454">
+  <objectgroup draworder="index">
+   <object id="1" type="gr" x="0" y="14" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="455">
+  <objectgroup draworder="index">
+   <object id="3" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="526">
+  <objectgroup draworder="index">
+   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="527">
+  <objectgroup draworder="index">
+   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="528">
+  <objectgroup draworder="index">
+   <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="627">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" x="0" y="1" width="2" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="628">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="629">
+  <objectgroup draworder="index">
+   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" x="14" y="1" width="2" height="15"/>
+  </objectgroup>
+ </tile>
  <tile id="645">
   <objectgroup draworder="index">
    <properties>
@@ -36,6 +115,33 @@
     <property name="unity:tag" value="Wall"/>
    </properties>
    <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="700">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="2" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="702">
+  <objectgroup draworder="index">
+   <object id="1" x="14" y="0" width="2" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="773">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="2" height="16"/>
+   <object id="3" x="0" y="14" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="774">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="14" width="16" height="2"/>
+  </objectgroup>
+ </tile>
+ <tile id="775">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="14" width="16" height="2"/>
+   <object id="2" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="860">
