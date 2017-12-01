@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,15 +26,15 @@ public class LevelManager : MonoBehaviour
     private Animator exitDoor;
 
     // Scenes that aren't levels, such as menus, gameover, etc.
-    string[] menus = { "start", "gameover", "preroll", "credits" };
-    private List<string> notLevels;
+    string[] menuStrings = { "start", "gameover", "preroll", "credits" };
+    private List<string> menus;
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
         Instance = this;
         SetupGame();
-        notLevels = new List<string>(menus);
+        menus = new List<string>(menuStrings);
         collectedPieces = 0;
         totalPieces = 0;
     }
@@ -41,6 +42,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         levels = new string[] { "start", "level00", "level01", "level02", "level09", "credits" };
+        Debug.Log(menus);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -51,6 +53,7 @@ public class LevelManager : MonoBehaviour
         // Start menu
         if (!gameStarted)
         {
+            Debug.Log("game not started");
             if (Input.GetKey("return"))
             {
                 GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
@@ -87,6 +90,7 @@ public class LevelManager : MonoBehaviour
     public void AddPiece()
     {
         collectedPieces++;
+        exitDoor = GameObject.Find("ExitDoor").GetComponent<Animator>();
         exitDoor.SetInteger("pieces", collectedPieces);
         if (collectedPieces == 7)
         {
@@ -172,8 +176,12 @@ public class LevelManager : MonoBehaviour
         {
             playerLevel = 3;
         }
+        else
+        {
+            player.setLevel(playerLevel);    
+        }
         // Reset the player state
-        player.setLevel(playerLevel);
+
         player.alive = true;
         levelReady = true;
     }
@@ -182,7 +190,7 @@ public class LevelManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // If the scene isn't in the list "notLevels", perform play setup
-        if (!notLevels.Contains(scene.name))
+        if (levels.Contains(scene.name))
         {
             SetupLevel();
         }
