@@ -90,7 +90,7 @@ public class LevelManager : MonoBehaviour
         exitDoor.SetInteger("pieces", collectedPieces);
         if (collectedPieces == 7)
         {
-            exitDoor.SetTrigger("complete");
+            exitDoor.SetBool("complete", true);
         }
     }
 
@@ -164,20 +164,16 @@ public class LevelManager : MonoBehaviour
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         exitDoor = GameObject.Find("ExitDoor").GetComponent<Animator>();
-        playerIsCollectingItem = false;
         exitDoor.SetInteger("pieces", totalPieces);
+        playerIsCollectingItem = false;
 
         // In debug mode, max out player
         if (player.debug)
         {
             playerLevel = 3;
         }
-        else
-        {
-            // Reset the player state
-            player.setLevel(playerLevel);
-        }
-
+        // Reset the player state
+        player.setLevel(playerLevel);
         player.alive = true;
         levelReady = true;
     }
