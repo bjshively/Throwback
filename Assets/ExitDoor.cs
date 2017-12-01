@@ -6,9 +6,11 @@ public class ExitDoor : MonoBehaviour
 {
     private Animator anim;
     private PlayerController player;
+    private bool gameComplete;
     // Use this for initialization
     void Start()
     {
+        gameComplete = false;
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
@@ -23,10 +25,11 @@ public class ExitDoor : MonoBehaviour
     {
         if (col.gameObject.name == "Player")
         {
-            if (anim.GetBool("complete"))
+            if (anim.GetBool("complete") && !gameComplete)
             {
                 anim.SetTrigger("eat");
                 player.Disappear();
+                gameComplete = true;
             }
         }
     }

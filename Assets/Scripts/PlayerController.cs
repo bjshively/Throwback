@@ -445,9 +445,18 @@ public class PlayerController : MonoBehaviour
 
     public void Disappear()
     {
-        canMove = false;
         Stop();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
+        spriteRenderer.sortingLayerName = "Infinity";
+        Invoke("DestroyTheWorld", 3);
+
+    }
+
+    public void DestroyTheWorld()
+    {
+        GameObject.Find("Level99").SetActive(false);
+        GameObject.Find("LevelNotifications").SetActive(false);
+        LevelManager.Instance.Invoke("ShowCredits", 3);
     }
 
     // At the end of the level, publish any relevant state details to the Level Manager

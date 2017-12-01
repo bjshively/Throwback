@@ -198,4 +198,9 @@ public class LevelManager : MonoBehaviour
             SetupLevel();
         }
     }
+
+    public void ShowCredits()
+    {
+        SceneManager.LoadScene("credits");
+    }
 }
