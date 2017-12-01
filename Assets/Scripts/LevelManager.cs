@@ -41,8 +41,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        levels = new string[] { "start", "level00", "level01", "level02", "level09", "credits" };
-        Debug.Log(menus);
+        levels = new string[] { "start", "Level00", "Level01", "Level02", "Level09", "credits" };
         SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
@@ -53,7 +52,6 @@ public class LevelManager : MonoBehaviour
         // Start menu
         if (!gameStarted)
         {
-            Debug.Log("game not started");
             if (Input.GetKey("return"))
             {
                 GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
