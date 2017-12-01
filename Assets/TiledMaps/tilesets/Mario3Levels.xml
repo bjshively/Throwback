@@ -13,6 +13,7 @@
   <property name="unity:tag" type="string" default="Turnaround"/>
  </objecttype>
  <objecttype name="Hazard" color="#fd5f08">
+  <property name="unity:isTrigger" type="string" default="true"/>
   <property name="unity:tag" type="string" default="Hazard"/>
  </objecttype>
  <objecttype name="jumpthrough" color="#21ffb8">

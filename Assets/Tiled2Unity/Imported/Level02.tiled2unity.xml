@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 12/1/2017 1:33:06 AM-->
+<!--Last exported: 12/1/2017 1:48:20 AM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0001" material="mario3levels" />
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
@@ -248,6 +248,25 @@
       <GameObject name="RectangleObject" x="4286" y="-739" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
         <RectangleObjectComponent tmx-object-id="39" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="4286" tmx-object-y="739" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
         <BoxCollider2D width="6" height="16" />
+      </GameObject>
+    </GameObject>
+    <GameObject name="HazardTriggers" x="0" y="0" z="0">
+      <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
+      <GameObject name="RectangleObject" x="2514" y="-61" rotation="0" isTrigger="true" tag="Hazard" layer="Hazard">
+        <RectangleObjectComponent tmx-object-id="40" tmx-object-name="" tmx-object-type="Hazard" tmx-object-x="2514" tmx-object-y="61" tmx-object-width="126" tmx-object-height="6" tmx-object-rotation="0" />
+        <BoxCollider2D width="126" height="6" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="879" y="-605" rotation="0" isTrigger="true" tag="Hazard" layer="Hazard">
+        <RectangleObjectComponent tmx-object-id="41" tmx-object-name="" tmx-object-type="Hazard" tmx-object-x="879" tmx-object-y="605" tmx-object-width="33" tmx-object-height="5" tmx-object-rotation="0" />
+        <BoxCollider2D width="33" height="5" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="927" y="-605" rotation="0" isTrigger="true" tag="Hazard" layer="Hazard">
+        <RectangleObjectComponent tmx-object-id="42" tmx-object-name="" tmx-object-type="Hazard" tmx-object-x="927" tmx-object-y="605" tmx-object-width="33" tmx-object-height="5" tmx-object-rotation="0" />
+        <BoxCollider2D width="33" height="5" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="976" y="-605" rotation="0" isTrigger="true" tag="Hazard" layer="Hazard">
+        <RectangleObjectComponent tmx-object-id="43" tmx-object-name="" tmx-object-type="Hazard" tmx-object-x="976" tmx-object-y="605" tmx-object-width="33" tmx-object-height="5" tmx-object-rotation="0" />
+        <BoxCollider2D width="33" height="5" />
       </GameObject>
     </GameObject>
   </Prefab>

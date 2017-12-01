@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 12/1/2017 1:35:52 AM-->
+<!--Last exported: 12/1/2017 1:49:58 AM-->
 <Tiled2Unity version="1.0.11.1">
   <AssignMaterial mesh="mesh_0001" material="mario3levels" />
   <AssignMaterial mesh="mesh_0002" material="mario3levels" />
@@ -11,12 +11,12 @@
   <Prefab name="Level03" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="5" numTilesWide="349" numTilesHigh="49" tileWidth="16" tileHeight="16" exportScale="1" mapWidthInPixels="5584" mapHeightInPixels="784" backgroundColor="#808080" scale=".01">
     <GameObject name="Boundaries" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
-      <GameObject name="LeftEdge" x="-29" y="-4" rotation="0" layer="">
-        <RectangleObjectComponent tmx-object-id="10" tmx-object-name="LeftEdge" tmx-object-type="" tmx-object-x="-29" tmx-object-y="4" tmx-object-width="29" tmx-object-height="765" tmx-object-rotation="0" />
+      <GameObject name="LeftEdge" x="-29" y="-4" rotation="0" layer="ground">
+        <RectangleObjectComponent tmx-object-id="10" tmx-object-name="LeftEdge" tmx-object-type="ground" tmx-object-x="-29" tmx-object-y="4" tmx-object-width="29" tmx-object-height="765" tmx-object-rotation="0" />
         <BoxCollider2D width="29" height="765" />
       </GameObject>
-      <GameObject name="LeftEdge" x="5520" y="-27" rotation="0" layer="">
-        <RectangleObjectComponent tmx-object-id="17" tmx-object-name="LeftEdge" tmx-object-type="" tmx-object-x="5520" tmx-object-y="27" tmx-object-width="29" tmx-object-height="673" tmx-object-rotation="0" />
+      <GameObject name="LeftEdge" x="5580" y="-29" rotation="0" layer="ground">
+        <RectangleObjectComponent tmx-object-id="17" tmx-object-name="LeftEdge" tmx-object-type="ground" tmx-object-x="5580" tmx-object-y="29" tmx-object-width="29" tmx-object-height="673" tmx-object-rotation="0" />
         <BoxCollider2D width="29" height="673" />
       </GameObject>
       <GameObject name="abyss" x="-68" y="-829" rotation="0" isTrigger="true" layer="">
@@ -176,118 +176,6 @@
       <GameObject name="RectangleObject" x="3103" y="-611" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
         <RectangleObjectComponent tmx-object-id="54" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3103" tmx-object-y="611" tmx-object-width="5" tmx-object-height="14" tmx-object-rotation="0" />
         <BoxCollider2D width="5" height="14" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2610" y="-967" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="25" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2610" tmx-object-y="967" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3031" y="-969" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="24" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3031" tmx-object-y="969" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="7477" y="-973" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="6" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="7477" tmx-object-y="973" tmx-object-width="6" tmx-object-height="177" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="177" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3011" y="-1031" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="23" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3011" tmx-object-y="1031" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3094" y="-1034" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="34" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="3094" tmx-object-y="1034" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="4936" y="-1111" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="2" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4936" tmx-object-y="1111" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3031" y="-1111" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="22" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3031" tmx-object-y="1111" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="4626" y="-1112" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="1" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4626" tmx-object-y="1112" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2950" y="-1114" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="35" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="2950" tmx-object-y="1114" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="5090" y="-1176" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="3" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="5090" tmx-object-y="1176" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2434" y="-1207" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="26" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="2434" tmx-object-y="1207" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3011" y="-1208" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="21" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3011" tmx-object-y="1208" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2614" y="-1210" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="33" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="2614" tmx-object-y="1210" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3093" y="-1210" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="36" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="3093" tmx-object-y="1210" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="6658" y="-1256" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="5" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="6658" tmx-object-y="1256" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3032" y="-1304" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="20" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3032" tmx-object-y="1304" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2950" y="-1304" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="37" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="2950" tmx-object-y="1304" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="5544" y="-1352" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="4" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="5544" tmx-object-y="1352" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="1893" y="-1367" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="29" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1893" tmx-object-y="1367" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="1696" y="-1368" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="28" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1696" tmx-object-y="1368" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="4178" y="-1383" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="7" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4178" tmx-object-y="1383" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="4696" y="-1383" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="8" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="4696" tmx-object-y="1383" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3091" y="-1383" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="19" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3091" tmx-object-y="1383" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3657" y="-1384" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="18" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="3657" tmx-object-y="1384" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="1315" y="-1463" rotation="0" isTrigger="true" tag="Turnaround" layer="Turnaround">
-        <RectangleObjectComponent tmx-object-id="27" tmx-object-name="" tmx-object-type="Turnaround" tmx-object-x="1315" tmx-object-y="1463" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="2436" y="-1463" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="31" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="2436" tmx-object-y="1463" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="3573" y="-1594" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="38" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="3573" tmx-object-y="1594" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
-      </GameObject>
-      <GameObject name="RectangleObject" x="4262" y="-1594" rotation="0" isTrigger="true" tag="Wall" layer="Wall">
-        <RectangleObjectComponent tmx-object-id="39" tmx-object-name="" tmx-object-type="Wall" tmx-object-x="4262" tmx-object-y="1594" tmx-object-width="6" tmx-object-height="16" tmx-object-rotation="0" />
-        <BoxCollider2D width="6" height="16" />
       </GameObject>
     </GameObject>
   </Prefab>

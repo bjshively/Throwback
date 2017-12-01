@@ -5,13 +5,13 @@
  </properties>
  <tileset firstgid="1" source="tilesets/Mario 3 Levels.tsx"/>
  <objectgroup name="Boundaries">
-  <object id="10" name="LeftEdge" x="-29" y="4" width="29" height="765"/>
+  <object id="10" name="LeftEdge" type="ground" x="-29" y="4" width="29" height="765"/>
   <object id="15" name="abyss" x="-68" y="829" width="7325" height="27">
    <properties>
     <property name="unity:isTrigger" value="true"/>
    </properties>
   </object>
-  <object id="17" name="LeftEdge" x="5520" y="27" width="29" height="673"/>
+  <object id="17" name="LeftEdge" type="ground" x="5580" y="29" width="29" height="673"/>
  </objectgroup>
  <layer name="Sky" width="349" height="49">
   <properties>
@@ -450,34 +450,6 @@
 </data>
  </layer>
  <objectgroup name="Turnarounds">
-  <object id="1" type="Turnaround" x="4626" y="1112" width="6" height="16"/>
-  <object id="2" type="Turnaround" x="4936" y="1111" width="6" height="16"/>
-  <object id="3" type="Turnaround" x="5090" y="1176" width="6" height="16"/>
-  <object id="4" type="Turnaround" x="5544" y="1352" width="6" height="16"/>
-  <object id="5" type="Turnaround" x="6658" y="1256" width="6" height="16"/>
-  <object id="6" type="Wall" x="7477" y="973" width="6" height="177"/>
-  <object id="7" type="Turnaround" x="4178" y="1383" width="6" height="16"/>
-  <object id="8" type="Turnaround" x="4696" y="1383" width="6" height="16"/>
-  <object id="18" type="Turnaround" x="3657" y="1384" width="6" height="16"/>
-  <object id="19" type="Turnaround" x="3091" y="1383" width="6" height="16"/>
-  <object id="20" type="Turnaround" x="3032" y="1304" width="6" height="16"/>
-  <object id="21" type="Turnaround" x="3011" y="1208" width="6" height="16"/>
-  <object id="22" type="Turnaround" x="3031" y="1111" width="6" height="16"/>
-  <object id="23" type="Turnaround" x="3011" y="1031" width="6" height="16"/>
-  <object id="24" type="Turnaround" x="3031" y="969" width="6" height="16"/>
-  <object id="25" type="Turnaround" x="2610" y="967" width="6" height="16"/>
-  <object id="26" type="Turnaround" x="2434" y="1207" width="6" height="16"/>
-  <object id="27" type="Turnaround" x="1315" y="1463" width="6" height="16"/>
-  <object id="28" type="Turnaround" x="1696" y="1368" width="6" height="16"/>
-  <object id="29" type="Turnaround" x="1893" y="1367" width="6" height="16"/>
-  <object id="31" type="Wall" x="2436" y="1463" width="6" height="16"/>
-  <object id="33" type="Wall" x="2614" y="1210" width="6" height="16"/>
-  <object id="34" type="Wall" x="3094" y="1034" width="6" height="16"/>
-  <object id="35" type="Wall" x="2950" y="1114" width="6" height="16"/>
-  <object id="36" type="Wall" x="3093" y="1210" width="6" height="16"/>
-  <object id="37" type="Wall" x="2950" y="1304" width="6" height="16"/>
-  <object id="38" type="Wall" x="3573" y="1594" width="6" height="16"/>
-  <object id="39" type="Wall" x="4262" y="1594" width="6" height="16"/>
   <object id="44" type="Turnaround" x="891" y="354" width="5" height="14"/>
   <object id="46" type="Turnaround" x="959" y="354" width="5" height="14"/>
   <object id="47" type="Turnaround" x="1436" y="417" width="5" height="14"/>
@@ -491,10 +463,5 @@
   <object id="55" type="Turnaround" x="4110" y="321" width="5" height="14"/>
   <object id="56" type="Turnaround" x="4397" y="323" width="5" height="14"/>
  </objectgroup>
- <objectgroup name="HazardTriggers" visible="0">
-  <object id="40" type="Hazard" x="2853" y="1025" width="126" height="6"/>
-  <object id="41" type="Hazard" x="1218" y="1569" width="33" height="5"/>
-  <object id="42" type="Hazard" x="1266" y="1569" width="33" height="5"/>
-  <object id="43" type="Hazard" x="1315" y="1569" width="33" height="5"/>
- </objectgroup>
+ <objectgroup name="HazardTriggers" visible="0"/>
 </map>
