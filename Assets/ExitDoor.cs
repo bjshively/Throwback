@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExitDoor : MonoBehaviour
 {
     private Animator anim;
+    private AudioSource audio;
     private PlayerController player;
     private bool gameComplete;
     // Use this for initialization
@@ -12,6 +13,7 @@ public class ExitDoor : MonoBehaviour
     {
         gameComplete = false;
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
         player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 	
@@ -27,7 +29,9 @@ public class ExitDoor : MonoBehaviour
         {
             if (anim.GetBool("complete") && !gameComplete)
             {
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
                 anim.SetTrigger("eat");
+                audio.Play();
                 player.Disappear();
                 gameComplete = true;
             }

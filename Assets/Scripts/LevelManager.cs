@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     private bool levelReady;
     public int playerLevel;
     public bool playerIsCollectingItem;
-    private int collectedPieces;
+    public int collectedPieces;
     private int totalPieces;
     private Animator exitDoor;
 

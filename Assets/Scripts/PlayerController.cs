@@ -450,7 +450,7 @@ public class PlayerController : MonoBehaviour
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         spriteRenderer.sortingLayerName = "Infinity";
         spriteRenderer.sortingOrder = 100;
-        Invoke("DestroyTheWorld", 3);
+        Invoke("DestroyTheWorld", 1.5f);
 
     }
 
