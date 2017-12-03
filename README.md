@@ -6,7 +6,7 @@ This game was built as an entry for the [GitHub Game Off 2017](itch.io/jam/game-
 
 ## Controls
 
-- WASD to move.
+- WASD or arrow keys to move. Spacebar to jump.
 - JKL to use weapons as you collect them.
 
 ## Technology
