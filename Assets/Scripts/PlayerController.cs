@@ -137,11 +137,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (canMove)
         {
-            if (Input.GetKey("d"))
+            if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
             {
                 Move(1);
             }
-            else if (Input.GetKey("a"))
+            else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
             {
                 Move(-1);
             }
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Jump       
-            if (Input.GetKeyDown("w") && grounded)
+            if ((Input.GetKeyDown("w") || Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
             {
                 audio[1].Play();
                 body.velocity = new Vector2(body.velocity.x, jumpForce);
