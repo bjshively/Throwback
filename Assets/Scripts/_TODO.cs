@@ -5,15 +5,10 @@
 // BRAD TODO
 // knockback animation feels fucked up
 // seesaw platform with physics
-// Sound effects for door
-// Set music volume for all stages
-
+// Update level0 door respawn for new sprite size - I couldn't find a script for it
 
 
 // EITHER TODO
-// lvl2 needs music
-// lvl3 needs music
-// lvl99 needs music
 
 
 
@@ -25,16 +20,21 @@
 
 
 // PAULISH
-// 
-// ground pound/air melee
+// ground pound/air melee sprite
+// ground pound/air melee control
 
 
 
+// DONE =================
+// lvl2 needs music
+// lvl3 needs music
+// lvl99 needs music
 // Hook up door
 // - Trigger for "complete"
 // - Trigger for "open"
 // Setup other tetris pieces
-// DONE =================
+// Sound effects for door
+// Set music volume for all stages
 // fix reappearing block sprite reappear
 // Update lvl3 horizontal platforms to use new prefab
 // lvl3 left wall bullet collection
