@@ -30,9 +30,7 @@ public class Cage : MonoBehaviour
         {
             // Reset to false to prevent this from firing over and over again 
             open = false;
-            audio.PlayDelayed(.8f);
             anim.SetTrigger("fall");
-            Invoke("Disable", 1f);
         }
     }
 
@@ -44,5 +42,10 @@ public class Cage : MonoBehaviour
     public void setOpen()
     {
         open = true;
+    }
+
+    private void PlaySound()
+    {
+        audio.Play();
     }
 }
