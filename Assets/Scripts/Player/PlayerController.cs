@@ -309,13 +309,8 @@ public class PlayerController : MonoBehaviour
         Stop();
         body.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         canMove = false;
-
-        // Start the animation trigger
         anim.SetTrigger("melee");
 
-        // After some delay, enable the melee collision box, then disable it
-        Invoke("setMelee", .15f);
-        Invoke("resetMelee", .5f);
     }
 
     public void FireZapper()
