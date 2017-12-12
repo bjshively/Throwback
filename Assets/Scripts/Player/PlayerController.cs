@@ -255,9 +255,9 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                Invoke("resetMove", 1);
-                knockback();
+                anim.SetTrigger("knockback");
             }
+
         }
     }
 
@@ -290,9 +290,7 @@ public class PlayerController : MonoBehaviour
     // Player is knocked backwards upon collidding with an enemy
     private void knockback()
     {
-        anim.SetTrigger("knockback");
         hurt = true;
-        Invoke("resetHurt", .25f);
         invincible = true;
         Invoke("resetInvincibility", 3);
     }
