@@ -396,7 +396,7 @@ public class PlayerController : MonoBehaviour
     // Player should repeatedly take damage from hazards if standing on/in them
     void OnCollisionStay2D(Collision2D col)
     {
-        if (col.transform.tag == "Hazard")
+        if (col.gameObject.layer == 15)
         {
             takeDamage();
         }
