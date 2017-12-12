@@ -179,24 +179,24 @@
  </tile>
  <tile id="626">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="627">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
-   <object id="2" type="ground" x="0" y="1" width="2" height="15"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Wall" type="Wall" x="0" y="1" width="2" height="15"/>
   </objectgroup>
  </tile>
  <tile id="628">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="629">
   <objectgroup draworder="index">
    <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
-   <object id="2" type="ground" x="14" y="1" width="2" height="15"/>
+   <object id="2" name="Wall" type="Wall" x="14" y="1" width="2" height="15"/>
   </objectgroup>
  </tile>
  <tile id="645">
@@ -211,34 +211,34 @@
  </tile>
  <tile id="699">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="700">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="2" height="16"/>
+   <object id="1" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="702">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="14" y="0" width="2" height="16"/>
+   <object id="1" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="773">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="2" height="16"/>
-   <object id="3" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="1" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
+   <object id="3" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="774">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="775">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="14" width="16" height="2"/>
-   <object id="2" type="ground" x="14" y="0" width="2" height="16"/>
+   <object id="1" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="2" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="860">

@@ -1,11 +1,12 @@
 ﻿// EMO TODO
 // look into zapper collision for small enemies (shouldn't get hit)
-
+// Finish fixing maps and exports for new wall stuff
 
 // BRAD TODO
-// knockback animation feels fucked up
 // seesaw platform with physics
-// Update level0 door respawn for new sprite size - I couldn't find a script for it
+// cannot kill goombas with zapper
+
+
 
 
 // EITHER TODO
@@ -26,6 +27,8 @@
 
 
 // DONE =================
+// Update level0 door respawn for new sprite size - I couldn't find a script for it
+// knockback animation feels fucked up
 // lvl2 needs music
 // lvl3 needs music
 // lvl99 needs music
