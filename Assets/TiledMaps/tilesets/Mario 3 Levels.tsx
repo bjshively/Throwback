@@ -148,17 +148,17 @@
  </tile>
  <tile id="526">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Crates" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="527">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Crates" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="528">
   <objectgroup draworder="index">
-   <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Crates" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="531">
@@ -203,7 +203,10 @@
     <property name="unity:layer" value="ground"/>
     <property name="unity:tag" value="Wall"/>
    </properties>
-   <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
+   <object id="4" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
+   <object id="5" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="699">
@@ -240,22 +243,23 @@
  </tile>
  <tile id="860">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="861">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="862">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="921">
   <objectgroup draworder="index">
-   <object id="1" type="Hazard" x="0" y="0" width="16" height="16"/>
+   <object id="1" name="Hazard" type="Hazard" x="0" y="0" width="16" height="16"/>
+   <object id="2" name="Ground" type="ground" x="0" y="1" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="975">
@@ -284,27 +288,24 @@
  </tile>
  <tile id="1118">
   <objectgroup draworder="index">
-   <object id="7" type="ground" x="1" y="0" width="15" height="2"/>
-   <object id="8" type="Wall" x="-1" y="4" width="2" height="12"/>
-   <object id="9" type="ground" x="0" y="3" width="2" height="13"/>
+   <object id="7" name="Ground" type="ground" x="1" y="0" width="15" height="2"/>
+   <object id="8" name="Wall" type="Wall" x="0" y="4" width="2" height="12"/>
   </objectgroup>
  </tile>
  <tile id="1119">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="1120">
   <objectgroup draworder="index">
-   <object id="2" type="ground" x="0" y="0" width="15" height="2"/>
-   <object id="3" type="Wall" x="15" y="3" width="2" height="13"/>
-   <object id="4" type="ground" x="14" y="3" width="2" height="13"/>
+   <object id="2" name="Ground" type="ground" x="0" y="0" width="15" height="2"/>
+   <object id="3" name="Wall" type="Wall" x="14" y="3" width="2" height="13"/>
   </objectgroup>
  </tile>
  <tile id="1191">
   <objectgroup draworder="index">
-   <object id="1" type="Wall" x="-1" y="2" width="2" height="14"/>
-   <object id="2" type="ground" x="0" y="0" width="2" height="16"/>
+   <object id="1" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1192">
@@ -312,23 +313,22 @@
  </tile>
  <tile id="1193">
   <objectgroup draworder="index">
-   <object id="4" type="Wall" x="15" y="2" width="2" height="14"/>
-   <object id="5" type="ground" x="14" y="0" width="2" height="16"/>
+   <object id="4" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="1261">
   <objectgroup draworder="index">
-   <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="1262">
   <objectgroup draworder="index">
-   <object id="1" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="1263">
   <objectgroup draworder="index">
-   <object id="2" type="jumpthrough" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Jumpthrough" type="jumpthrough" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="1264">
@@ -375,9 +375,8 @@
  </tile>
  <tile id="1417">
   <objectgroup draworder="index">
-   <object id="2" type="ground" x="1" y="0" width="15" height="2"/>
-   <object id="3" type="Wall" x="-1" y="3" width="2" height="13"/>
-   <object id="4" type="ground" x="0" y="3" width="2" height="13"/>
+   <object id="2" name="Ground" type="ground" x="1" y="0" width="15" height="2"/>
+   <object id="3" name="Wall" type="Wall" x="0" y="3" width="2" height="13"/>
   </objectgroup>
  </tile>
  <tile id="1418">
