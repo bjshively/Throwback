@@ -79,7 +79,7 @@ public class Collectible : MonoBehaviour
 
             if (gameObject.name == "MessageNoWeapon")
             {
-                GameObject.Find("ExitDoor").transform.position = new Vector2(52.487f, -2.260632f);
+                GameObject.Find("ExitDoor").transform.position = new Vector2(52.477f, -2.294f);
                 collected = false;
                 notifyText.show("You don't have any weapons.\n\nBe careful.");
                 notifyText.Invoke("clearMessage", 4);
