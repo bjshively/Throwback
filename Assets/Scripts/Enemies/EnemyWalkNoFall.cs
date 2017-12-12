@@ -78,7 +78,7 @@ public class EnemyWalkNoFall : Enemy
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        base.OnCollisionEnter2D();
+        base.OnCollisionEnter2D(col);
         if (col.gameObject.layer == 14)
         {
             if (canTurn)
