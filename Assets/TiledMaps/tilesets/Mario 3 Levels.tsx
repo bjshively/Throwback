@@ -36,19 +36,19 @@
  </tile>
  <tile id="307">
   <objectgroup draworder="index">
-   <object id="5" type="ground" x="0" y="0" width="16" height="2"/>
-   <object id="6" type="ground" x="0" y="1" width="2" height="15"/>
+   <object id="5" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="6" name="Wall" type="Wall" x="0" y="2" width="2" height="14"/>
   </objectgroup>
  </tile>
  <tile id="308">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="309">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="2"/>
-   <object id="2" type="ground" x="14" y="1" width="2" height="15"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
+   <object id="2" name="Wall" type="Wall" x="14" y="2" width="2" height="14"/>
   </objectgroup>
  </tile>
  <tile id="310">
@@ -81,12 +81,12 @@
  </tile>
  <tile id="380">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="2" height="16"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="382">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="14" y="0" width="2" height="16"/>
+   <object id="1" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="383">
@@ -119,17 +119,19 @@
  </tile>
  <tile id="453">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="0" width="16" height="16"/>
+   <object id="1" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="2" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="454">
   <objectgroup draworder="index">
-   <object id="1" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
   </objectgroup>
  </tile>
  <tile id="455">
   <objectgroup draworder="index">
-   <object id="3" type="ground" x="0" y="0" width="16" height="16"/>
+   <object id="3" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="4" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
   </objectgroup>
  </tile>
  <tile id="458">
@@ -203,10 +205,8 @@
     <property name="unity:layer" value="ground"/>
     <property name="unity:tag" value="Wall"/>
    </properties>
-   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="2"/>
-   <object id="2" name="Wall" type="Wall" x="0" y="0" width="2" height="16"/>
-   <object id="4" name="Wall" type="Wall" x="14" y="0" width="2" height="16"/>
-   <object id="5" name="Ground" type="ground" x="0" y="14" width="16" height="2"/>
+   <object id="1" name="Ground" type="ground" x="0" y="0" width="16" height="16"/>
+   <object id="2" name="Wall" type="Wall" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="699">
