@@ -24,18 +24,7 @@ public class EnemyWalk : Enemy
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        base.OnCollisionEnter2D(col);
-        if (col.collider.tag == "Wall")
-        {
-            Flip();
-        }
-    }
-
-    // If the enemy bumps into part of the World, change directions
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        base.OnTriggerEnter2D(col);
-        if (col.gameObject.tag == "Wall")
+        if (col.gameObject.layer == 14)
         {
             if (canTurn)
             {
@@ -46,8 +35,6 @@ public class EnemyWalk : Enemy
             }
         }
     }
-
-
 
     private void resetCanTurn()
     {

@@ -78,6 +78,13 @@ public abstract class Enemy : MonoBehaviour
         {
             Die();
         }
+
+        // wall
+        if (col.collider.gameObject.layer == 14)
+        {
+            Debug.Log("wall");
+            Flip();
+        }
     }
 
     protected void OnTriggerEnter2D(Collider2D col)

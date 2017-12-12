@@ -75,15 +75,6 @@ public class EnemyWalkNoFall : Enemy
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        base.OnCollisionEnter2D(col);
-        if (col.gameObject.tag == "Wall")
-        {
-            Flip();
-        }
-    }
-
     private void resetCanTurn()
     {
         canTurn = true;
