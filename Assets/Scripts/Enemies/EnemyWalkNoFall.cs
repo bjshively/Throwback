@@ -69,9 +69,21 @@ public class EnemyWalkNoFall : Enemy
     void OnTriggerEnter2D(Collider2D col)
     {
         base.OnTriggerEnter2D(col);
-        if (col.gameObject.tag == "Wall" || col.gameObject.tag == "Turnaround")
+        if (col.gameObject.tag == "Turnaround")
         {
             Flip();
+        }
+    }
+
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.layer == 14)
+        {
+            if (canTurn)
+            {
+                Flip();
+            }
         }
     }
 
