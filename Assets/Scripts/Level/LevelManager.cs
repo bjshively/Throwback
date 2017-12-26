@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
         // Start menu
         if (SceneManager.GetActiveScene().name == "Start")
         {
-            if (Input.GetKey("return") && !gameStarted)
+            if (Input.GetButtonDown("Start") && !gameStarted)
             {
                 GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
                 GameObject.Find("menu-startsound").GetComponent<AudioSource>().Play();
