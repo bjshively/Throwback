@@ -40,7 +40,7 @@ public class Collectible : MonoBehaviour
             // The player is frozen until they press the key, executing the attack and tearing down the item
             if (attackKey != null)
             {
-                if (Input.GetKeyDown(attackKey))
+                if (Input.GetButtonDown(attackKey))
                 {
                     attack();
                     Teardown();
@@ -97,7 +97,7 @@ public class Collectible : MonoBehaviour
             // Weapons
             else if (gameObject.name == "PowerGlove")
             {
-                attackKey = "j";
+                attackKey = "Melee";
                 notifyText.show("Powerglove\n\n\nPress J to melee");
                 player.setLevel(1);
                 collect(messageDisplayTime);
@@ -105,7 +105,7 @@ public class Collectible : MonoBehaviour
             }
             else if (gameObject.name == "Zapper")
             {
-                attackKey = "k";
+                attackKey = "Zapper";
                 notifyText.show("Zapper\n\n\nPress K to fire");
                 player.setLevel(2);
                 collect(messageDisplayTime);
@@ -113,7 +113,7 @@ public class Collectible : MonoBehaviour
             }
             else if (gameObject.name == "SuperScope")
             {
-                attackKey = "l";
+                attackKey = "SuperScope";
                 notifyText.show("SuperScope\n\nPress L to fire\n\nIt's powerful but slow to reload");
                 player.setLevel(3);
                 collect(messageDisplayTime);
