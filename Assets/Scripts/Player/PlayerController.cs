@@ -137,11 +137,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (canMove)
         {
-            if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetAxis("Horizontal") > 0)
             {
                 Move(1);
             }
-            else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetAxis("Horizontal") < 0)
             {
                 Move(-1);
             }
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Jump       
-            if ((Input.GetKeyDown("w") || Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
+            if ((Input.GetKeyDown("w") || Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetButtonDown("Jump")) && grounded)
             {
                 audio[1].Play();
                 body.velocity = new Vector2(body.velocity.x, jumpForce);
@@ -160,24 +160,22 @@ public class PlayerController : MonoBehaviour
             // Weapons
             if (hasPowerglove)
             {
-                if (Input.GetKey("j") && canMove && grounded)
+                if ((Input.GetButton("Melee")) && canMove && grounded)
                 {
                     UseMelee();
                 }
             }
             if (hasZapper)
             {
-                if (Input.GetKey("k") && canFire)
+                if (Input.GetButton("Zapper") && canFire)
                 {
                     FireZapper();
                 }
             }
 
-
-
             if (hasSuperscope)
             {
-                if (Input.GetKey("l") && canFire && scopeIsCool)
+                if (Input.GetButton("SuperScope") && canFire && scopeIsCool)
                 {
                     FireSuperScope();
                 }
