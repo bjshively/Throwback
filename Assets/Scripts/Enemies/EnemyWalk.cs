@@ -34,6 +34,13 @@ public class EnemyWalk : Enemy
 
             }
         }
+
+        // bullets
+        if (col.collider.gameObject.layer == 11)
+        {
+            Die();
+        }
+
     }
 
     private void resetCanTurn()
