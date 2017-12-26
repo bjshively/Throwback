@@ -4,10 +4,6 @@
 
 // BRAD TODO
 // seesaw platform with physics
-// cannot kill goombas with zapper
-
-
-
 
 // EITHER TODO
 
