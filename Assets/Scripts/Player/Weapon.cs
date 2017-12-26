@@ -66,7 +66,7 @@ public abstract class Weapon : MonoBehaviour
         }
 
         // Destroy bullet when it hits the ground layer
-        if (col.gameObject.layer == 8 || col.gameObject.layer == 13 || col.gameObject.tag == "Wall")
+        if (col.gameObject.layer == 8 || col.gameObject.layer == 13 || col.gameObject.tag == "Wall" || col.gameObject.layer == 14)
         {
             SelfDestruct();
         }
