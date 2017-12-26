@@ -169,7 +169,17 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetButton("Zapper") && canFire)
                 {
-                    anim.SetTrigger("zap");
+                    // There is no "jump-and-zap" animation state,
+                    // So we should just fire if the player isn't grounded but can fire
+                    if (!grounded)
+                    {
+                        FireZapper();
+                    }
+                    else
+                    {
+                        anim.SetTrigger("zap");
+                    }
+
                 }
             }
 
