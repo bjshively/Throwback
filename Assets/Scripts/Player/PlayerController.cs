@@ -278,17 +278,19 @@ public class PlayerController : MonoBehaviour
         canMove = false;
         audio[3].Play();
         audio[4].PlayDelayed(2);
-        Invoke("setAliveFalse", 3);
+        StartCoroutine(setAliveFalse(3));
     }
 
-    void setAliveFalse()
+    IEnumerator setAliveFalse(float time)
     {
+        yield return new WaitForSeconds(time);
         alive = false;
     }
 
     // Called after iframes expire
-    private void resetInvincibility()
+    IEnumerator ResetInvincibility()
     {
+        yield return new WaitForSeconds(3f);
         invincible = false;
 
         // Reset the attack interrupt flag
@@ -300,7 +302,7 @@ public class PlayerController : MonoBehaviour
     {
         hurt = true;
         invincible = true;
-        Invoke("resetInvincibility", 3);
+        StartCoroutine(ResetInvincibility());
     }
 
     private void resetHurt()
@@ -451,7 +453,6 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.sortingLayerName = "Infinity";
         spriteRenderer.sortingOrder = 100;
         Invoke("DestroyTheWorld", 1.5f);
-
     }
 
     public void DestroyTheWorld()
