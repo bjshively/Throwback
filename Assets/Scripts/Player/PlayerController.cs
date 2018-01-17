@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     // Player attributes
     public int currentHealth;
-    private float moveSpeed = 3F;
+    private float moveSpeed = 1.8F; //3F
     private float jumpForce = 7;
 
     private GameObject groundPoint1;
