@@ -39,7 +39,7 @@ public class Rocket : MonoBehaviour
         player.gameObject.SetActive(false);
         body.gravityScale = 0;
         anim.SetTrigger("FinishLevel");
-        body.velocity = Vector2.up;
+        body.velocity = Vector2.up * 5;
         LevelManager.Instance.Invoke("NextLevel", 2.5f);
     }
 }

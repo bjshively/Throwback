@@ -14,7 +14,7 @@ public class EnemyWalkNoFall : Enemy
     void Start()
     {
         base.Start();
-        moveSpeed = .5f;
+        moveSpeed = 3f;
         canTurn = true;
         if (movingLeft)
         {
@@ -27,7 +27,7 @@ public class EnemyWalkNoFall : Enemy
     {
         if (!LevelManager.Instance.stopAllAction())
         {
-            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 6)
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 20)
             {
                 Move();
             }

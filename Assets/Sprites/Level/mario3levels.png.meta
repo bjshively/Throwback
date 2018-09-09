@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 408efd52308f84b9abe0a760bb66f866
-timeCreated: 1516160737
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: mario3levels_0
@@ -1512,7 +1510,7 @@ TextureImporter:
     21303010: mario3levels_1505
     21303012: mario3levels_1506
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1552,18 +1550,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1573,7 +1574,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1605,6 +1607,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c32f1474cac499640b9372b4be2b99c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_1
       rect:
@@ -1623,6 +1631,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6bdef40a98d1a604e8ec945a188ceca7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_2
       rect:
@@ -1642,6 +1656,12 @@ TextureImporter:
         - {x: 8, y: 3}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 09af064b187cec149a39f54960c47699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_3
       rect:
@@ -1660,6 +1680,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e41ec69774407145b1e06b7cb987efb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_4
       rect:
@@ -1678,6 +1704,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d5a7479b5278f0741a052a9b56fe3e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_5
       rect:
@@ -1696,6 +1728,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 745aa3654782b444395836530b050645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_6
       rect:
@@ -1714,6 +1752,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5aa718a3a4d097f49a3eb007e09d8ea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_7
       rect:
@@ -1732,6 +1776,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dae389d6df35dd34db8a0b41be6838e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_8
       rect:
@@ -1750,6 +1800,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2441ac6d9f8a4d3499578d41f30bb17a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_9
       rect:
@@ -1768,6 +1824,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: fd78b21396f70704ea4fb56e0a5b5537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_10
       rect:
@@ -1786,6 +1848,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f63fe781e8ecc141bf6c2eae8303633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_11
       rect:
@@ -1804,6 +1872,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e04452eb6ef4f14686fb20d4aca10f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_12
       rect:
@@ -1822,6 +1896,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 962f44939ed584d43b2a57872b420b87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_13
       rect:
@@ -1840,6 +1920,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 01c9990bac0e4ce46855abbd03e09b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_14
       rect:
@@ -1858,6 +1944,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 131c7b5b866de134484dc0964e1c0e82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_15
       rect:
@@ -1876,6 +1968,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6873ead282bc8f043a1cb7f78284f00a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_16
       rect:
@@ -1894,6 +1992,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 63220ca397136654a897cf50578fa974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_17
       rect:
@@ -1912,6 +2016,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 643bb194b3c74dd49918fa1c62a52ba5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_18
       rect:
@@ -1930,6 +2040,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 04b5fa6be9db16148b720f661a1a2c84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_19
       rect:
@@ -1948,6 +2064,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a38f9fc36190e6a40bef7f705f831363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_20
       rect:
@@ -1966,6 +2088,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7499691bfd4c60c4984cf4aaed9033db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_21
       rect:
@@ -1984,6 +2112,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: af82f3f07c4d07f44b4b625217323f48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_22
       rect:
@@ -2002,6 +2136,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: eeab8fec25941d24da58bd543817e7cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_23
       rect:
@@ -2020,6 +2160,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d37e89670b7e56c4188cd27cf5850c8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_24
       rect:
@@ -2037,6 +2183,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6076cf8a4a11d8244bc078e7821fb0f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_25
       rect:
@@ -2055,6 +2207,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1f0277eae925883428e00b3163a8966e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_26
       rect:
@@ -2073,6 +2231,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7dcc7279be05dc84c9495ee2baafd215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_27
       rect:
@@ -2090,6 +2254,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3e6798b80797e3144be99975097a1d34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_28
       rect:
@@ -2107,6 +2277,12 @@ TextureImporter:
         - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 65760a3b9e1d9ba4e95f88064a5109c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_29
       rect:
@@ -2125,6 +2301,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: fa698e0ced527834698178b4bba6bc51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_30
       rect:
@@ -2143,6 +2325,12 @@ TextureImporter:
         - {x: 8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d83a818a876c8d04c9515d6ff58008d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_31
       rect:
@@ -2160,6 +2348,12 @@ TextureImporter:
         - {x: -8, y: 0}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cddf857fd4d4e2a44b52f69a5df65f11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_32
       rect:
@@ -2177,6 +2371,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f184fa3aad0cb364c97d05e2a6ff4263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_33
       rect:
@@ -2194,6 +2394,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7b83da9bddbbaa94986575c232f69e5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_34
       rect:
@@ -2211,6 +2417,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6a94de5ca1f90314aad6e44cc09c3b0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_35
       rect:
@@ -2228,6 +2440,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 44356e08bc73b5247933bfa95a41e570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_36
       rect:
@@ -2249,6 +2467,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 07f79e64da5c2fd4da5f055e80bd613c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_37
       rect:
@@ -2269,6 +2493,12 @@ TextureImporter:
         - {x: 8, y: 6}
         - {x: 7, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3a597afeb0b17db4295dda6c759a907e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_38
       rect:
@@ -2287,6 +2517,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ce67f6e9081b80643b92aab0aaed95f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_39
       rect:
@@ -2305,6 +2541,12 @@ TextureImporter:
         - {x: -8, y: 8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a3550beb7ad034c41b6140bd71ed8e4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_40
       rect:
@@ -2323,6 +2565,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 85252152670c3d34caa59e7d30842658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_41
       rect:
@@ -2341,6 +2589,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 575b2d7d6fbc930458b2589ec51eae71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_42
       rect:
@@ -2359,6 +2613,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 55c8a2c7217acc344953da94043f8383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_43
       rect:
@@ -2377,6 +2637,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5a9eb9df736e8dd4db5b5932445e6e08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_44
       rect:
@@ -2395,6 +2661,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a19bb0e50578374bb8fb95f738d7152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_45
       rect:
@@ -2413,6 +2685,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ccc398c581f16934e97e8a86f0ae7ffd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_46
       rect:
@@ -2431,6 +2709,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a59f561879ae3fd4cb8e56f09c8bccda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_47
       rect:
@@ -2450,6 +2734,12 @@ TextureImporter:
         - {x: 8, y: 2}
         - {x: 2, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: f86aba9e55649e147a3f24ab52e940d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_48
       rect:
@@ -2470,6 +2760,12 @@ TextureImporter:
         - {x: 8, y: 6}
         - {x: 6, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 682f82dea51d7404eb2f0008c5e973f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_49
       rect:
@@ -2490,6 +2786,12 @@ TextureImporter:
         - {x: 2, y: -2}
         - {x: -1, y: 1}
       tessellationDetail: 0
+      bones: []
+      spriteID: a28a1eff7c07bad478b2fc1f930343a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_50
       rect:
@@ -2510,6 +2812,12 @@ TextureImporter:
         - {x: 8, y: 1}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8dd006da13a3dd840ad78113d95e2a77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_51
       rect:
@@ -2529,6 +2837,12 @@ TextureImporter:
         - {x: 8, y: -2}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dcab2029d7f9fe341bd1962b5ab8e6ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_52
       rect:
@@ -2548,6 +2862,12 @@ TextureImporter:
         - {x: -1, y: 4}
         - {x: 0, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3f8bc59b12056ca4b8189e48cb56c07e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_53
       rect:
@@ -2567,6 +2887,12 @@ TextureImporter:
         - {x: 8, y: 2}
         - {x: 2, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 377026ebcd320614d949ae6d016b9032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_54
       rect:
@@ -2587,6 +2913,12 @@ TextureImporter:
         - {x: 8, y: 6}
         - {x: 6, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 40f9cfbb0b4474d4c8241e5ad03e26f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_55
       rect:
@@ -2607,6 +2939,12 @@ TextureImporter:
         - {x: 2, y: -2}
         - {x: -1, y: 1}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6cf13fb2e8a681442ac29f2fd84e965d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_56
       rect:
@@ -2626,6 +2964,12 @@ TextureImporter:
         - {x: -1, y: 4}
         - {x: 0, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 65becb13334428746923e7a2e599f09f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_57
       rect:
@@ -2645,6 +2989,12 @@ TextureImporter:
         - {x: 8, y: -2}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 25ddc5b0973a7eb43a6109f82205c53b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_58
       rect:
@@ -2665,6 +3015,12 @@ TextureImporter:
         - {x: 8, y: 1}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b4cc9368b015a0479ee8103e9d5223b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_59
       rect:
@@ -2685,6 +3041,12 @@ TextureImporter:
         - {x: 8, y: 1}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 496d595a3d7133a449895890bc6ebc99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_60
       rect:
@@ -2705,6 +3067,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 12133026a4983874fb662f6c4b325fe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_61
       rect:
@@ -2725,6 +3093,12 @@ TextureImporter:
         - {x: 8, y: 5}
         - {x: 5, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b5fcdc8f371fb3b4e8bfcd4a43ae1bd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_62
       rect:
@@ -2745,6 +3119,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 244cfa825078d194d9febc13cacf5cc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_63
       rect:
@@ -2765,6 +3145,12 @@ TextureImporter:
         - {x: 8, y: 5}
         - {x: 5, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c74390fba60951c4a93afd3a17c6e51f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_64
       rect:
@@ -2783,6 +3169,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dae603ca45f4c4b40a50a03d3ee39ac7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_65
       rect:
@@ -2801,6 +3193,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d49b38f61f76ee488becc6fb2d9e239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_66
       rect:
@@ -2819,6 +3217,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c22efa85879966b44a0e09c0ac3dd396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_67
       rect:
@@ -2837,6 +3241,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1b886df818682df418ccd1fcbf033a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_68
       rect:
@@ -2855,6 +3265,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d42aaef3927923d4989cde3db2ea62a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_69
       rect:
@@ -2873,6 +3289,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dfbcf5fde0ac4434e918f52d72a8bf2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_70
       rect:
@@ -2891,6 +3313,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: dde3c3af4ee28654f9ad726c667068ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_71
       rect:
@@ -2909,6 +3337,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: a4ca9d8be7f92a34694a54b2a3bd7c06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_72
       rect:
@@ -2927,6 +3361,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 741a7c55a31c6d648a8a26273fe257c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_73
       rect:
@@ -2945,6 +3385,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cdf094f2874939a4893b6bc13de28993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_74
       rect:
@@ -2963,6 +3409,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ea1295bce97d7d459b2452a09531b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_75
       rect:
@@ -2981,6 +3433,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f69717e60d2289744a61c9093c434b6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_76
       rect:
@@ -2999,6 +3457,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2124965252e7d5346b4106f7859539bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_77
       rect:
@@ -3017,6 +3481,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b3126126b8ab427418e78edfc0118c52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_78
       rect:
@@ -3035,6 +3505,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ce560955f976dc64da5f87f3b7650a5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_79
       rect:
@@ -3053,6 +3529,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5cd93798c74851844b403c4af2126745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_80
       rect:
@@ -3071,6 +3553,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: fcc409cae8dc64b4cb1a69b237b6411e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_81
       rect:
@@ -3089,6 +3577,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3e2bf3da1250c9f48a0929fb4044b447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_82
       rect:
@@ -3107,6 +3601,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6fb4b834f879d3f4c918c4613de2f5ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_83
       rect:
@@ -3125,6 +3625,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9eadae795b18ff64f802478752d57666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_84
       rect:
@@ -3142,6 +3648,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: a9cb8c91efeb9fd41ab1cdf94c83b120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_85
       rect:
@@ -3160,6 +3672,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f31f2cfb4e5a4c540894f25b2163c3e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_86
       rect:
@@ -3177,6 +3695,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: d15b7021e168ad645913d3c7e08767b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_87
       rect:
@@ -3195,6 +3719,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 0}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1df2ccadffe5ba14eb0a1636c0efd9e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_88
       rect:
@@ -3212,6 +3742,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7dc1657ae15fc3440b70686a3b19814a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_89
       rect:
@@ -3229,6 +3765,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6cc9eeaa9b03e644c94452ecbc860e9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_90
       rect:
@@ -3247,6 +3789,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: ca87195650cb06b44b8ca4b2e1d061d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_91
       rect:
@@ -3265,6 +3813,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a9d6d467ab69a948b999bbe1a1e03a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_92
       rect:
@@ -3284,6 +3838,12 @@ TextureImporter:
         - {x: 8, y: 6}
         - {x: 6, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 88d2ddefa9850f543bc8551a33d904b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_93
       rect:
@@ -3302,6 +3862,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 29dddbf3e5fa0ab4bb18c9b210f5b49f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_94
       rect:
@@ -3320,6 +3886,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f42be641ab8d7fa4cab5fc69b0ab52a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_95
       rect:
@@ -3338,6 +3910,12 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: -8, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: cb9c09ac5729eb043a89dc963169065f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_96
       rect:
@@ -3357,6 +3935,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e70954e731e33144bad96b6e052c6339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_97
       rect:
@@ -3376,6 +3960,12 @@ TextureImporter:
         - {x: 8, y: 1}
         - {x: 4, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5d04e106f1461a742a428c31702d4251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_98
       rect:
@@ -3394,6 +3984,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 84ba1ae20b4402c48828217c1ef5cd95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_99
       rect:
@@ -3412,6 +4008,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7581918dd4e416a49a91d16b5499323e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_100
       rect:
@@ -3430,6 +4032,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7a1eeb343fedf4843bea8207b1524b82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_101
       rect:
@@ -3448,6 +4056,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 67d4da211f29d4740a531741a758db66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_102
       rect:
@@ -3468,6 +4082,12 @@ TextureImporter:
         - {x: 8, y: -5}
         - {x: 3, y: -3}
       tessellationDetail: 0
+      bones: []
+      spriteID: c535d0985c4984b4bb2762460253f850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_103
       rect:
@@ -3487,6 +4107,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: f1afd4eb9295e0542ae11aa5601693e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_104
       rect:
@@ -3505,6 +4131,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 24ab43b1018008240a0acdda38f18b0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_105
       rect:
@@ -3524,6 +4156,12 @@ TextureImporter:
         - {x: 8, y: -5}
         - {x: -5, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 89f867c25d198824daa6ccc9c35a4aed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_106
       rect:
@@ -3542,6 +4180,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 29d9de23ea8c80348a8836f744fa79b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_107
       rect:
@@ -3560,6 +4204,12 @@ TextureImporter:
         - {x: -7, y: 8}
         - {x: -7, y: -8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a79b90116bf09f4a946d52444b61fc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_108
       rect:
@@ -3578,6 +4228,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 31841c36f86f24d4f888ac32cf29c338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_109
       rect:
@@ -3596,6 +4252,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e1e58fc191b70241b98b667ca71a8ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_110
       rect:
@@ -3614,6 +4276,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f934ab905bc5994cb8a5bfd6efbbfcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_111
       rect:
@@ -3632,6 +4300,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 45e9b3f9113ad6d43b784ad7011aea3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_112
       rect:
@@ -3650,6 +4324,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 783b4878b659894479c0df596ff2301c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_113
       rect:
@@ -3668,6 +4348,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: da9029bc0bfdc4945801fbbf1a89df54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_114
       rect:
@@ -3686,6 +4372,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1f78d43a31ec869479616096053dfb49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_115
       rect:
@@ -3704,6 +4396,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 40299c7814c869849975a028f3d27935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_116
       rect:
@@ -3722,6 +4420,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: c47a68b86dd088b4687b6279d3803210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_117
       rect:
@@ -3740,6 +4444,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: b0efcc65ac4c26f4f946447d5fd04f78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_118
       rect:
@@ -3758,6 +4468,12 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 92418e881ca06f9419ff09e1e012de08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_119
       rect:
@@ -3778,6 +4494,12 @@ TextureImporter:
         - {x: 8, y: 2}
         - {x: 6, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0723ea3c7a49899459dc367cbb24d773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_120
       rect:
@@ -3792,6 +4514,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d2bdf856536fccd44a28ead350392e36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_121
       rect:
@@ -3806,6 +4534,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: abc99d8841ccd3b4bb3d557196831636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_122
       rect:
@@ -3820,6 +4554,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2501aad3e3fcc9146b9b0563eea72da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mario3levels_123
       rect:
@@ -3834,8 +4574,20 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6987f0129f10e54e9852a2ff7bd924b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

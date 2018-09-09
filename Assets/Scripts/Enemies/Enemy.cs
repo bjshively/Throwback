@@ -14,7 +14,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected bool alive;
     protected bool canMove = true;
-    protected float moveSpeed;
+    public float moveSpeed;
 
     // Use this for initialization
     protected virtual void Start()
@@ -36,7 +36,7 @@ public abstract class Enemy : MonoBehaviour
         if (!LevelManager.Instance.stopAllAction())
         {
             // Most enemies only move within a certain range of the player
-            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 6 && alive)
+            if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position)) < 35 && alive)
             {
                 Flip();
                 Move();
