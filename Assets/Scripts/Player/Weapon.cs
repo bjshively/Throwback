@@ -49,7 +49,7 @@ public abstract class Weapon : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Mathf.Abs(Vector2.Distance(transform.position, player.transform.position)) > 4)
+        if (Mathf.Abs(Vector2.Distance(transform.position, player.transform.position)) > 40)
         {
             SelfDestruct();
         }

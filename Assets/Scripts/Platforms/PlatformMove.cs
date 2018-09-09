@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
     protected GameObject player;
-    protected float speed = 1;
+    protected float speed = 5;
     protected Transform currentPoint;
     public Transform[] points;
 

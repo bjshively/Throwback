@@ -9,7 +9,7 @@ public class Zapper : Weapon
     {
         get
         {
-            return 7;
+            return 17;
         } 
     }
 

@@ -10,7 +10,7 @@ public class EnemyFloat : Enemy
     protected void Start()
     {
         base.Start();
-        moveSpeed = .5f;
+        moveSpeed = 5f;
         timer = 0;
     }
 
