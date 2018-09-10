@@ -6,7 +6,7 @@ public class PlatformCircle : PlatformMove
 {
     private Vector3 center;
     public float radius = .1f;
-    public float timeToCompleteCircle = 10f;
+    public float timeToCompleteCircle = 5f;
     public float startAngle = 0;
 
     // Use this for initialization

@@ -14,7 +14,7 @@ public class ContraBullet : MonoBehaviour
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         target = player.transform.position;
-        moveSpeed = 2;
+        moveSpeed = 10;
 
         // All bullets will self destruct after 2 seconds
         Invoke("SelfDestruct", 2);
