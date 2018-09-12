@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformNoParent : MonoBehaviour
 {
-    protected float speed = 1;
+    protected float speed = 3;
     protected Transform currentPoint;
     public Transform[] points;
     private float timer;
