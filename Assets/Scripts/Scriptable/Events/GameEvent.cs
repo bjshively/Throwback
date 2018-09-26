@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class GameEvent : ScriptableObject
 {
-
 	private readonly List<GameEventListener> EventListeners = new List<GameEventListener>();
 
 	public void Raise()
